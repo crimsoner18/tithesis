@@ -1,0 +1,92 @@
+[    
+    {
+      "questionText": "Question 1: Force that propels the normally stationary bobble head into motion could be described as forced vibration",
+      "answerOptions": [
+        { "answerText": "Pendulum", "isCorrect": false },
+        { "answerText": "Motion", "isCorrect": false },
+        { "answerText": "Forced Vibration", "isCorrect": true },
+        { "answerText": "Kinetic", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 2: A vibrating object's tendency to lose or dissipate its energy over time is known as",
+      "answerOptions": [
+        { "answerText": "Damping", "isCorrect": true },
+        { "answerText": "Transition", "isCorrect": false },
+        { "answerText": "Force", "isCorrect": false },
+        { "answerText": "Vibration", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 3: A force of 16 N is required to stretch a spring a distance of 40 cm from its rest position What force (in Newtons) is required to stretch the same spring ...",
+      "answerOptions": [
+        { "answerText": "... twice the distance?", "isCorrect": true },
+        { "answerText": "... three times the distance?", "isCorrect": false },
+        { "answerText": "... one-half the distance?", "isCorrect": false },
+        { "answerText": "... four times the distance", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 4: Why does pendulum and hanging spring is an example of virating objects?",
+      "answerOptions": [
+        { "answerText": "direction is up and down", "isCorrect": false },
+        { "answerText": "it vibrate back and forth around its fixed equilibrium point", "isCorrect": true },
+        { "answerText": "it has a comparatively short period", "isCorrect": false },
+        { "answerText": "none of the above", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 5: Which of the following mass-spring systems will have the highest frequency of vibration?",
+      "answerOptions": [
+        { "answerText": "A spring with a k=300 N/m and a mass of 200 g suspended from it.", "isCorrect": false },
+        { "answerText": "A spring with a k=400 N/m and a mass of 200 g suspended from it.", "isCorrect": true },
+        { "answerText": "A spring with a k=300 N/m and a mass of 100 g suspended from it.", "isCorrect": false },
+        { "answerText": "A spring with a k=50 N/m and a mass of 100 g suspended from it.", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 6: The reciprocal of period",
+      "answerOptions": [
+        { "answerText": "Second", "isCorrect": false },
+        { "answerText": "amplitude", "isCorrect": false },
+        { "answerText": "frequency", "isCorrect": true },
+        { "answerText": "motion", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 7: The maximum displacement of an object from its resting position",
+      "answerOptions": [
+        { "answerText": "Second", "isCorrect": false },
+        { "answerText": "amplitude", "isCorrect": true },
+        { "answerText": "frequency", "isCorrect": false },
+        { "answerText": "motion", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 8: gravitys is highly predictable because?",
+      "answerOptions": [
+        { "answerText": "it is always in the same direction and always of the same magnitude", "isCorrect": true },
+        { "answerText": "it's angle is directed upwards and to the right.", "isCorrect": false },
+        { "answerText": "they are not acting in the same, opposite, or perpendicular directions", "isCorrect": false },
+        { "answerText": "a positive displacement is to the right", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 9: A pair of trapeze performers at the circus is swinging from ropes attached to a large elevated platform. Suppose that the performers can be treated as a simple pendulumwith a length of 16 m. Determine the period for one complete back and forth cycle.",
+      "answerOptions": [
+        { "answerText": "7.5 s", "isCorrect": false },
+        { "answerText": "8.0 s", "isCorrect": true },
+        { "answerText": "8.2 s", "isCorrect": false },
+        { "answerText": "3.5 s", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Question 10: The time for one full cycle to complete itself; i.e., seconds/cycle",
+      "answerOptions": [
+        { "answerText": "amplitude", "isCorrect": false },
+        { "answerText": "distance", "isCorrect": false },
+        { "answerText": "frequency", "isCorrect": false },
+        { "answerText": "period", "isCorrect": true }
+      ]
+    }
+  ]
