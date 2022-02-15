@@ -16,6 +16,12 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import ModuleOne from '../screens/ModuleOneScreen';
+import ModuleTwo from '../screens/ModuleTwoScreen';
+import ModuleThree from '../screens/ModuleThreeScreen';
+import ModuleFour from '../screens/ModuleFourScreen';
+import ModuleFive from '../screens/ModuleFiveScreen';
+import ModuleSix from '../screens/ModuleSixScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -40,6 +46,12 @@ function RootNavigator() {
     <Stack.Navigator>
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      <Stack.Screen name="ModuleOne" component={ModuleOne} options={{ headerShown: false }} />
+      <Stack.Screen name="ModuleTwo" component={ModuleTwo} options={{ headerShown: false }} />
+      <Stack.Screen name="ModuleThree" component={ModuleThree} options={{ headerShown: false }} />
+      <Stack.Screen name="ModuleFour" component={ModuleFour} options={{ headerShown: false }} />
+      <Stack.Screen name="ModuleFive" component={ModuleFive} options={{ headerShown: false }} />
+      <Stack.Screen name="ModuleSix" component={ModuleSix} options={{ headerShown: false }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>
@@ -66,7 +78,7 @@ function BottomTabNavigator() {
         name="TabOne"
         component={TabOneScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
+          title: 'Learning Materials',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Pressable
@@ -88,7 +100,7 @@ function BottomTabNavigator() {
         name="TabTwo"
         component={TabTwoScreen}
         options={{
-          title: 'Tab Two',
+          title: 'Help Corner',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
