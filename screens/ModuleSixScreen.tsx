@@ -1,78 +1,41 @@
-import React, { useState } from 'react';
-import { Pressable, StatusBar, StyleSheet } from 'react-native';
+import React from 'react';
+import { Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
-import questions from '../assets/questions/module1_quiz1.json'
 
-export default function ModuleSixScreen({ navigation }: RootTabScreenProps<'ModuleOne'>) {
-  const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [showScore, setShowScore] = useState(false)
-  const [score, setScore] = useState(0)
-
-  const HandleAnswerButtonClick = (isCorrect: boolean) => {
-    if (isCorrect === true) {
-      setScore(score + 1);
-    }
-
-    const nextQuetions = currentQuestion + 1;
-    
-    if (nextQuetions < questions.length) {
-      setCurrentQuestion(nextQuetions);
-    }
-    else {
-      setShowScore(true)
-    }
-  }
-
+export default function ModuleThreeScreen({ navigation }: RootTabScreenProps<'ModuleOne'>) {
   return (
-    <>
-      <View style={styles.container}>
-      <Text style={styles.header}>Quiz</Text>
-        {showScore ? (
-          <Text style={styles.score_section}>
-            You scored {score} out of {questions.length}
-          </Text>
-        )
-          :
-          (
-            <>
-              <View style={styles.question_section}>
-                <View style={styles.question_count}>
-                  <Text>Question {currentQuestion + 1} / {questions.length}</Text>
-                </View>
-                <Text style={styles.question_text}>
-                  {questions[currentQuestion].questionText}
-                </Text>
-              </View>
-
-              <View style={styles.answer_section}>
-                {
-                  questions[currentQuestion].answerOptions.map((answerOptions) => (
-                    <Pressable 
-                      onPress={() => HandleAnswerButtonClick(answerOptions.isCorrect)} 
-                      style={styles.button}
-                      key={answerOptions.answerText}
-                      >
-                      <Text>{answerOptions.answerText}</Text>
-                    </Pressable>
-                  ))
-                }
-              </View>
-            </>
-          )}
-      </View>
-    </>
+    <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollview} scrollEnabled={true}>
+        <Text> Module 3: Vibrations</Text>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  scrollview: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  },
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
   },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '80%',
+  },
   button: {
     borderRadius: 8,
+    padding: 6,
     borderColor: 'red',
     backgroundColor: 'green',
     borderWidth: 1,
@@ -80,31 +43,5 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  header: {
-    textAlign: 'center',
-    color: '#f71aa2',
-  },
-  score_section: {
-    flex: 1,
-    alignItems: 'center',
-    fontSize: 24,
-  },
-  question_section: {
-    width: '100%',
-    position: 'relative',
-  },
-  question_count: {
-    marginBottom: 20,
-  },
-  question_text: {
-    marginBottom: 12,
-  },
-  answer_section: {
-    flex: 1,
-    width: '100%',
-    flexDirection: 'column',
-    justifyContent: 'center',
-  },
+  }
 });
-

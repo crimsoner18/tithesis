@@ -10,11 +10,11 @@ export default function CommentCard({
 }) {
   return (
     <TouchableOpacity>
-      <Card style={{ height: 200, width: 300, backgroundColor: "pink" }}>
-        <Card.Title title={title} subtitle="#Imongmamamaytite" />
+      <Card style={{ height: 200, width: 300 }}>
+        <Card.Title title={title} subtitle="Sample post" />
         <Card.Content>
           <Title>{title}</Title>
-          <Paragraph>BBMSARA2069</Paragraph>
+          <Paragraph>Sample</Paragraph>
         </Card.Content>
       </Card>
     </TouchableOpacity>
@@ -27,7 +27,7 @@ const styles = {
     flexDirection: "row",
     margin: 10,
     borderRadius: 10,
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
     shadowColor: "#000",
   },
 };

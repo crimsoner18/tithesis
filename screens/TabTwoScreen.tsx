@@ -9,15 +9,7 @@ export default function TabTwoScreen() {
   const DATA = [
     {
       id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-      title: "First Item",
-    },
-    {
-      id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-      title: "Second Item",
-    },
-    {
-      id: "58694a0f-3da1-471f-bd96-145571e29d72",
-      title: "Third Item",
+      title: "Sample Title",
     },
   ];
   const [posts, setPosts] = useState(DATA);
@@ -31,7 +23,7 @@ export default function TabTwoScreen() {
             ...posts,
             {
               id: "58694a0f-3da1-471f-bd96-145571e29d72",
-              title: "Third Item",
+              title: "Sample Title",
             },
           ]);
         }}
@@ -43,11 +35,11 @@ export default function TabTwoScreen() {
         ItemSeparatorComponent={() => (
           <View
             style={styles.separator}
-            lightColor="#eee"
-            darkColor="rgba(255,255,255,0.1)"
+            // lightColor="#eee"
+            // darkColor="rgba(255,255,255,0.1)"
           />
         )}
-        renderItem={({ item }) => <CommentCard title={item.title} />}
+        renderItem={({ item }) => <CommentCard title={item.title} comment={""} />}
       />
     </View>
   );

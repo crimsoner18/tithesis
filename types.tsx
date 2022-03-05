@@ -23,6 +23,17 @@ export type RootStackParamList = {
   ModuleFour: undefined;
   ModuleFive: undefined;
   ModuleSix: undefined;
+  Quiz: undefined;
+  ModuleOneLessonOne: undefined;
+  ModuleOneLessonTwo: undefined;
+  ModuleOneLessonThree: undefined;
+  ModuleOneLessonFour: undefined;
+  ModuleOneLessonFive: undefined;
+  ModuleOneLessonSix: undefined;
+  ModuleTwoLessonOne: undefined;
+  ModuleTwoLessonTwo: undefined;
+  ModuleTwoLessonThree: undefined;
+  ModuleTwoLessonFour: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
@@ -34,6 +45,12 @@ export type RootTabParamList = {
   TabOne: undefined;
   TabTwo: undefined;
   ModuleOne: undefined;
+  ModuleTwo: undefined;
+  ModuleThree: undefined;
+  ModuleFour: undefined;
+  ModuleFive: undefined;
+  ModuleSix: undefined;
+  Quiz: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<

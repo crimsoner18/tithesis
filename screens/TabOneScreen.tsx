@@ -1,82 +1,127 @@
 import React from 'react';
-import { Button, Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
-
-import { Text, View } from '../components/Themed';
+import { ScrollView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
+import {Card, Paragraph} from 'react-native-paper';
+import { View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
-    <SafeAreaView style={styles.container}>
-        <ScrollView contentContainerStyle={styles.scrollview} scrollEnabled={true}>
-            <Pressable
-                onPress={() => navigation.navigate('ModuleOne')}
-                style={styles.button}
-            >
-                <Text style={styles.title}> Module 1: Vibrations</Text>
-            </Pressable>
-            <Pressable
-                onPress={() => navigation.navigate('ModuleTwo')}
-                style={styles.button}
-            >
-                <Text style={styles.title}> Module 2: Vibrations</Text>
-            </Pressable>
-            <Pressable
-                onPress={() => navigation.navigate('ModuleThree')}
-                style={styles.button}
-            >
-                <Text style={styles.title}> Module 3: Vibrations</Text>
-            </Pressable>
-            <Pressable
-                onPress={() => navigation.navigate('ModuleFour')}
-                style={styles.button}
-            >
-                <Text style={styles.title}> Module 4: Vibrations</Text>
-            </Pressable>
-            <Pressable
-                onPress={() => navigation.navigate('ModuleFive')}
-                style={styles.button}
-            >
-                <Text style={styles.title}> Module 5: Vibrations</Text>
-            </Pressable>
-            <Pressable
-                onPress={() => navigation.navigate('ModuleSix')}
-                style={styles.button}
-            >
-                <Text style={styles.title}> Module 6: Vibrations</Text>
-            </Pressable>
+    <View style={styles.container}>
+        <ScrollView contentContainerStyle={styles.scrollview}>
+          <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOne')}
+          style={styles.card}>
+                <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Module One" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => navigation.navigate('ModuleTwo')}
+            style={styles.card}>
+            <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Module Two" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => navigation.navigate('ModuleThree')}
+            style={styles.card}>
+            <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Module Three" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => navigation.navigate('ModuleFour')}
+            style={styles.card}>
+            <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Module Four" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => navigation.navigate('ModuleFive')}
+            style={styles.card}>
+            <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Module Five" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => navigation.navigate('ModuleSix')}
+            style={styles.card}>
+            <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Module Six" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={() => navigation.navigate('Quiz')}
+            style={styles.card}>
+            <Card>
+                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
+                  <Card.Title title="Sample Quiz Window" />
+                  <Card.Content>
+                    <Paragraph>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </Paragraph>
+                  </Card.Content>
+                </Card>
+            </TouchableOpacity>
         </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     paddingTop: StatusBar.currentHeight,
+    flexGrow: 1,
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
   scrollview: {
     alignItems: 'center',
+    alignContent: 'center',
     justifyContent: 'center',
-    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    flexGrow: 1,
   },
-  button: {
-    borderRadius: 8,
-    padding: 6,
-    borderColor: 'red',
-    backgroundColor: 'green',
-    borderWidth: 1,
-    height: '15%',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
+  card: {
+    marginBottom: 10, 
   }
 });

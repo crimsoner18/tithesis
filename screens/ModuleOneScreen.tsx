@@ -1,47 +1,81 @@
 import React from 'react';
-import { Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
-
-import { Text, View } from '../components/Themed';
+import { Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
+import { Card, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../types';
+
+const {width, height} = Dimensions.get("window");
+const vw = width-10;
+const vh = height;
 
 export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview} scrollEnabled={true}>
-        <Text> Module 1: Vibrations</Text>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneLessonOne')}>
+            <Card style={styles.card}>
+              <Card.Title title="Vibrations" subtitle="Lesson 1"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneLessonTwo')}>
+            <Card style={styles.card}>
+              <Card.Title title="The Nature of a Wave" subtitle="Lesson 2"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneLessonThree')}>
+            <Card style={styles.card}>
+              <Card.Title title="Properties of a Wave" subtitle="Lesson 3"/>
+            </Card>
+        </TouchableOpacity>
+        {/* <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneLessonFour')}>
+            <Card style={styles.card}>
+              <Card.Title title="The Nature of a Wave" subtitle="Lesson 4"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneLessonFive')}>
+            <Card style={styles.card}>
+              <Card.Title title="Vibrations" subtitle="Lesson 5"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneLessonSix')}>
+            <Card style={styles.card}>
+              <Card.Title title="The Nature of a Wave" subtitle="Lesson 6"/>
+            </Card>
+        </TouchableOpacity> */}
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    paddingTop: StatusBar.currentHeight,
+    flexGrow: 1,
+  },
+  title: {
+    alignItems: 'center',
+  },
   scrollview: {
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1,
+    flexDirection: 'column',
+    flexWrap: 'wrap',
+    flexGrow: 1,
+    marginTop: -80,
   },
-  container: {
-    flex: 1,
-    paddingTop: StatusBar.currentHeight,
+  card: {
+    marginLeft: 5,
+    marginRight: 5,
+    width: vw,
+    marginBottom: 5,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-  button: {
-    borderRadius: 8,
-    padding: 6,
-    borderColor: 'red',
-    backgroundColor: 'green',
-    borderWidth: 1,
-    height: '15%',
-    width: '100%',
+  text: {
     alignItems: 'center',
-    justifyContent: 'center',
   }
 });
+
