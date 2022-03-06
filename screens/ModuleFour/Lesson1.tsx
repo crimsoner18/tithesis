@@ -21,14 +21,16 @@ export default function LessonOneScreen() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview}>
         <Card style={styles.card}>
-          <Cover
-            source={require("../../assets/images/module4/lesson1/image1.png")}
-          />
-
           <Title
             title="The Index Of Refraction and Laws of Refraction"
             subtitle="Lesson 1"
           />
+          <Card>
+            <Cover
+              resizeMode="contain"
+              source={require("../../assets/images/module4/lesson1/image1.png")}
+            />
+          </Card>
           <Content>
             <Paragraph>
               If you put something in the way of light, it doesn't change shape.
@@ -104,9 +106,5 @@ const styles = StyleSheet.create({
   },
   paragraph: {
     marginBottom: 10,
-  },
-  coverImage: {
-    backgroundColor: "#FFFFFF",
-    margin: 10,
   },
 });

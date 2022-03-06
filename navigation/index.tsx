@@ -36,6 +36,7 @@ import M2LessonTwoScreen from "../screens/ModuleTwo/Lesson2";
 import M2LessonThreeScreen from "../screens/ModuleTwo/Lesson3";
 import M2LessonFourScreen from "../screens/ModuleTwo/Lesson4";
 import M4LessonOneScreen from "../screens/ModuleFour/Lesson1";
+import M4LessonTwoScreen from "../screens/ModuleFour/Lesson2";
 import {
   RootStackParamList,
   RootTabParamList,
@@ -172,6 +173,30 @@ function RootNavigator() {
       />
       <Stack.Screen
         name="ModuleFourLessonOne"
+        component={M4LessonOneScreen}
+        options={{
+          headerShown: true,
+          title: "The Refraction And Lenses",
+        }}
+      />
+      <Stack.Screen
+        name="ModuleFourLessonTwo"
+        component={M4LessonTwoScreen}
+        options={{
+          headerShown: true,
+          title: "Lenses And Refraction of Light",
+        }}
+      />
+      <Stack.Screen
+        name="ModuleFourLessonThree"
+        component={M4LessonOneScreen}
+        options={{
+          headerShown: true,
+          title: "The Refraction And Lenses",
+        }}
+      />
+      <Stack.Screen
+        name="ModuleFourLessonFour"
         component={M4LessonOneScreen}
         options={{
           headerShown: true,
