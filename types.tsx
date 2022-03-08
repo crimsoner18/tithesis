@@ -53,11 +53,16 @@ export type RootStackParamList = {
 
   ModuleThreeLessonOne: undefined;
   ModuleThreeLessonTwo: undefined;
+
   ModuleFourLessonOne: undefined;
   ModuleFourLessonTwo: undefined;
   ModuleFourLessonThree: undefined;
+
   ModuleFiveLessonOne: undefined;
   ModuleFiveLessonTwo: undefined;
+
+  ModuleSixLessonOne: undefined;
+  ModuleSixLessonTwo: undefined;
 
 
 };
