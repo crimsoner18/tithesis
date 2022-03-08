@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: It is considered to be the most interesting optical instrument because it enables us to see our surroundings in a detailed and colorful manner.",
+      "answerOptions": [
+        { "answerText": "Camera", "isCorrect": false },
+        { "answerText": "Telescope", "isCorrect": false },
+        { "answerText": "Eyes", "isCorrect": true },
+        { "answerText": "Magnifying glass", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: Cornea functions as ___________.",
+      "answerOptions": [
+        { "answerText": "A refractor of light and protects the eyes from accidents by preventing foreign particles inside it.", "isCorrect": false },
+        { "answerText": "A messenger of sensation from the eyes to the brain", "isCorrect": false },
+        { "answerText": "The center of the eye that lets the light in and focus it on the retina.", "isCorrect": true },
+        { "answerText": "A controller of the amount of light entering the eye.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: It refers to the nerve cells at the back of the eye essential for detecting and deciphering colors.",
+      "answerOptions": [
+        { "answerText": "Optic Nerve", "isCorrect": false },
+        { "answerText": "Retina", "isCorrect": false },
+        { "answerText": "Pupils", "isCorrect": true },
+        { "answerText": "Iris", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: The lens functions to make sure that all the light from an object is being focused on the retina only.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: It is a muscle that controls the movement of the lens.",
+      "answerOptions": [
+        { "answerText": "Posterior Muscle", "isCorrect": false },
+        { "answerText": "Lateral Muscle", "isCorrect": false },
+        { "answerText": "Medial Muscle", "isCorrect": true },
+        { "answerText": "Ciliary Muscle", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: Which of the following best describes accommodation",
+      "answerOptions": [
+        { "answerText": "The distance is called the minimum distance of an object from the eye.", "isCorrect": false },
+        { "answerText": "It is the ability of the lens of the eye to adjust its focal length.", "isCorrect": false },
+        { "answerText": "Process of visual nerve impulses that begins with interconnections in the retina and continues in the brain.", "isCorrect": true },
+        { "answerText": "It is the method of correcting visual defects.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: Refractive Errors refer to the type of vision problems wherein the person experiences blurry visions due to the inability of the eye to focus images sharply on the retina.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: What are the two most known refractive errors?",
+      "answerOptions": [
+        { "answerText": "Nearsightedness and Farsightedness", "isCorrect": false },
+        { "answerText": "Astigmatism and Presbyopia", "isCorrect": false },
+        { "answerText": "Astigmatism and Nearsightedness", "isCorrect": true },
+        { "answerText": "Farsightedness and Presbyopia", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: How are refractive errors be corrected?",
+      "answerOptions": [
+        { "answerText": "Prescribed eyeglasses and surgeries", "isCorrect": false },
+        { "answerText": "Anti-rad eyeglasses", "isCorrect": false },
+        { "answerText": "Surgeries", "isCorrect": true },
+        { "answerText": "Lens", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: This condition can be corrected through the use of cylindrical lens due to its no refractive power along one axis, and it’s concave or convex along the other axis.",
+      "answerOptions": [
+        { "answerText": "Astigmatism", "isCorrect": false },
+        { "answerText": "Hyperopia", "isCorrect": false },
+        { "answerText": "Presbyopia", "isCorrect": true },
+        { "answerText": "Myopia", "isCorrect": false }
+      ]
+    }
+  ]

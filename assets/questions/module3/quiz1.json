@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: It refers to the objects that produce lights on their own.",
+      "answerOptions": [
+        { "answerText": "Illuminated Objects", "isCorrect": false },
+        { "answerText": "Luminous Objects", "isCorrect": false },
+        { "answerText": "Torch", "isCorrect": true },
+        { "answerText": "None of the Above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: These are objects that reflect light back at our sight.",
+      "answerOptions": [
+        { "answerText": "Illuminated Objects", "isCorrect": false },
+        { "answerText": "Luminous Objects", "isCorrect": false },
+        { "answerText": "Torch", "isCorrect": true },
+        { "answerText": "None of the Above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: Illuminated objects emits light in a variety of directions.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: What are the two types of rays seen when viewing an image?",
+      "answerOptions": [
+        { "answerText": "Incident and Reflected", "isCorrect": false },
+        { "answerText": "Reflected and Refracted", "isCorrect": false },
+        { "answerText": "Illuminated and Illuminous", "isCorrect": true },
+        { "answerText": "None of the above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: It refers to the ray originated at the object location and first travels along a line towards the mirror.",
+      "answerOptions": [
+        { "answerText": "Light ray", "isCorrect": false },
+        { "answerText": "Incident ray", "isCorrect": false },
+        { "answerText": "Reflected Ray", "isCorrect": true },
+        { "answerText": "None of the above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: It refers to the law describing the behavior of light as it undergoes reflection.",
+      "answerOptions": [
+        { "answerText": "Law of Jungle", "isCorrect": false },
+        { "answerText": "Law of Refraction", "isCorrect": false },
+        { "answerText": "Law of Physics", "isCorrect": true },
+        { "answerText": "Law of Reflection", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: If a ray of light were to approach and reflect off of a flat mirror, the light's behavior as it reflected would follow a predictable law known as the law of reflection.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: When the individual rays reflect off the rough surface, they will proceed on one point only.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: The second application of the distinction between diffuse and specular reflection is applied to the field of ___",
+      "answerOptions": [
+        { "answerText": "Videography", "isCorrect": false },
+        { "answerText": "Photography", "isCorrect": false },
+        { "answerText": "Physics", "isCorrect": true },
+        { "answerText": "Biology", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: It refers to the ray that reflects off the mirror and travels into one’s eye.",
+      "answerOptions": [
+        { "answerText": "Light ray", "isCorrect": false },
+        { "answerText": "Incident ray", "isCorrect": false },
+        { "answerText": "Reflected Ray", "isCorrect": true },
+        { "answerText": "None of the above", "isCorrect": false }
+      ]
+    }
+  ]

@@ -37,10 +37,15 @@ import M1QuizTwoScreen from "../screens/ModuleOne/Quizzes/Lesson2";
 import M1QuizThreeScreen from "../screens/ModuleOne/Quizzes/Lesson3";
 import M1QuizFourScreen from "../screens/ModuleOne/Quizzes/Lesson4";
 
+// Module 2 imports
 import M2LessonOneScreen from "../screens/ModuleTwo/Lesson1";
 import M2LessonTwoScreen from "../screens/ModuleTwo/Lesson2";
 import M2LessonThreeScreen from "../screens/ModuleTwo/Lesson3";
 import M2LessonFourScreen from "../screens/ModuleTwo/Lesson4";
+import M2QuizOneScreen from "../screens/ModuleTwo/Quizzes/Lesson1";
+import M2QuizTwoScreen from "../screens/ModuleTwo/Quizzes/Lesson2";
+import M2QuizThreeScreen from "../screens/ModuleTwo/Quizzes/Lesson3";
+import M2QuizFourScreen from "../screens/ModuleTwo/Quizzes/Lesson4";
 
 import M3LessonOneScreen from '../screens/ModuleThree/Lesson1';
 import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
@@ -139,6 +144,8 @@ function RootNavigator() {
           title: "Module Six: Optical Instruments 1",
         }}
       />
+
+      {/* MODULE ONE LESSONS AND QUIZZES */}
       <Stack.Screen
         name="ModuleOneLessonOne"
         component={M1LessonOneScreen}
@@ -181,6 +188,7 @@ function RootNavigator() {
         options={{ headerShown: true, title: "Lesson 4 Quiz" }}
       />
       
+      {/* MODULE TWO LESSONS AND QUIZZES */}
       <Stack.Screen
         name="ModuleTwoLessonOne"
         component={M2LessonOneScreen}
@@ -204,6 +212,29 @@ function RootNavigator() {
           title: "Understanding Polarization and Malus law",
         }}
       />
+
+      <Stack.Screen
+        name="ModuleTwoQuizOne"
+        component={M2QuizOneScreen}
+        options={{ headerShown: true, title: "Lesson 1 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleTwoQuizTwo"
+        component={M2QuizTwoScreen}
+        options={{ headerShown: true, title: "Lesson 2 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleTwoQuizThree"
+        component={M2QuizThreeScreen}
+        options={{ headerShown: true, title: "Lesson 3 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleTwoQuizFour"
+        component={M2QuizFourScreen}
+        options={{ headerShown: true, title: "Lesson 4 Quiz" }}
+      />
+
+      {/* MODULE THREE LESSONS AND QUIZZES */}
       <Stack.Screen 
         name="ModuleThreeLessonOne" 
         component={M3LessonOneScreen} 

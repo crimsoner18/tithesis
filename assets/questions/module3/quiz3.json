@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: These are named as the two types of mirrors. ",
+      "answerOptions": [
+        { "answerText": "Concave and Convex", "isCorrect": false },
+        { "answerText": "Mirror and Lens", "isCorrect": false },
+        { "answerText": "Curvature and Center", "isCorrect": true },
+        { "answerText": "Light and wave", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: It can be used in determining the magnification of a picture.",
+      "answerOptions": [
+        { "answerText": "Mathematics", "isCorrect": false },
+        { "answerText": "Geometry", "isCorrect": false },
+        { "answerText": "Physics", "isCorrect": true },
+        { "answerText": "Science", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: It refers to the diverging mirror.",
+      "answerOptions": [
+        { "answerText": "Concave", "isCorrect": false },
+        { "answerText": "Convex", "isCorrect": false },
+        { "answerText": "Ray", "isCorrect": true },
+        { "answerText": "Light", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: Because it sits behind the mirror at the place where the reflected rays appear to originate, the picture is",
+      "answerOptions": [
+        { "answerText": "Imaginary", "isCorrect": false },
+        { "answerText": "Real", "isCorrect": false },
+        { "answerText": "Virtual", "isCorrect": true },
+        { "answerText": "Upright", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: The rays actually go in all directions from the object.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: Which of the following statement is true?",
+      "answerOptions": [
+        { "answerText": "The rays actually go in all directions from the object. ", "isCorrect": false },
+        { "answerText": "The three rays were chosen for their ease of construction.", "isCorrect": false },
+        { "answerText": "The image point obtained by the ray diagram must agree with the value of q calculated from the mirror equation. ", "isCorrect": true },
+        { "answerText": "All of the above ", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: Geometry also depicts the distances between the image and the objects.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: Concave: __________; Convex: Diverging.",    
+      "answerOptions": [
+        { "answerText": "Diverging", "isCorrect": false },
+        { "answerText": "Converging", "isCorrect": false },
+        { "answerText": "Concaving", "isCorrect": true },
+        { "answerText": "None of the above.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9:A concave mirror's image is often upright, virtual, and smaller than the object.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: For convex mirrors, the equations are the same as for concave mirrors.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    }
+  ]

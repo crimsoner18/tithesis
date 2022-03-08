@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: Which of the following is Sir Isaac Newton’s theory that explains the light as a particle",
+      "answerOptions": [
+        { "answerText": "Corpuscular Theory", "isCorrect": false },
+        { "answerText": "Quantum Theory", "isCorrect": false },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Wave Theory", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: Huygens’ wave theory of light considered light to be ____________",
+      "answerOptions": [
+        { "answerText": "Made up of particles", "isCorrect": false },
+        { "answerText": "Longitudinal Waves", "isCorrect": false },
+        { "answerText": "Transverse Waves", "isCorrect": true },
+        { "answerText": "Of dual nature", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: If the light was made up of particles of energy it is called",
+      "answerOptions": [
+        { "answerText": "Electrons", "isCorrect": false },
+        { "answerText": "Protons", "isCorrect": false },
+        { "answerText": "Photons", "isCorrect": true },
+        { "answerText": "Photos", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: According to the Electromagnetic theory electromagnetic wave is_____________",
+      "answerOptions": [
+        { "answerText": "Transverse waves", "isCorrect": false },
+        { "answerText": "Longitudinal waves", "isCorrect": false },
+        { "answerText": "made up of particles", "isCorrect": true },
+        { "answerText": "mechanical", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: This theory also failed in explaining the black body radiation.",
+      "answerOptions": [
+        { "answerText": "Wave Theory", "isCorrect": false },
+        { "answerText": "Corpuscular Theory", "isCorrect": false },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Quantum Theory", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: It is successful in explaining the phenomena of reflection, refraction, interference, and diffraction phenomena of light and tells us that light is a wave.",
+      "answerOptions": [
+        { "answerText": "Wave Theory", "isCorrect": false },
+        { "answerText": "Corpuscular Theory", "isCorrect": false },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Quantum Theory", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: Contemporary of Newton, proposed a wave theory of light that had much merit.",
+      "answerOptions": [
+        { "answerText": "Albert Einstein", "isCorrect": false },
+        { "answerText": "Max Planck", "isCorrect": false },
+        { "answerText": "Christian Huygens", "isCorrect": true },
+        { "answerText": "James Clerk Maxwell", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: A source of light continuously emits tiny elastic particles called",
+      "answerOptions": [
+        { "answerText": "photons", "isCorrect": false },
+        { "answerText": "ether", "isCorrect": false },
+        { "answerText": "Compton", "isCorrect": true },
+        { "answerText": "corpuscles", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: This theory assumes that light is radiated in discrete packets or bundles of energy called photons",
+      "answerOptions": [
+        { "answerText": "Corpuscular Theory", "isCorrect": false },
+        { "answerText": "Quantum Theory", "isCorrect": false },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Wave Theory", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: This theory also says that the color of light is dependent on the size of the corpuscles which tells that light is a particle.",
+      "answerOptions": [
+        { "answerText": "Quantum Theory ", "isCorrect": false },
+        { "answerText": "Corpuscular Theory", "isCorrect": false },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Wave Theory", "isCorrect": false }
+      ]
+    }
+  ]

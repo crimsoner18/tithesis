@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: Constructive and destructive interference refer to the phenomenon of",
+      "answerOptions": [
+        { "answerText": "waves adding together or canceling each other out when they are superimposed.", "isCorrect": false },
+        { "answerText": "waves traveling different distances.", "isCorrect": false },
+        { "answerText": "waves bending around obstacles.", "isCorrect": true },
+        { "answerText": "waves changing direction when moving from one material to another.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: Two light sources are said to be coherent if they",
+      "answerOptions": [
+        { "answerText": "are of the same frequency.", "isCorrect": false },
+        { "answerText": "are of the same frequency, and maintain a constant phase difference.", "isCorrect": false },
+        { "answerText": "are of the same amplitude, and maintain a constant phase difference.", "isCorrect": true },
+        { "answerText": "are of the same frequency and amplitude.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: What principle is responsible for alternating light and dark bands when light passes through two or more narrow slits?",
+      "answerOptions": [
+        { "answerText": "Refraction", "isCorrect": false },
+        { "answerText": "Polarization", "isCorrect": false },
+        { "answerText": "Diffraction", "isCorrect": true },
+        { "answerText": "Interference", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: Constructive interference occurs when the difference in path lengths traveled by two light rays is",
+      "answerOptions": [
+        { "answerText": "an integer multiple of the half-wavelength of the light.", "isCorrect": false },
+        { "answerText": "zero or an integer multiple of the wavelength of the light.", "isCorrect": false },
+        { "answerText": "anything other than zero.", "isCorrect": true },
+        { "answerText": "exactly zero.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: Destructive interference occurs when the difference in path lengths traveled by two light rays is",
+      "answerOptions": [
+        { "answerText": "integer multiple of the half-wavelength of the light.", "isCorrect": false },
+        { "answerText": "zero or an integer multiple of the wavelength of the light.", "isCorrect": false },
+        { "answerText": "anything other than zero.", "isCorrect": true },
+        { "answerText": "exactly zero.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: Bright spots on the interference pattern are visible because of",
+      "answerOptions": [
+        { "answerText": "Destructive Interference of Light", "isCorrect": false },
+        { "answerText": "Constructive Interference of Light", "isCorrect": false },
+        { "answerText": "Polarization of Light", "isCorrect": true },
+        { "answerText": "Light is always bright.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: The main principle used in Interference is",
+      "answerOptions": [
+        { "answerText": "Heisenberg’s Uncertainty Principle", "isCorrect": false },
+        { "answerText": "Superposition Principle", "isCorrect": false },
+        { "answerText": "Quantum Mechanics", "isCorrect": true },
+        { "answerText": "Fermi Principle", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: When Two waves of same amplitude add constructively, the intensity becomes",
+      "answerOptions": [
+        { "answerText": "Double", "isCorrect": false },
+        { "answerText": "Half", "isCorrect": false },
+        { "answerText": "Four Times", "isCorrect": true },
+        { "answerText": "One-Fourth", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: What kind of sources are required for Young’s double Slit experiment",
+      "answerOptions": [
+        { "answerText": "Coherent", "isCorrect": false },
+        { "answerText": "Incoherent", "isCorrect": false },
+        { "answerText": "Intense", "isCorrect": true },
+        { "answerText": "Bright", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: What type of interference is represented in this diagram?",
+      "answerOptions": [
+        { "answerText": "Destructivet", "isCorrect": false },
+        { "answerText": "Constructive", "isCorrect": false },
+        { "answerText": "Intense", "isCorrect": true },
+        { "answerText": "Bright", "isCorrect": false }
+      ]
+    }
+  ]

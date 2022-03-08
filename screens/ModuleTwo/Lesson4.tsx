@@ -1,12 +1,13 @@
 import React from 'react';
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text } from 'react-native';
+import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Card, Paragraph, List } from 'react-native-paper';
+import { RootTabScreenProps } from '../../types';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
 
-export default function LessonFourScreen() {
+export default function LessonFourScreen({ navigation }: RootTabScreenProps<'ModuleTwo'>) {
   return (
     <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollview}>
@@ -148,6 +149,16 @@ export default function LessonFourScreen() {
                 </Card.Content>
                 <Card.Title title="" subtitle="Malus Law" />
               </Card>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleTwoQuizFour')}>
+                  <Card style={styles.card}>
+                    <List.Item
+                      title="Quiz"
+                      description="Take the quiz to learn more"
+                      left={props => <List.Icon {...props} icon="play-circle" />}
+                    />
+                  </Card>
+              </TouchableOpacity>
           </ScrollView>
     </SafeAreaView>
   );

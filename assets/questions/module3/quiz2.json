@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: It is referred to as the location of intersection where it seems to every observer that the light is diverging from.",
+      "answerOptions": [
+        { "answerText": "Image Location", "isCorrect": false },
+        { "answerText": "Midpoint", "isCorrect": false },
+        { "answerText": "Image site", "isCorrect": true },
+        { "answerText": "Middle site", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: How do plane mirror form an image?",
+      "answerOptions": [
+        { "answerText": "An image is formed due to the light that originates from an item in a variety of directions.", "isCorrect": false },
+        { "answerText": "An image is formed as the light reaches the mirror and reflected off of it.", "isCorrect": false },
+        { "answerText": "An image is formed as the ray of light intersects at some point.", "isCorrect": true },
+        { "answerText": "None of the above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: It is the image created by plane mirrors.",
+      "answerOptions": [
+        { "answerText": "Real Image", "isCorrect": false },
+        { "answerText": "Real-World Image", "isCorrect": false },
+        { "answerText": "Virtual Image", "isCorrect": true },
+        { "answerText": "Side Image", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: A virtual image is formed behind the mirror where light does not originate from.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: It is used to determine where a person must sight along a mirror in order to see an image of him/herself.",
+      "answerOptions": [
+        { "answerText": "Diagram", "isCorrect": false },
+        { "answerText": "Ray Diagram", "isCorrect": false },
+        { "answerText": "X-Axis", "isCorrect": true },
+        { "answerText": "Y-Axis", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: It is also used for determining what portion of a plane mirror must be used in order to view an image.",
+      "answerOptions": [
+        { "answerText": "Lenses", "isCorrect": false },
+        { "answerText": "Concave", "isCorrect": false },
+        { "answerText": "Convex", "isCorrect": true },
+        { "answerText": "Ray Diagram", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: If two plane mirrors are placed together on one of their edges, so as to form a right-angle mirror system and then the angle between them is decreased, some interesting observations can be made.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: Three, four, or even more reflections are made from lowering the angle of mirrors.",    
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: Repositioning the object, the mirror, and/or the person could result in a ray of light from the object reflecting off the mirror and traveling to the person’s eyes.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: It states that each person sees the image due to the reflection of light off the mirror.",
+      "answerOptions": [
+        { "answerText": "Law of Reflection", "isCorrect": false },
+        { "answerText": "Law of Mirror", "isCorrect": false },
+        { "answerText": "Law of Light", "isCorrect": true },
+        { "answerText": "Principle of Reflection", "isCorrect": false }
+      ]
+    }
+  ]

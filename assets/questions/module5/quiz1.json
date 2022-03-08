@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: \"Diffraction\" of light occurs when",
+      "answerOptions": [
+        { "answerText": "light bounces off a surface.", "isCorrect": false },
+        { "answerText": "light bends around corners or obstacles.", "isCorrect": false },
+        { "answerText": "light changes intensity when passing from one material into another.", "isCorrect": true },
+        { "answerText": "ight waves add together to make a wave with larger amplitude.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: For diffraction of a wave to occur.",
+      "answerOptions": [
+        { "answerText": "the wave must be a sound wave.", "isCorrect": false },
+        { "answerText": "the wave must be traveling from a less dense to a denser material.", "isCorrect": false },
+        { "answerText": "the wave must be traveling slower than the speed of light in a vacuum.", "isCorrect": true },
+        { "answerText": "the wave must encounter an obstacle that is comparable in size to the wavelength of the wave.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: What term is used to describe two waves when the crests and troughs of match as below?",
+      "answerOptions": [
+        { "answerText": "In Phase", "isCorrect": false },
+        { "answerText": "Out of Phase", "isCorrect": false },
+        { "answerText": "Phase Different", "isCorrect": true },
+        { "answerText": "the wave must encounter an obstacle that is comparable in size to the wavelength of the wave.", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: Monochromatic light of wavelength 589 nm is incident on a grating - the spacing between lines on the grating is 4.8x10-6 m. What is the angle between the zero order and first order maxima?",
+      "answerOptions": [
+        { "answerText": "7.05 degree", "isCorrect": false },
+        { "answerText": "6.89 degree", "isCorrect": false },
+        { "answerText": "13.2 degree", "isCorrect": true },
+        { "answerText": "0.466 degree", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: Monochromatic light of wavelength 589 nm is incident on a grating - the spacing between lines on the grating is 4.8x10-6 m. What is the angle between the first order and second order maxima?",
+      "answerOptions": [
+        { "answerText": "7.89 degree", "isCorrect": false },
+        { "answerText": "9.46 degree", "isCorrect": false },
+        { "answerText": "7.16 degree", "isCorrect": true },
+        { "answerText": "6.22 degree", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: When does Single Slit Diffraction Occur?",
+      "answerOptions": [
+        { "answerText": "When the Slit Width is smaller than λ", "isCorrect": false },
+        { "answerText": "When the Slit Width is the same as λ", "isCorrect": false },
+        { "answerText": "When the Slit Width is slightly larger than", "isCorrect": true },
+        { "answerText": "Both B and C ", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: When a wave moves around a barrier or through an opening it is known as what?",
+      "answerOptions": [
+        { "answerText": "Diffractione", "isCorrect": false },
+        { "answerText": "Refraction", "isCorrect": false },
+        { "answerText": "Destruction", "isCorrect": true },
+        { "answerText": "6.22 degree", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: How shall a diffraction pattern change when white light is used instead of a monochromatic light?",
+      "answerOptions": [
+        { "answerText": "The pattern will no longer be visible", "isCorrect": false },
+        { "answerText": "The shape of the pattern will change from hyperbolic to circular", "isCorrect": false },
+        { "answerText": "The colored pattern will be observed with a white bright fringe at the center", "isCorrect": true },
+        { "answerText": "The bright and dark fringes will change position", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: If a is the width of the slits and b the distance between the slits, then a + b is called as",
+      "answerOptions": [
+        { "answerText": "Opacities", "isCorrect": false },
+        { "answerText": "Transparency", "isCorrect": false },
+        { "answerText": "Grating Constant", "isCorrect": true },
+        { "answerText": "Grating value", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: Huygen’s wave theory of light considered light to be ____________",
+      "answerOptions": [
+        { "answerText": "Made up of particles", "isCorrect": false },
+        { "answerText": "Longitudinal Waves", "isCorrect": false },
+        { "answerText": "Transverse Waves", "isCorrect": true },
+        { "answerText": "Of dual nature", "isCorrect": false }
+      ]
+    }
+  ]

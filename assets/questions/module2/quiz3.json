@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: We can see things because light",
+      "answerOptions": [
+        { "answerText": "is absorbed by objects", "isCorrect": false },
+        { "answerText": "enters our eyes", "isCorrect": false },
+        { "answerText": "reflects from our eyes", "isCorrect": true },
+        { "answerText": "is colorless", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: Light is a form of",
+      "answerOptions": [
+        { "answerText": "Heat", "isCorrect": false },
+        { "answerText": "Power", "isCorrect": false },
+        { "answerText": "Energy", "isCorrect": true },
+        { "answerText": "Force", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: What is the symbol of the speed of light in a vacuum",
+      "answerOptions": [
+        { "answerText": "V", "isCorrect": false },
+        { "answerText": "a", "isCorrect": false },
+        { "answerText": "C", "isCorrect": true },
+        { "answerText": "D", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: What happens when light waves bounce off the surface of an object",
+      "answerOptions": [
+        { "answerText": "Transmission", "isCorrect": false },
+        { "answerText": "Absorption", "isCorrect": false },
+        { "answerText": "Reflection", "isCorrect": true },
+        { "answerText": "Refraction", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: What is the speed of light in a vacuum to three significant figures?",
+      "answerOptions": [
+        { "answerText": "1.86×10^8m/s", "isCorrect": false },
+        { "answerText": "3.00×10^8m/s", "isCorrect": false },
+        { "answerText": "6.71×10^8m/s", "isCorrect": true },
+        { "answerText": "1.50×10^11m/s", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: What is the frequency of a photon having energy 2.1 X 10-30 J?",
+      "answerOptions": [
+        { "answerText": "3.1 X 1013 Hz", "isCorrect": false },
+        { "answerText": "4.1 X 1013 Hz", "isCorrect": false },
+        { "answerText": "5.1 X 1013 Hz", "isCorrect": true },
+        { "answerText": "6.1 X 1013 Hz", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question7. What happens to the wavelength of a photon as the frequency increases?",
+      "answerOptions": [
+        { "answerText": "As a wavelength decreases in size, its frequency and energy decrease", "isCorrect": false },
+        { "answerText": "As a wavelength increases in size, its frequency and energy increases", "isCorrect": false },
+        { "answerText": "As the frequency of a photon goes up, the wavelength goes down, and as the frequency goes down, the wavelength increases.", "isCorrect": true },
+        { "answerText": "As the frequency of a photon goes up, the wavelength also goes up and as the frequency goes down, the wavelength decreasesz", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: What is the speed of light in water?",
+      "answerOptions": [
+        { "answerText": "2.26×10^8m/s", "isCorrect": false },
+        { "answerText": "3.00×10^8m/s", "isCorrect": false },
+        { "answerText": "6.71×10^8m/s", "isCorrect": true },
+        { "answerText": "1.50×10^11m/s", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: His only conclusion was that light speed was too fast to be measured by that experiment.",
+      "answerOptions": [
+        { "answerText": "Christian Huygens", "isCorrect": false },
+        { "answerText": "Aristotles", "isCorrect": false },
+        { "answerText": "Galileo Galilei", "isCorrect": true },
+        { "answerText": "Isaac Newtons", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: What is the wavelength of a photon that has a frequency of 6.9x10^9 Hz",
+      "answerOptions": [
+        { "answerText": "0.43 m", "isCorrect": false },
+        { "answerText": "0.043 m", "isCorrect": false },
+        { "answerText": "0.034 m", "isCorrect": true },
+        { "answerText": "0.434 m", "isCorrect": false }
+      ]
+    }
+  ]

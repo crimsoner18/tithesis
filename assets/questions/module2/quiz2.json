@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: Which of the following colors is a primary color",
+      "answerOptions": [
+        { "answerText": "Black", "isCorrect": false },
+        { "answerText": "White", "isCorrect": false },
+        { "answerText": "Red", "isCorrect": true },
+        { "answerText": "none of the above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: Which color has the shortest wavelength",
+      "answerOptions": [
+        { "answerText": "green", "isCorrect": false },
+        { "answerText": "violet", "isCorrect": false },
+        { "answerText": "red", "isCorrect": true },
+        { "answerText": "yellow", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: You look at a cyan-colored ribbon under white light. Which of the following primary colors is your eye not detecting",
+      "answerOptions": [
+        { "answerText": "green", "isCorrect": false },
+        { "answerText": "blue", "isCorrect": false },
+        { "answerText": "red", "isCorrect": true },
+        { "answerText": "yellow", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: The color of visible light is determined by its__________",
+      "answerOptions": [
+        { "answerText": "wavelength", "isCorrect": false },
+        { "answerText": "photons", "isCorrect": false },
+        { "answerText": "electromagnetic", "isCorrect": true },
+        { "answerText": "matter", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: A green apple is green because it reflects ___________ light",
+      "answerOptions": [
+        { "answerText": "red", "isCorrect": false },
+        { "answerText": "blue", "isCorrect": false },
+        { "answerText": "c", "isCorrect": true },
+        { "answerText": "green", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: If you combined the three primary pigment colors, what color would it be",
+      "answerOptions": [
+        { "answerText": "cyan", "isCorrect": false },
+        { "answerText": "white", "isCorrect": false },
+        { "answerText": "black", "isCorrect": true },
+        { "answerText": "None of the above", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: An object does not let light pass through it.",
+      "answerOptions": [
+        { "answerText": "prism", "isCorrect": false },
+        { "answerText": "opaque", "isCorrect": false },
+        { "answerText": "transparent", "isCorrect": true },
+        { "answerText": "pigments", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: The human eye can distinguish only ______________ light.",
+      "answerOptions": [
+        { "answerText": "red, orange, and yellow", "isCorrect": false },
+        { "answerText": "green, blue, and violet", "isCorrect": false },
+        { "answerText": "red, blue, and green", "isCorrect": true },
+        { "answerText": "red, green, and yellow", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: Which color has the longest wavelength",
+      "answerOptions": [
+        { "answerText": "violet", "isCorrect": false },
+        { "answerText": "cyan", "isCorrect": false },
+        { "answerText": "yellow", "isCorrect": true },
+        { "answerText": "red", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: It is a substance that colors materials by reflecting the light of certain wavelengths and absorbing light of other wavelengths.",
+      "answerOptions": [
+        { "answerText": "pigment", "isCorrect": false },
+        { "answerText": "prism", "isCorrect": false },
+        { "answerText": "opaque", "isCorrect": true },
+        { "answerText": "translucent", "isCorrect": false }
+      ]
+    }
+  ]

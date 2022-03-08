@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: It is an example of optical instruments used for studying things through placing the object near its focal point of the objective lens. It is commonly used by students in school laboratories.",
+      "answerOptions": [
+        { "answerText": "Microscope", "isCorrect": false },
+        { "answerText": "Camera", "isCorrect": false },
+        { "answerText": "Telescope", "isCorrect": true },
+        { "answerText": "Magnifying Glass", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 2: This refers to the tools used in enhancing an image in a clearer manner of view.",
+      "answerOptions": [
+        { "answerText": "Optical Instruments", "isCorrect": false },
+        { "answerText": "Optic", "isCorrect": false },
+        { "answerText": "Cameras", "isCorrect": true },
+        { "answerText": "Magnifying glass and telescope", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 3: It refers to the device mostly used for astronomical researches that magnifies objects that are very far away.",
+      "answerOptions": [
+        { "answerText": "Microscope", "isCorrect": false },
+        { "answerText": "Telescope", "isCorrect": false },
+        { "answerText": "Binoculars", "isCorrect": true },
+        { "answerText": "Magnifying glass", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 4: What is the main optical component of a camera?",
+      "answerOptions": [
+        { "answerText": "Mirror", "isCorrect": false },
+        { "answerText": "Lens", "isCorrect": false },
+        { "answerText": "Shutter", "isCorrect": true },
+        { "answerText": "Aperture", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 5: In order to inspect a very small object in a clear manner, the object can be placed on inside the focal point of the magnifier.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 6: To calculate the magnification of optical instruments, which of the following formula is needed to use?",
+      "answerOptions": [
+        { "answerText": "fo/fe", "isCorrect": false },
+        { "answerText": "∅^'/∅", "isCorrect": false },
+        { "answerText": "fe/fo", "isCorrect": true },
+        { "answerText": "A and B", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 7: It refers to the ability to measure how much larger an object appears after magnification",
+      "answerOptions": [
+        { "answerText": "Accommodation", "isCorrect": false },
+        { "answerText": "Assimilation", "isCorrect": false },
+        { "answerText": "Magnification power", "isCorrect": true },
+        { "answerText": "Standardization", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 8: The equation for magnification and original optics are hold true for each optical instrument.",
+      "answerOptions": [
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "False", "isCorrect": false },
+        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 9: A 30 mm eyepiece is used on a 1,400 mm focal length telescope. What is the magnification power of the telescope?",
+      "answerOptions": [
+        { "answerText": "47", "isCorrect": false },
+        { "answerText": "48", "isCorrect": false },
+        { "answerText": "49", "isCorrect": true },
+        { "answerText": "50", "isCorrect": false }
+      ]
+    },
+  
+    {
+      "questionText": "Question 10: Determine the total magnification of an image placed in a microscope with 4x scanning objective and a 10X eyepiece.",
+      "answerOptions": [
+        { "answerText": "4 X", "isCorrect": false },
+        { "answerText": "40 X", "isCorrect": false },
+        { "answerText": "400 X", "isCorrect": true },
+        { "answerText": "4000 X", "isCorrect": false }
+      ]
+    }
+  ]
