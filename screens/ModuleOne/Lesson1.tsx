@@ -1,12 +1,13 @@
-import React from 'react';
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text } from 'react-native';
-import { Card, Paragraph } from 'react-native-paper';
+import React, { useRef, useState } from 'react';
+import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Card, List, Paragraph } from 'react-native-paper';
+import { RootTabScreenProps } from '../../types';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
 
-export default function LessonOneScreen() {
+export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>){
   return (
     <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollview}>
@@ -94,6 +95,16 @@ export default function LessonOneScreen() {
                 </Card.Content>
                 <Card.Title title="" subtitle="Hooke's Law" />
               </Card>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleOneQuizOne')}>
+                  <Card style={styles.card}>
+                    <List.Item
+                      title="Quiz"
+                      description="Take the quiz to learn more"
+                      left={props => <List.Icon {...props} icon="play-circle" />}
+                    />
+                  </Card>
+              </TouchableOpacity>
           </ScrollView>
     </SafeAreaView>
   );

@@ -26,16 +26,33 @@ import ModuleThree from "../screens/ModuleThreeScreen";
 import ModuleFour from "../screens/ModuleFourScreen";
 import ModuleFive from "../screens/ModuleFiveScreen";
 import ModuleSix from "../screens/ModuleSixScreen";
-import QuizScreen from "../screens/QuizScreen";
+
+// Module 1 imports
 import M1LessonOneScreen from "../screens/ModuleOne/Lesson1";
 import M1LessonTwoScreen from "../screens/ModuleOne/Lesson2";
 import M1LessonThreeScreen from "../screens/ModuleOne/Lesson3";
 import M1LessonFourScreen from "../screens/ModuleOne/Lesson4";
+import M1QuizOneScreen from "../screens/ModuleOne/Quizzes/Lesson1";
+import M1QuizTwoScreen from "../screens/ModuleOne/Quizzes/Lesson2";
+import M1QuizThreeScreen from "../screens/ModuleOne/Quizzes/Lesson3";
+import M1QuizFourScreen from "../screens/ModuleOne/Quizzes/Lesson4";
+
 import M2LessonOneScreen from "../screens/ModuleTwo/Lesson1";
 import M2LessonTwoScreen from "../screens/ModuleTwo/Lesson2";
 import M2LessonThreeScreen from "../screens/ModuleTwo/Lesson3";
 import M2LessonFourScreen from "../screens/ModuleTwo/Lesson4";
+
+import M3LessonOneScreen from '../screens/ModuleThree/Lesson1';
+import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
+
 import M4LessonOneScreen from "../screens/ModuleFour/Lesson1";
+import M4LessonTwoScreen from "../screens/ModuleFour/Lesson2";
+import M4LessonThreeScreen from "../screens/ModuleFour/Lesson3";
+
+import M5LessonOneScreen from "../screens/ModuleFive/Lesson1";
+import M5LessonTwoScreen from "../screens/ModuleFive/Lesson2";
+
+
 import {
   RootStackParamList,
   RootTabParamList,
@@ -123,11 +140,6 @@ function RootNavigator() {
         }}
       />
       <Stack.Screen
-        name="Quiz"
-        component={QuizScreen}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
         name="ModuleOneLessonOne"
         component={M1LessonOneScreen}
         options={{ headerShown: true, title: "Vibrations" }}
@@ -147,6 +159,28 @@ function RootNavigator() {
         component={M1LessonFourScreen}
         options={{ headerShown: true, title: "Vibrations" }}
       />
+
+      <Stack.Screen
+        name="ModuleOneQuizOne"
+        component={M1QuizOneScreen}
+        options={{ headerShown: true, title: "Lesson 1 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleOneQuizTwo"
+        component={M1QuizTwoScreen}
+        options={{ headerShown: true, title: "Lesson 2 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleOneQuizThree"
+        component={M1QuizThreeScreen}
+        options={{ headerShown: true, title: "Lesson 3 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleOneQuizFour"
+        component={M1QuizFourScreen}
+        options={{ headerShown: true, title: "Lesson 4 Quiz" }}
+      />
+      
       <Stack.Screen
         name="ModuleTwoLessonOne"
         component={M2LessonOneScreen}
@@ -170,6 +204,22 @@ function RootNavigator() {
           title: "Understanding Polarization and Malus law",
         }}
       />
+      <Stack.Screen 
+        name="ModuleThreeLessonOne" 
+        component={M3LessonOneScreen} 
+        options={{ 
+          headerShown: true, 
+          title: 'Reflection and its Importance' 
+        }} 
+      />
+      <Stack.Screen 
+        name="ModuleThreeLessonTwo" 
+        component={M3LessonTwoScreen} 
+        options={{ 
+          headerShown: true, 
+          title: 'Image Formation in Plane Mirrors' 
+        }} 
+      />
       <Stack.Screen
         name="ModuleFourLessonOne"
         component={M4LessonOneScreen}
@@ -178,6 +228,39 @@ function RootNavigator() {
           title: "The Refraction And Lenses",
         }}
       />
+       <Stack.Screen
+        name="ModuleFourLessonTwo"
+        component={M4LessonTwoScreen}
+        options={{
+          headerShown: true,
+          title: "Lenses and Refraction of Light",
+        }}
+      />
+       <Stack.Screen
+        name="ModuleFourLessonThree"
+        component={M4LessonThreeScreen}
+        options={{
+          headerShown: true,
+          title: "Drawing Ray Diagrams for Convex Lenses",
+        }}
+      />
+      <Stack.Screen
+        name="ModuleFiveLessonOne"
+        component={M5LessonOneScreen}
+        options={{
+          headerShown: true,
+          title: "Diffraction and Interference",
+        }}
+      />
+       <Stack.Screen
+        name="ModuleFiveLessonTwo"
+        component={M5LessonTwoScreen}
+        options={{
+          headerShown: true,
+          title: "Wave Interference at the Particle Level",
+        }}
+      />
+
       <Stack.Group screenOptions={{ presentation: "modal" }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>

@@ -31,27 +31,17 @@ export default function ModuleFourScreen({
           </Card>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate("ModuleTwoLessonTwo")}
+          onPress={() => navigation.navigate("ModuleFourLessonTwo")}
         >
           <Card style={styles.card}>
-            <Card.Title title="Visible Light and Color" subtitle="Lesson 2" />
+            <Card.Title title="Lenses and Refraction of Light" subtitle="Lesson 2" />
           </Card>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate("ModuleTwoLessonThree")}
+          onPress={() => navigation.navigate("ModuleFourLessonThree")}
         >
           <Card style={styles.card}>
-            <Card.Title title="Basic Properties of Light" subtitle="Lesson 3" />
-          </Card>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("ModuleTwoLessonFour")}
-        >
-          <Card style={styles.card}>
-            <Card.Title
-              title="Understanding Polarization and Malus law"
-              subtitle="Lesson 4"
-            />
+            <Card.Title title="Drawing Ray Diagrams for Convex Lenses" subtitle="Lesson 3" />
           </Card>
         </TouchableOpacity>
       </ScrollView>

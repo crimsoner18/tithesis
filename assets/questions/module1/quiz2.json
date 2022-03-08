@@ -1,20 +1,100 @@
 [    
-    {
-      "questionText": "BOBO KA 1: Force that propels the normally stationary bobble head into motion could be described as forced vibration",
-      "answerOptions": [
-        { "answerText": "Pendulum", "isCorrect": false },
-        { "answerText": "Motion", "isCorrect": false },
-        { "answerText": "Forced Vibration", "isCorrect": true },
-        { "answerText": "Kinetic", "isCorrect": false }
-      ]
-    },
-    {
-      "questionText": "BOBO KA aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: Force that propels the normally stationary bobble head into motion could be described as forced vibration",
-      "answerOptions": [
-        { "answerText": "Pendulum", "isCorrect": false },
-        { "answerText": "Motion", "isCorrect": false },
-        { "answerText": "Forced Vibration", "isCorrect": true },
-        { "answerText": "Kinetic", "isCorrect": false }
-      ]
-    }
-  ]
+  {
+    "questionText": "Question 1: Air molecules must travel from Jill's lips to John's ears in order for John to hear her",
+    "answerOptions": [
+      { "answerText": "true", "isCorrect": false },
+      { "answerText": "maybe", "isCorrect": false },
+      { "answerText": "false", "isCorrect": true },
+      { "answerText": "none of the above", "isCorrect": false }
+    ]
+  },    
+  {
+    "questionText": "Question 2: Because the medium's particles are ____, it can transmit a wave from one spot to another.",
+    "answerOptions": [
+      { "answerText": "frictionless", "isCorrect": false },
+      { "answerText": "isolated from one another", "isCorrect": false },
+      { "answerText": "able to interact", "isCorrect": true },
+      { "answerText": "very lightc", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 3: Energy is transported from east to west via a transverse wave. The medium's particles will move_____",
+    "answerOptions": [
+      { "answerText": "east to west only", "isCorrect": false },
+      { "answerText": "both eastward and westward", "isCorrect": false },
+      { "answerText": "north to south only", "isCorrect": true },
+      { "answerText": "both northward and southward", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 4: Energy is being transported from left to right by a wave. The medium's particles move back and forth in a leftward and rightward direction. A is the name for this sort of wave.",
+    "answerOptions": [
+      { "answerText": "mechanical", "isCorrect": false },
+      { "answerText": "electromagnetic", "isCorrect": false },
+      { "answerText": "transverse", "isCorrect": true },
+      { "answerText": "longitudinal", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 5: Describe how the fans in a stadium must move in order to produce a longitudinal stadium wave.",
+    "answerOptions": [
+      { "answerText": "The fans will need to sway side to side", "isCorrect": false },
+      { "answerText": "The fans will need to sway from left to right", "isCorrect": false },
+      { "answerText": "The fans will need to sway right to left", "isCorrect": true },
+      { "answerText": "The fans will need to sway in any direction", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 6: A sound wave is not an electromagnetic wave, but rather a mechanical wave. That is to say,",
+    "answerOptions": [
+      { "answerText": "particles of the medium move perpendicular to the direction of energy transport.", "isCorrect": false },
+      { "answerText": "a sound wave transports its energy through a vacuum.", "isCorrect": false },
+      { "answerText": "particles of the medium regularly and repeatedly oscillate about their rest position", "isCorrect": true },
+      { "answerText": "a medium is required in order for sound waves to transport energy.", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 7: What can be said about the waves formed in a horizontal rod when struck vertically from above",
+    "answerOptions": [
+      { "answerText": "The particles vibrate horizontally along the direction of the rod.", "isCorrect": false },
+      { "answerText": "The particles vibrate vertically, perpendicular to the direction of the rod.", "isCorrect": false },
+      { "answerText": "The particles vibrate in circles, perpendicular to the direction of the rod.", "isCorrect": true },
+      { "answerText": "The particles travel along the rod from the point of impact to its end.", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 8: Which of the following is not a characteristic of mechanical waves",
+    "answerOptions": [
+      { "answerText": "They consist of disturbances or oscillations of a medium.", "isCorrect": false },
+      { "answerText": "They transport energy.", "isCorrect": false },
+      { "answerText": "They travel in a direction that is at right angles to the direction of the particles of the medium.", "isCorrect": true },
+      { "answerText": "They are created by a vibrating source.", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 9: a disturbance that propagates through a medium from one point to another",
+    "answerOptions": [
+      { "answerText": "medium", "isCorrect": false },
+      { "answerText": "wave", "isCorrect": false },
+      { "answerText": "equilibrium", "isCorrect": true },
+      { "answerText": "crest", "isCorrect": false }
+    ]
+  },
+   
+  {
+    "questionText": "Question 10: one in which the medium's particles move in a direction that is parallel to the wave's movement.",
+    "answerOptions": [
+      { "answerText": "longitudinal wave", "isCorrect": false },
+      { "answerText": "transverse wave", "isCorrect": false },
+      { "answerText": "sound wave", "isCorrect": true },
+      { "answerText": "electromagnetic wave", "isCorrect": false }
+    ]
+  }
+]

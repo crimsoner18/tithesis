@@ -3,13 +3,13 @@ import { Pressable, StatusBar, StyleSheet } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
-import questions from '../assets/questions/module1/quiz1.json'
 import { Card } from 'react-native-paper';
+import questions from '../assets/questions/module1/quiz1.json'; 
 
 export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
-  const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [showScore, setShowScore] = useState(false)
-  const [score, setScore] = useState(0)
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
 
   const HandleAnswerButtonClick = (isCorrect: boolean) => {
     if (isCorrect === true) {
