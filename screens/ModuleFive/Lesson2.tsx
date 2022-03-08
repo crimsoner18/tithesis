@@ -1,148 +1,137 @@
-import React from "react";
-import {
-  Dimensions,
-  Linking,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  StatusBar,
-} from "react-native";
-import { Card, Paragraph, List } from "react-native-paper";
+import React, { useRef, useState } from 'react';
+import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Card, List, Paragraph } from 'react-native-paper';
+import { RootTabScreenProps } from '../../types';
 
-const { width, height } = Dimensions.get("window");
-const vw = width - 10;
+const {width, height} = Dimensions.get("window");
+const vw = width-10;
 const vh = height;
 
-const { Title, Content, Cover } = Card;
-
-export default function LessonOneScreen() {
+export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>){
   return (
-    <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollview}>       
-        <Card style={styles.card}>
-        <Title
-            title="Drawing Ray Diagrams"
-            subtitle="Lesson 3"
-        />  
-        <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
-        RULE 1 – Ray parallel to principal axis will pass through focus
-          </Paragraph>
-          <Content>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image1.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-            <Paragraph><Text style={{fontWeight: "bold"}}> Convex Lens - </Text>
-            pass through right side
-            </Paragraph>
-            <Paragraph><Text style={{fontWeight: "bold"}}> Concave Lens - </Text>
-            ray pass through on left side
-            </Paragraph>
-          </Content>
+    <SafeAreaView style={styles.container}>
+          <ScrollView contentContainerStyle={styles.scrollview}>
+              <Card style={styles.card}>
+                <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
+                Wave Interference at the Particle Level
+                </Paragraph>
+                <Card.Content>
+                <Paragraph style={{marginBottom:10}}> 
+                  Interference occurs when two waves combine to generate a new wave with a larger, smaller, or
+                  equal amplitude. Waves that are correlated or coherent with one other, either because they
+                  emanate from the same source or have the same or nearly the same frequency, create
+                  constructive and destructive interference.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  • Interference occurs when two waves collide, resulting in the generation of a new wave.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  • The behavior of the particles has an impact on wave interference.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  • When a wave passes close to a particle, the particle rises and falls down in an oval pattern,
+                  allowing the wave to go in one direction only.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  •When a second wave is present, the particle's vibration is modified
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  •Because the velocity of the combined waves cancel each other out, when two (or more) waves
+                  collide, the particle goes up and down rather than along an oval path.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  • Because of the particle's mobility, the waves are able to pass through each other.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  • Because the waves aren't changed, the quantity of energy remains constant.
+                  </Paragraph>
+                  <Paragraph style={{marginLeft:20,marginBottom:10}}>
+                  • As a result, when two or more waves collide, the particle vibration maintains the direction and
+                  energy of each wave. The wavelength, frequency, and amplitude of the waves do not change
+                  after they have traveled through each other.
+                  </Paragraph>
+                  <Card style={styles.imageHolder}>
+                  <Card.Cover 
+                  source={require('../../assets/images/module5/lesson2/image1.png')}
+                  resizeMode={`contain`}
+                  style={{'backgroundColor': '#FFFFFF'}}/>
+                  </Card>
+                  <Paragraph style={styles.paragraph}>
+                  Constructive and Destructive Wave Interference
+                  </Paragraph>
+                  <Paragraph style={styles.paragraph1}>
+                  The principle of superposition states that:{"\n"}
+                  "When two waves meet, the resulting amplitude is the SUM of the individual amplitudes."
+                  </Paragraph>
+                </Card.Content>
+              </Card>
 
-       
-        <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
-        Rule 2 – Ray passing through focus will become parallel to principal axis
-          </Paragraph>
-          <Content>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image2.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-            <Paragraph><Text style={{fontWeight: "bold"}}> Convex Lens - </Text>
-            Ray pass through focus on left side and become parallel to principal
-            axis after refraction.
-            </Paragraph>
-            <Paragraph><Text style={{fontWeight: "bold"}}> Concave Lens - </Text>
-            the focus sine s located on the right side, ray pass through focus and
-            becomes parallel to principal axis.
-            </Paragraph>
-          </Content>
-        <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
-        Observed the figure below
-          </Paragraph>
-          <Content>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image3.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-            <Paragraph>
-            As illustrated in the figures, the direction of light rays
-            passing through the lens is determined by two rules.
-            </Paragraph>
-            <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
-            Rule 1: Refraction of Light Rays on a Convex Lens's Optical Axis
-            </Paragraph>
-            <Paragraph>
-            Any light ray passing through the center of a convex lens remains stationary.
-            </Paragraph>
-            <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
-            Rule 2: Refraction of Light Rays off the Optical Axis of a Convex Lens
-            </Paragraph>
-            <Paragraph>
-            Passing through a convex lens will cause a light beam parallel to the optical axis to
-            change direction. The light ray changes direction and passes through the lens' focal
-            point on the opposite side from where it enters the lens.
-            </Paragraph>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image4.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-            <Paragraph>
-            A convex lens ray graph represents the path light
-            rays take as they pass through a convex lens.
-            Simply draw two ray lines to create a ray diagram
-            and determine the location of the image that
-            would be created on a screen. This is
-            occasionally referred to as "the two refraction
-            rules for converging lenses." The only thing to
-            keep in mind is:
-            </Paragraph>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image5.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-            <Paragraph>
-            To begin, draw a parallel line through the primary focal point.
-            </Paragraph>
-            <Paragraph>
-            Second, draw a ray line through the convex lens's center.
-            Draw a parallel line through the object's primary
-            focal point. Typically, we choose the object's top:
-            </Paragraph>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image6.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-            <Paragraph>
-            From the object, pass a ray line through the center of the convex lens.
-            The intersection of these two lines forms the image's top. 
-            Draw a vertical line up to the principal axis to complete the image as follows:
-            </Paragraph>
-            <Card style={styles.imageHolder}>
-              <Card.Cover 
-              source={require('../../assets/images/module4/lesson3/image7.png')}
-              resizeMode={`contain`}
-              style={{'backgroundColor': '#FFFFFF'}}/>
-            </Card>
-          </Content>
-        </Card>
-      </ScrollView>
-    </View>
+              <Card style={styles.card}>
+                <Card.Content>
+                  <Paragraph style={styles.paragraph}>
+                  Constructive Interference
+                  </Paragraph>
+                  <Paragraph>
+                  When two or more waves collide, constructive interference develops. The amplitude of the final
+                  wave is bigger than the sum of the separate waves' amplitudes.
+                  </Paragraph> 
+                  <Card style={styles.imageHolder}>
+                  <Card.Cover 
+                  source={require('../../assets/images/module5/lesson2/image2.png')}
+                  resizeMode={`contain`}
+                  style={{'backgroundColor': '#FFFFFF'}}/>
+                  </Card>
+                  <Paragraph style={styles.paragraph}>
+                  Destructive Wave Interference
+                  </Paragraph>
+                  <Paragraph>
+                  When two or more waves collide, destructive interference develops. The generated wave has a
+                  smaller amplitude than at least one of the initial amplitudes.
+                  </Paragraph>
+                  <Card style={styles.imageHolder}>
+                  <Card.Cover 
+                  source={require('../../assets/images/module5/lesson2/image3.png')}
+                  resizeMode={`contain`}
+                  style={{'backgroundColor': '#FFFFFF'}}/>
+                  </Card>
+                  <Paragraph style={styles.paragraph}>
+                  Superstition
+                  </Paragraph>
+                  <Paragraph>
+                  When two waves of the same sort collide, what happens? They interfere. This interference might
+                  be beneficial or harmful, depending on the situation. Different frequencies can produce beats. To
+                  make things easier, we'll Investigate equal-frequency and-amplitude interfering waves.
+                  </Paragraph>
+                  <Paragraph style={styles.paragraph}>
+                  Principle of Superposition
+                  </Paragraph>
+                  <Paragraph>
+                  When two or more waves are simultaneously present at a single point in space, the displacement
+                  of the medium at that point is the sum of the displacements due to each individual wave.
+                  </Paragraph>
+                  <Paragraph style={styles.paragraph1}>
+                  Dnet = D1 + D2 + ··· = ! i Di
+                  </Paragraph>
+                  <Card style={styles.imageHolder}>
+                  <Card.Cover 
+                  source={require('../../assets/images/module5/lesson2/image4.png')}
+                  resizeMode={`contain`}
+                  style={{'backgroundColor': '#FFFFFF'}}/>
+                  </Card>
+                </Card.Content>
+              </Card>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleOneQuizOne')}>
+                  <Card style={styles.card}>
+                    <List.Item
+                      title="Quiz"
+                      description="Take the quiz to learn more"
+                      left={props => <List.Icon {...props} icon="play-circle" />}
+                    />
+                  </Card>
+              </TouchableOpacity>
+          </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -153,17 +142,17 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   parent: {
     height: vh,
     marginBottom: -50,
   },
   scrollview: {
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column",
-    flexWrap: "wrap",
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    flexWrap: 'wrap',
     flexGrow: 1,
   },
   card: {
@@ -172,19 +161,21 @@ const styles = StyleSheet.create({
   },
   sourceText: {
     fontSize: 10,
-    color: "blue",
-    justifyContent: "center",
-    alignItems: "center",
+    color: 'blue',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   imageHolder: {
     margin: 5,
     marginBottom: 10,
   },
   paragraph: {
-    marginBottom: 10,
+    textAlign: 'center',
+    fontWeight: "bold",
   },
-  coverImage: {
-    backgroundColor: "#FFFFFF",
-    margin: 10,
+  paragraph1: {
+    textAlign: 'center',
   },
 });
+
+
