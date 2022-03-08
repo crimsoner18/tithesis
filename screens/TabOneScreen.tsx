@@ -86,19 +86,6 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
                   </Card.Content>
                 </Card>
             </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('Quiz')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Sample Quiz Window" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
         </ScrollView>
     </View>
   );

@@ -1,47 +1,70 @@
-import React from 'react';
-import { Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
-
-import { Text, View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
-
-export default function ModuleThreeScreen({ navigation }: RootTabScreenProps<'ModuleOne'>) {
+import React from "react";
+import {
+  Pressable,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions,
+} from "react-native";
+import { Card } from "react-native-paper";
+import { Text, View } from "../components/Themed";
+import { RootTabScreenProps } from "../types";
+const { width, height } = Dimensions.get("window");
+const vw = width - 10;
+const vh = height;
+export default function ModuleFourScreen({
+  navigation,
+}: RootTabScreenProps<"ModuleFour">) {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollview} scrollEnabled={true}>
-        <Text> Module 3: Vibrations</Text>
+      <ScrollView
+        contentContainerStyle={styles.scrollview}
+        scrollEnabled={true}
+      >
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleSixLessonOne")}
+        >
+          <Card style={styles.card}>
+            <Card.Title title="Optics of the Human Eye and the Image Formation" subtitle="Lesson 1" />
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleSixLessonTwo")}
+        >
+          <Card style={styles.card}>
+            <Card.Title title="Principles of Optical Instruments" subtitle="Lesson 2" />
+          </Card>
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  scrollview: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
   container: {
-    flex: 1,
     paddingTop: StatusBar.currentHeight,
+    flexGrow: 1,
   },
   title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    alignItems: "center",
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+  scrollview: {
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    flexGrow: 1,
+    marginTop: -80,
   },
-  button: {
-    borderRadius: 8,
-    padding: 6,
-    borderColor: 'red',
-    backgroundColor: 'green',
-    borderWidth: 1,
-    height: '15%',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
+  card: {
+    marginLeft: 5,
+    marginRight: 5,
+    width: vw,
+    marginBottom: 5,
+  },
+  text: {
+    alignItems: "center",
+  },
 });
