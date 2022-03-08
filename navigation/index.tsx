@@ -47,16 +47,22 @@ import M2QuizTwoScreen from "../screens/ModuleTwo/Quizzes/Lesson2";
 import M2QuizThreeScreen from "../screens/ModuleTwo/Quizzes/Lesson3";
 import M2QuizFourScreen from "../screens/ModuleTwo/Quizzes/Lesson4";
 
+// Module 3 imports
 import M3LessonOneScreen from '../screens/ModuleThree/Lesson1';
 import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
 
+// Module 4 imports
 import M4LessonOneScreen from "../screens/ModuleFour/Lesson1";
 import M4LessonTwoScreen from "../screens/ModuleFour/Lesson2";
 import M4LessonThreeScreen from "../screens/ModuleFour/Lesson3";
 
+// Module 5 imports
 import M5LessonOneScreen from "../screens/ModuleFive/Lesson1";
 import M5LessonTwoScreen from "../screens/ModuleFive/Lesson2";
 
+// Module 6 imports
+import M6LessonOneScreen from "../screens/ModuleSix/Lesson1";
+import M6LessonTwoScreen from "../screens/ModuleSix/Lesson2";
 
 import {
   RootStackParamList,
@@ -289,6 +295,22 @@ function RootNavigator() {
         options={{
           headerShown: true,
           title: "Wave Interference at the Particle Level",
+        }}
+      />
+            <Stack.Screen
+        name="ModuleSixLessonOne"
+        component={M6LessonOneScreen}
+        options={{
+          headerShown: true,
+          title: "Optics of the Human Eye and the Image Formation",
+        }}
+      />
+       <Stack.Screen
+        name="ModuleSixLessonTwo"
+        component={M6LessonTwoScreen}
+        options={{
+          headerShown: true,
+          title: "Principles of Optical Instruments",
         }}
       />
 
