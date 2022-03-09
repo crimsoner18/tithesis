@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useRef, useState } from 'react';
 import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, List, Paragraph } from 'react-native-paper';
@@ -8,6 +9,16 @@ const vw = width-10;
 const vh = height;
 
 export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>){
+  const setLessonAsRead = async (value: string) => {
+    try {
+      await AsyncStorage.setItem('@M5L2isRead', value)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  setLessonAsRead('true');
+  
   return (
     <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollview}>

@@ -1,3 +1,4 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import React from "react";
 import {
   Dimensions,
@@ -18,6 +19,16 @@ const vh = height;
 const { Title, Content, Cover } = Card;
 
 export default function LessonOneScreen() {
+  const setLessonAsRead = async (value: string) => {
+    try {
+      await AsyncStorage.setItem('@M4L2isRead', value)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  setLessonAsRead('true');
+
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview}>

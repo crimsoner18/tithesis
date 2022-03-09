@@ -5,11 +5,20 @@ import { Text, View } from '../../../components/Themed';
 import { RootTabScreenProps } from '../../../types';
 import { Card } from 'react-native-paper';
 import questions from '../../../assets/questions/module2/quiz3.json'; 
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+
+  const setLessonAsRead = async (value: string) => {
+    try {
+      await AsyncStorage.setItem('@M2L3isRead', value)
+    } catch (e) {
+      console.log(e)
+    }
+  }
 
   const HandleAnswerButtonClick = (isCorrect: boolean) => {
     if (isCorrect === true) {
@@ -23,6 +32,7 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
     }
     else {
       setShowScore(true)
+      setLessonAsRead('true')
     }
   }
 
@@ -30,10 +40,16 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
     <>
       <Card style={styles.container}>
             <Card.Content style={{flex: 1}}>
-                {showScore ? (
-                <Text style={styles.score_section}>
+            {showScore ? (
+                <>
+                  <Text style={styles.score_section}>
                     You scored {score} out of {questions.length}
-                </Text>
+                  </Text>
+                  <Pressable
+                  onPress={() => navigation.navigate('ModuleTwo')}
+                    style={styles.button}>
+                    <Text>Return To Lessons</Text>
+              </Pressable></>
                 )
                 :
                 (

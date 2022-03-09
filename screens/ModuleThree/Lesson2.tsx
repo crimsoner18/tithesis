@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text } from 'react-native';
 import { Card, Paragraph } from 'react-native-paper';
@@ -7,6 +8,16 @@ const vw = width-10;
 const vh = height;
 
 export default function LessonOneScreen() {
+  const setLessonAsRead = async (value: string) => {
+    try {
+      await AsyncStorage.setItem('@M3L2isRead', value)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  setLessonAsRead('true');
+  
   return (
     <SafeAreaView style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollview}>

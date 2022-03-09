@@ -32,6 +32,7 @@ import M1LessonOneScreen from "../screens/ModuleOne/Lesson1";
 import M1LessonTwoScreen from "../screens/ModuleOne/Lesson2";
 import M1LessonThreeScreen from "../screens/ModuleOne/Lesson3";
 import M1LessonFourScreen from "../screens/ModuleOne/Lesson4";
+import M1SimulationScreen from "../screens/ModuleOne/Simulation";
 import M1QuizOneScreen from "../screens/ModuleOne/Quizzes/Lesson1";
 import M1QuizTwoScreen from "../screens/ModuleOne/Quizzes/Lesson2";
 import M1QuizThreeScreen from "../screens/ModuleOne/Quizzes/Lesson3";
@@ -170,6 +171,11 @@ function RootNavigator() {
       <Stack.Screen
         name="ModuleOneLessonFour"
         component={M1LessonFourScreen}
+        options={{ headerShown: true, title: "Vibrations" }}
+      />
+      <Stack.Screen
+        name="ModuleOneSimulation"
+        component={M1SimulationScreen}
         options={{ headerShown: true, title: "Vibrations" }}
       />
 

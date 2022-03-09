@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Card, Paragraph, List } from 'react-native-paper';
@@ -8,6 +9,7 @@ const vw = width-10;
 const vh = height;
 
 export default function LessonTwoScreen({ navigation }: RootTabScreenProps<'ModuleTwo'>){
+  
   return (
     <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollview}>
