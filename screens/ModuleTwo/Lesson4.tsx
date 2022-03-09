@@ -8,6 +8,7 @@ const vw = width-10;
 const vh = height;
 
 export default function LessonFourScreen({ navigation }: RootTabScreenProps<'ModuleTwo'>) {
+
   return (
     <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollview}>

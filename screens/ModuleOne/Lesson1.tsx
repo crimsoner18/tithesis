@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, List, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;

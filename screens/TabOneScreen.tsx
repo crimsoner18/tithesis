@@ -1,8 +1,13 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { ScrollView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
 import {Card, Paragraph} from 'react-native-paper';
 import { View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
+
+const clearAsyncStorage = async() => {
+  AsyncStorage.clear();
+}
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
@@ -87,14 +92,13 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
-            onPress={() => navigation.navigate('Quiz')}
+            onPress={() => clearAsyncStorage()}
             style={styles.card}>
             <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Sample Quiz Window" />
+                  <Card.Title title="Clear AsyncStorage" />
                   <Card.Content>
                     <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      EYYY LESGOOOOOOO
                     </Paragraph>
                   </Card.Content>
                 </Card>
