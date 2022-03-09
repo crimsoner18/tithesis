@@ -51,6 +51,7 @@ import M2QuizFourScreen from "../screens/ModuleTwo/Quizzes/Lesson4";
 // Module 3 imports
 import M3LessonOneScreen from '../screens/ModuleThree/Lesson1';
 import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
+import M3LessonThreeScreen from '../screens/ModuleThree/Lesson3';
 
 // Module 4 imports
 import M4LessonOneScreen from "../screens/ModuleFour/Lesson1";
@@ -261,6 +262,14 @@ function RootNavigator() {
         options={{ 
           headerShown: true, 
           title: 'Image Formation in Plane Mirrors' 
+        }} 
+      />
+      <Stack.Screen 
+        name="ModuleThreeLessonThree" 
+        component={M3LessonThreeScreen} 
+        options={{ 
+          headerShown: true, 
+          title: 'Concave and Convex Mirrors' 
         }} 
       />
       <Stack.Screen
