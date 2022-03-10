@@ -23,6 +23,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
         }}
       >
         <View style={styles.centeredView}>
+          <ScrollView>
           <View style={styles.modalView}>
             <Text style={styles.modalText}>INTRODUCTION:</Text>
             <Text style={{fontWeight:"bold"}}>WAVES AND OPTICS</Text>
@@ -32,10 +33,16 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
             as well as the changes it undergoes and produces and other phenomena that are closely related to it.  
             </Text>
             <Text style={{fontWeight:"bold"}}>About Us</Text>
+            <Text style={{marginBottom:20}}>Physics Center is a specialized application that is designed and developed to be 
+            an aid to the knowledge, acquisition and organization of the learners in Waves and Optics. It is named as this due 
+            to its aim to be the central area or middle point of student’s knowledge and their go-to-application whenever they 
+            are learning Waves and Optics, a branch of Physics. Its features include learning materials and video lessons on Waves 
+            and Optics, activities, quizzes, a simulation about the Image formation on Mirrors and Lenses, and a help corner. 
+            </Text>
             <List.Item 
-            title=""
+            title={<Text numberOfLines={4}>Jean Nicole A. Rivera, a 3rd year BSE- Science student at the University of Rizal System Morong who graduated at Carlos Botong V Francisco Memorial National High School in Angono Rizal. She received recognition for being a dean's lister, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST) and the Deputy secretary of the Science Enthusiasts and Environmentalists Society (SEES) for S.Y. 2021-2022. </Text>}
             style={{flex:1, width:'100%'}}
-            description="Jean Nicole A. Rivera, a 3rd year BSE- Science student at the University of Rizal System Morong who graduated at Carlos Botong V Francisco Memorial National High School in Angono Rizal. She received recognition for being a dean's lister, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST) and the Deputy secretary of the Science Enthusiasts and Environmentalists Society (SEES) for S.Y. 2021-2022. "
+            description={<Text numberOfLines={4}>Jean Nicole A. Rivera, a 3rd year BSE- Science student at the University of Rizal System Morong who graduated at Carlos Botong V Francisco Memorial National High School in Angono Rizal. She received recognition for being a dean's lister, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST) and the Deputy secretary of the Science Enthusiasts and Environmentalists Society (SEES) for S.Y. 2021-2022. </Text>}
             left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Rivera.jpg')} />}
           />
           <List.Item 
@@ -70,6 +77,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
               <Text style={styles.textStyle}>Hide Modal</Text>
             </Pressable>
           </View>
+          </ScrollView>
         </View>
       </Modal>
 
@@ -200,14 +208,20 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   card: {
-    marginBottom: 10, 
+    margin: 10,
+    flexGrow: 1,
+    width: '100%', 
   },
   centeredView: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    width: '100%',
   },
   modalView: {
+    flex: 1,
+    width: '100%',
+    flexDirection: 'column',
     backgroundColor: "white",
     borderRadius: 20,
     padding: 35,

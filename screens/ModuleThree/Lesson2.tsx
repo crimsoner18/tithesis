@@ -371,40 +371,6 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
 
                   </Card.Content>
                 </Card>
-<<<<<<< HEAD
-=======
-                <Card style={styles.card}>
-                  <Card.Title title="Watch Video Lesson Here" />
-                  <Video
-                    ref={video}
-                    useNativeControls
-                    style={{ height: 300 }}
-                    resizeMode="contain"
-                    onPlaybackStatusUpdate={(status) => setStatus(() => status)}
-                    source={require("../../assets/videos/module3/lesson2.mp4")}
-                  />
-                  <View>
-                    <Button
-                      title={status.isPlaying ? "Pause" : "Play"}
-                      onPress={() =>
-                        status.isPlaying
-                          ? video.current.pauseAsync()
-                          : video.current.playAsync()
-                      }
-                    />
-                  </View>
-                </Card>
-                <TouchableOpacity
-                  onPress={() => navigation.navigate('ModuleThreeQuizTwo')}>
-                    <Card style={styles.card}>
-                      <List.Item
-                        title="Quiz"
-                        description="Take the quiz to learn more"
-                        left={props => <List.Icon {...props} icon="play-circle" />}
-                      />
-                    </Card>
-                </TouchableOpacity>
->>>>>>> 3ce47137ca864ffd3f13ea24b2e6f43c479f3b74
           </ScrollView>
     </SafeAreaView>
   );
