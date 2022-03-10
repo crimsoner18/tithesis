@@ -1,11 +1,28 @@
 import { StyleSheet, ScrollView, FlatList } from "react-native";
-
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import CommentCard from "../components/help/comment/CommentCard";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "react-native-paper";
 export default function TabTwoScreen() {
+  const [currentUser, setCurrentUser] = useState("");
+  const getUser = async () => {
+    try {
+      const user = await AsyncStorage.getItem("user");
+
+      if (user) {
+        return user;
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+  useEffect(() => {
+    getUser().then((user) => {
+      setCurrentUser(user);
+    });
+  }, []);
   const DATA = [
     {
       id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
@@ -39,7 +56,9 @@ export default function TabTwoScreen() {
             // darkColor="rgba(255,255,255,0.1)"
           />
         )}
-        renderItem={({ item }) => <CommentCard title={item.title} comment={""} />}
+        renderItem={({ item }) => (
+          <CommentCard title={item.title} comment={""} />
+        )}
       />
     </View>
   );

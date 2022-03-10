@@ -1,16 +1,34 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, { useState } from 'react';
-import { Text, Modal, Alert, Pressable, ScrollView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
-import {Card, Paragraph} from 'react-native-paper';
-import { View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import React, { useEffect, useState } from "react";
+import {
+  Text,
+  Modal,
+  Alert,
+  Pressable,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions,
+  TextInput,
+} from "react-native";
+import { Card, Paragraph } from "react-native-paper";
+import { View } from "../components/Themed";
+import { RootTabScreenProps } from "../types";
 
-const clearAsyncStorage = async() => {
+const clearAsyncStorage = async () => {
   AsyncStorage.clear();
-}
-
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+};
+const windowHeight = Dimensions.get("window").height;
+export default function TabOneScreen({
+  navigation,
+}: RootTabScreenProps<"TabOne">) {
+  const [modalText, setModalText] = useState("");
   const [modalVisible, setModalVisible] = useState(true);
+
+  const setUser = (user: string) => {
+    AsyncStorage.setItem("user", user);
+  };
   return (
     <View style={styles.container}>
       <Modal
@@ -24,122 +42,166 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Hello World!</Text>
+            <Text style={styles.modalText}>Tell Me your Fucking Name!</Text>
+            <TextInput
+              placeholder="Your Name"
+              value={modalText}
+              onChangeText={(e) => {
+                setModalText(e);
+              }}
+            />
             <Pressable
               style={[styles.button, styles.buttonClose]}
-              onPress={() => setModalVisible(!modalVisible)}
+              onPress={() => {
+                setUser(modalText);
+                setModalVisible(!modalVisible);
+              }}
             >
-              <Text style={styles.textStyle}>Hide Modal</Text>
+              <Text style={styles.textStyle}>Enter</Text>
             </Pressable>
           </View>
         </View>
       </Modal>
 
-        <ScrollView contentContainerStyle={styles.scrollview}>
-          <TouchableOpacity
-          onPress={() => navigation.navigate('ModuleOne')}
-          style={styles.card}>
-                <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module One" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleTwo')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Two" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleThree')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Three" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleFour')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Four" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleFive')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Five" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleSix')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Six" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleOneSimulation')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="VIEW SIMULATION" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => setModalVisible(true)}
-            style={styles.card}>
-            <Card>
-                  <Card.Title title="Clear AsyncStorage" />
-                  <Card.Content>
-                    <Paragraph>
-                      EYYY LESGOOOOOOO
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-        </ScrollView>
+      <ScrollView contentContainerStyle={styles.scrollview}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleOne")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="Module One" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleTwo")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="Module Two" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleThree")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="Module Three" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleFour")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="Module Four" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleFive")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="Module Five" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleSix")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="Module Six" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleOneSimulation")}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Cover
+              source={{
+                uri: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg",
+              }}
+            />
+            <Card.Title title="VIEW SIMULATION" />
+            <Card.Content>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => setModalVisible(true)}
+          style={styles.card}
+        >
+          <Card>
+            <Card.Title title="Clear AsyncStorage" />
+            <Card.Content>
+              <Paragraph>EYYY LESGOOOOOOO</Paragraph>
+            </Card.Content>
+          </Card>
+        </TouchableOpacity>
+      </ScrollView>
     </View>
   );
 }
@@ -151,18 +213,18 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   scrollview: {
-    alignItems: 'center',
-    alignContent: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
     flexGrow: 1,
   },
   card: {
-    marginBottom: 10, 
+    marginBottom: 10,
   },
   centeredView: {
     flex: 1,
@@ -177,16 +239,16 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2
+      height: 2,
     },
     shadowOpacity: 0.25,
     shadowRadius: 4,
-    elevation: 5
+    elevation: 5,
   },
   button: {
     borderRadius: 20,
     padding: 10,
-    elevation: 2
+    elevation: 2,
   },
   buttonOpen: {
     backgroundColor: "#F194FF",
@@ -197,10 +259,10 @@ const styles = StyleSheet.create({
   textStyle: {
     color: "white",
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
   },
   modalText: {
     marginBottom: 15,
-    textAlign: "center"
-  }
+    textAlign: "center",
+  },
 });
