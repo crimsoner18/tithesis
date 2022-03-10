@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useState } from 'react';
 import { Text, Modal, Alert, Pressable, ScrollView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
-import {Card, Paragraph} from 'react-native-paper';
+import {Avatar, Card, List, Paragraph} from 'react-native-paper';
 import { View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
@@ -24,7 +24,45 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Hello World!</Text>
+            <Text style={styles.modalText}>INTRODUCTION:</Text>
+            <Text style={{fontWeight:"bold"}}>WAVES AND OPTICS</Text>
+            <Text style={{marginBottom:20}}>It is a branch of Physics that deals with the study of optical phenomena, 
+            having its subject that revolves on the interaction of waves and light rays. The knowledge on Waves and optics 
+            is very useful for us to understand the surrounding phenomena regarding the origins and propagation of light, \
+            as well as the changes it undergoes and produces and other phenomena that are closely related to it.  
+            </Text>
+            <Text style={{fontWeight:"bold"}}>About Us</Text>
+            <List.Item 
+            title=""
+            style={{flex:1, width:'100%'}}
+            description="Jean Nicole A. Rivera, a 3rd year BSE- Science student at the University of Rizal System Morong who graduated at Carlos Botong V Francisco Memorial National High School in Angono Rizal. She received recognition for being a dean's lister, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST) and the Deputy secretary of the Science Enthusiasts and Environmentalists Society (SEES) for S.Y. 2021-2022. "
+            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Rivera.jpg')} />}
+          />
+          <List.Item 
+            title=""
+            style={{flex:1, width:'100%'}}
+            description="Leanna Mae G. Añis, a 3rd year BSE- Science student at the University of Rizal System Morong who is a graduate senior high student at the Catalino D. Salazar National High School, Cardona Rizal. She is a dean's lister in her 1st year and 2nd year, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST), and a member of the Science Enthusiasts and Environmentalists Society (SEES).  "
+            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Anis.png')} />}
+          />
+          <List.Item 
+            title=""
+            style={{flex:1, width:'100%'}}
+            description="Ernila F. Custan, finished her senior high at Tomas Claudio Colleges, Morong Rizal, a 3rd year BSE- Science student at the University of Rizal System Morong. She received scholarship from the Barangay scholar (2020) and Manila Teacher's scholarship (2021). She is a member of the Science Enthusiasts and Environmentalists Society (SEES). "
+            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Custan.jpg')} />}
+          />
+          <List.Item 
+            title=""
+            style={{flex:1, width:'100%'}}
+            description="Jobren P. Passion, graduated senior high at Tomas Claudio Colleges, Morong Rizal, a 3rd year BSE- Science student at the University of Rizal System. A member of the Science Enthusiasts and Environmentalists Society (SEES). "
+            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Pasion.jpg')} />}
+          />
+          <List.Item 
+            title=""
+            style={{flex:1, width:'100%'}}
+            description="Richard A. Etil Jr., took his senior high at the Binangonan Catholic College, Binangonan Rizal, STEM strand. A 3rd year BSE- Science student, a former head of the Tarcisian Turno 275, Catholic church organization, former organist of Himig Tarcisian Chorale. A member of Science Enthusiasts and Environmentalists Society (SEES). "
+            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/etil.gif')} />}
+          />
+
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}

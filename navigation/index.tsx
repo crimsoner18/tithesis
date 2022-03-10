@@ -279,8 +279,6 @@ function RootNavigator() {
           title: 'Concave and Convex Mirrors' 
         }} 
       />
-<<<<<<< HEAD
-=======
       <Stack.Screen
         name="ModuleThreeQuizOne"
         component={M4QuizOneScreen}
@@ -298,7 +296,6 @@ function RootNavigator() {
       />
 
       {/* MODULE 4 LESSONS AND QUIZZES */}
->>>>>>> 3ce47137ca864ffd3f13ea24b2e6f43c479f3b74
       <Stack.Screen
         name="ModuleFourLessonOne"
         component={M4LessonOneScreen}
