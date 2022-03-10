@@ -141,7 +141,7 @@ export default function LessonOneScreen({
             onPlaybackStatusUpdate={(status) => setStatus(() => status)}
             source={require("../../assets/videos/module1/lesson1.mp4")}
           />
-          <View>
+          <View style={styles.buttons}>
             <Button
               title={status.isPlaying ? "Pause" : "Play"}
               onPress={() =>
