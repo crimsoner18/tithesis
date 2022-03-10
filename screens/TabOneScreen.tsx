@@ -10,7 +10,7 @@ const clearAsyncStorage = async() => {
 }
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
-  const [modalVisible, setModalVisible] = useState(false);
+  const [modalVisible, setModalVisible] = useState(true);
   return (
     <View style={styles.container}>
       <Modal
