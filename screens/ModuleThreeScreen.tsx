@@ -55,6 +55,12 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
               <Card.Title title="Image Formation in Plane Mirrors" subtitle="Lesson 2" style={{ backgroundColor: isLesson2Read ? '#90EE90' : 'none' }}/>
             </Card>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleThreeLessonThree')}>
+            <Card style={styles.card}>
+              <Card.Title title="Concave and Convex Mirrors" subtitle="Lesson 3" style={{ backgroundColor: isLesson3Read ? '#90EE90' : 'none' }}/>
+            </Card>
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );

@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Video } from "expo-av";
 import React from "react";
 import {
   Dimensions,
@@ -9,8 +10,11 @@ import {
   Text,
   View,
   StatusBar,
+  Button,
+  TouchableOpacity,
 } from "react-native";
 import { Card, Paragraph, List } from "react-native-paper";
+import { RootTabScreenProps } from "../../types";
 
 const { width, height } = Dimensions.get("window");
 const vw = width - 10;
@@ -18,17 +22,12 @@ const vh = height;
 
 const { Title, Content, Cover } = Card;
 
-export default function LessonOneScreen() {
-  const setLessonAsRead = async (value: string) => {
-    try {
-      await AsyncStorage.setItem('@M4L1isRead', value)
-    } catch (e) {
-      console.log(e)
-    }
-  }
+export default function LessonOneScreen({
+  navigation,
+}: RootTabScreenProps<"ModuleOne">) {
+  const video = React.useRef(null);
 
-  setLessonAsRead('true');
-
+  const [status, setStatus] = React.useState({});
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview}>
@@ -75,6 +74,38 @@ export default function LessonOneScreen() {
             </Paragraph>
           </Content>
         </Card>
+        <Card style={styles.card}>
+          <Card.Title title="Watch Video Lesson Here" />
+          <Video
+            ref={video}
+            useNativeControls
+            style={{ height: 300 }}
+            resizeMode="contain"
+            onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+            source={require("../../assets/videos/module4/lesson1.mp4")}
+          />
+          <View>
+            <Button
+              title={status.isPlaying ? "Pause" : "Play"}
+              onPress={() =>
+                status.isPlaying
+                  ? video.current.pauseAsync()
+                  : video.current.playAsync()
+              }
+            />
+          </View>
+        </Card>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ModuleFourQuizOne")}
+        >
+          <Card style={styles.card}>
+            <List.Item
+              title="Quiz"
+              description="Take the quiz to learn more"
+              left={(props) => <List.Icon {...props} icon="play-circle" />}
+            />
+          </Card>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );

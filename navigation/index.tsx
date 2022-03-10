@@ -51,19 +51,27 @@ import M2QuizFourScreen from "../screens/ModuleTwo/Quizzes/Lesson4";
 // Module 3 imports
 import M3LessonOneScreen from '../screens/ModuleThree/Lesson1';
 import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
+import M3LessonThreeScreen from '../screens/ModuleThree/Lesson3';
 
 // Module 4 imports
 import M4LessonOneScreen from "../screens/ModuleFour/Lesson1";
 import M4LessonTwoScreen from "../screens/ModuleFour/Lesson2";
 import M4LessonThreeScreen from "../screens/ModuleFour/Lesson3";
+import M4QuizOneScreen from "../screens/ModuleFour/Quizzes/Lesson1";
+import M4QuizTwoScreen from "../screens/ModuleFour/Quizzes/Lesson2";
+import M4QuizThreeScreen from "../screens/ModuleFour/Quizzes/Lesson3";
 
 // Module 5 imports
 import M5LessonOneScreen from "../screens/ModuleFive/Lesson1";
 import M5LessonTwoScreen from "../screens/ModuleFive/Lesson2";
+import M5QuizOneScreen from "../screens/ModuleFive/Quizzes/Lesson1";
+import M5QuizTwoScreen from "../screens/ModuleFive/Quizzes/Lesson2";
 
 // Module 6 imports
 import M6LessonOneScreen from "../screens/ModuleSix/Lesson1";
 import M6LessonTwoScreen from "../screens/ModuleSix/Lesson2";
+import M6QuizOneScreen from "../screens/ModuleSix/Quizzes/Lesson1";
+import M6QuizTwoScreen from "../screens/ModuleSix/Quizzes/Lesson2";
 
 import {
   RootStackParamList,
@@ -263,6 +271,31 @@ function RootNavigator() {
           title: 'Image Formation in Plane Mirrors' 
         }} 
       />
+      <Stack.Screen 
+        name="ModuleThreeLessonThree" 
+        component={M3LessonThreeScreen} 
+        options={{ 
+          headerShown: true, 
+          title: 'Concave and Convex Mirrors' 
+        }} 
+      />
+      <Stack.Screen
+        name="ModuleThreeQuizOne"
+        component={M4QuizOneScreen}
+        options={{ headerShown: true, title: "Lesson 1 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleThreeQuizTwo"
+        component={M4QuizTwoScreen}
+        options={{ headerShown: true, title: "Lesson 2 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleThreeQuizThree"
+        component={M4QuizThreeScreen}
+        options={{ headerShown: true, title: "Lesson 3 Quiz" }}
+      />
+
+      {/* MODULE 4 LESSONS AND QUIZZES */}
       <Stack.Screen
         name="ModuleFourLessonOne"
         component={M4LessonOneScreen}
@@ -287,6 +320,25 @@ function RootNavigator() {
           title: "Drawing Ray Diagrams for Convex Lenses",
         }}
       />
+
+      <Stack.Screen
+        name="ModuleFourQuizOne"
+        component={M4QuizOneScreen}
+        options={{ headerShown: true, title: "Lesson 1 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleFourQuizTwo"
+        component={M4QuizTwoScreen}
+        options={{ headerShown: true, title: "Lesson 2 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleFourQuizThree"
+        component={M4QuizThreeScreen}
+        options={{ headerShown: true, title: "Lesson 3 Quiz" }}
+      />
+
+
+      {/* MODULE 5 LESSONS AND QUIZZES */}
       <Stack.Screen
         name="ModuleFiveLessonOne"
         component={M5LessonOneScreen}
@@ -303,7 +355,20 @@ function RootNavigator() {
           title: "Wave Interference at the Particle Level",
         }}
       />
-            <Stack.Screen
+
+      <Stack.Screen
+        name="ModuleFiveQuizOne"
+        component={M5QuizOneScreen}
+        options={{ headerShown: true, title: "Lesson 1 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleFiveQuizTwo"
+        component={M5QuizTwoScreen}
+        options={{ headerShown: true, title: "Lesson 2 Quiz" }}
+      />
+
+      {/* MODULE 6 LESSONS AND QUIZZES */}
+      <Stack.Screen
         name="ModuleSixLessonOne"
         component={M6LessonOneScreen}
         options={{
@@ -318,6 +383,16 @@ function RootNavigator() {
           headerShown: true,
           title: "Principles of Optical Instruments",
         }}
+      />
+      <Stack.Screen
+        name="ModuleSixQuizOne"
+        component={M6QuizOneScreen}
+        options={{ headerShown: true, title: "Lesson 1 Quiz" }}
+      />
+      <Stack.Screen
+        name="ModuleSixQuizTwo"
+        component={M6QuizTwoScreen}
+        options={{ headerShown: true, title: "Lesson 2 Quiz" }}
       />
 
       <Stack.Group screenOptions={{ presentation: "modal" }}>
