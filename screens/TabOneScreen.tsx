@@ -42,7 +42,7 @@ export default function TabOneScreen({
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Tell Me your Fucking Name!</Text>
+            <Text style={styles.modalText}>Tell Me your Name!</Text>
             <TextInput
               placeholder="Your Name"
               value={modalText}
