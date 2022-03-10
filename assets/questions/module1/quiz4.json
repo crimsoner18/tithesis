@@ -1,0 +1,101 @@
+[    
+    {
+      "questionText": "Question 1: What type of wave behavior occurs when a wave oscillates in one particular direction?",
+      "answerOptions": [
+        { "answerText": "Reflection", "isCorrect": false },
+        { "answerText": "Refraction", "isCorrect": false },
+        { "answerText": "Diffraction", "isCorrect": true },
+        { "answerText": "Polarization", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 2: What type of wave behavior occurs when a wave stays in the same medium, but bends around an obstacle?",
+      "answerOptions": [
+        { "answerText": "Reflection", "isCorrect": false },
+        { "answerText": "Refraction", "isCorrect": false },
+        { "answerText": "Diffraction", "isCorrect": true },
+        { "answerText": "Polarization", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 3: What is it called when a wave encounters a barrier and returns to the original medium?",
+      "answerOptions": [
+        { "answerText": "Reflection", "isCorrect": false },
+        { "answerText": "Refraction", "isCorrect": false },
+        { "answerText": "Diffraction", "isCorrect": true },
+        { "answerText": "Polarization", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 4: A tennis coach paces back and forth along the sideline 10 times in 2 minutes. The frequency of her pacing is ________ Hz.",
+      "answerOptions": [
+        { "answerText": "5.0", "isCorrect": false },
+        { "answerText": "0.20", "isCorrect": false },
+        { "answerText": "0.1", "isCorrect": true },
+        { "answerText": "0.083", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 5: A second hand on non-digital clocks (which are becoming increasingly rare) revolves in a regular and repeated pattern. A clock's second hand rotates at a frequency of Hz.",
+      "answerOptions": [
+        { "answerText": "1/60", "isCorrect": false },
+        { "answerText": "1/12", "isCorrect": false },
+        { "answerText": "1/2", "isCorrect": true },
+        { "answerText": "1", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 6: Olive Uddin goes to the park with her father for a good afternoon. She climbs into the swing and begins a motion that involves a complete back-and-forth cycle every 2 seconds. Swings occur with a frequency of _",
+      "answerOptions": [
+        { "answerText": "0.5 Hz", "isCorrect": false },
+        { "answerText": "1 Hz", "isCorrect": false },
+        { "answerText": "2 Hz", "isCorrect": true },
+        { "answerText": "4Hz", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 7: What can be said about the waves formed in a horizontal rod when struck vertically from above?",
+      "answerOptions": [
+        { "answerText": "The particles vibrate horizontally along the direction of the rod.", "isCorrect": false },
+        { "answerText": "The particles vibrate vertically, perpendicular to the direction of the rod", "isCorrect": false },
+        { "answerText": "The particles vibrate in circles, perpendicular to the direction of the rod.", "isCorrect": true },
+        { "answerText": "The particles travel along the rod from the point of impact to its end.", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 8: Which of the following is not a characteristic of mechanical waves?",    
+      "answerOptions": [
+        { "answerText": "They consist of disturbances or oscillations of a medium.", "isCorrect": false },
+        { "answerText": "They transport energy", "isCorrect": false },
+        { "answerText": "They travel in a direction that is at right angles to the direction of the particles of the medium.", "isCorrect": true },
+        { "answerText": "They are created by a vibrating source.", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 9: A pair of trapeze performers at the circus is swinging from ropes attached to a large elevated platform. Suppose that the performers can be treated as a simple pendulum with a length of 16 m. Determine the period for one complete back and forth cycle.",
+      "answerOptions": [
+        { "answerText": "7.5 s", "isCorrect": false },
+        { "answerText": "8.0 s", "isCorrect": false },
+        { "answerText": "8.2 s", "isCorrect": true },
+        { "answerText": "3.5 s", "isCorrect": false }
+      ]
+    },
+
+    {
+      "questionText": "Question 10: The time for one full cycle to complete itself; i.e., seconds/cycle",
+      "answerOptions": [
+        { "answerText": "Amplitude", "isCorrect": false },
+        { "answerText": "distance", "isCorrect": false },
+        { "answerText": "frequency", "isCorrect": true },
+        { "answerText": "period", "isCorrect": false }
+      ]
+    }
+  ]

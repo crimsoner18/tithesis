@@ -1,23 +1,18 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text } from 'react-native';
-import { Card, Paragraph } from 'react-native-paper';
+import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Card, List, Paragraph } from 'react-native-paper';
+import { RootTabScreenProps } from '../../types';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
 
-export default function LessonOneScreen() {
-    const setLessonAsRead = async (value: string) => {
-        try {
-          await AsyncStorage.setItem('@M3L1isRead', value)
-        } catch (e) {
-          console.log(e)
-        }
-      }
-    
-      setLessonAsRead('true');
-      
+export default function LessonOneScreen({navigation}: RootTabScreenProps<"ModuleThree">) {
+    const video = React.useRef(null);
+  
+    const [status, setStatus] = React.useState({});
+
   return (
     <SafeAreaView style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollview}>
@@ -305,7 +300,16 @@ export default function LessonOneScreen() {
                 </Card.Content>
                 <Card.Title title="" subtitle="Applications of Specular and Diffuse Reflection" />
             </Card>
-
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleThreeQuizOne')}>
+                  <Card style={styles.card}>
+                    <List.Item
+                      title="Quiz"
+                      description="Take the quiz to learn more"
+                      left={props => <List.Icon {...props} icon="play-circle" />}
+                    />
+                  </Card>
+              </TouchableOpacity>
           </ScrollView>
     </SafeAreaView>
   );

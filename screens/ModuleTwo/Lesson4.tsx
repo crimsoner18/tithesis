@@ -1,5 +1,6 @@
+import { Video } from 'expo-av';
 import React from 'react';
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Button, Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, Paragraph, List } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
 
@@ -8,6 +9,9 @@ const vw = width-10;
 const vh = height;
 
 export default function LessonFourScreen({ navigation }: RootTabScreenProps<'ModuleTwo'>) {
+  const video = React.useRef(null);
+
+  const [status, setStatus] = React.useState({});
 
   return (
     <SafeAreaView style={styles.container}>
@@ -149,6 +153,27 @@ export default function LessonFourScreen({ navigation }: RootTabScreenProps<'Mod
                   </Paragraph>
                 </Card.Content>
                 <Card.Title title="" subtitle="Malus Law" />
+              </Card>
+              <Card style={styles.card}>
+                <Card.Title title="Watch Video Lesson Here" />
+                <Video
+                  ref={video}
+                  useNativeControls
+                  style={{ height: 300 }}
+                  resizeMode="contain"
+                  onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+                  source={require("../../assets/videos/module1/lesson1.mp4")}
+                />
+                <View>
+                  <Button
+                    title={status.isPlaying ? "Pause" : "Play"}
+                    onPress={() =>
+                      status.isPlaying
+                        ? video.current.pauseAsync()
+                        : video.current.playAsync()
+                    }
+                  />
+                </View>
               </Card>
               <TouchableOpacity
                 onPress={() => navigation.navigate('ModuleTwoQuizFour')}>

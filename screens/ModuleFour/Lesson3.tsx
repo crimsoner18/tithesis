@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Video } from "expo-av";
 import React from "react";
 import {
   Dimensions,
@@ -9,8 +10,11 @@ import {
   Text,
   View,
   StatusBar,
+  Button,
+  TouchableOpacity,
 } from "react-native";
 import { Card, Paragraph, List } from "react-native-paper";
+import { RootTabScreenProps } from "../../types";
 
 const { width, height } = Dimensions.get("window");
 const vw = width - 10;
@@ -18,17 +22,17 @@ const vh = height;
 
 const { Title, Content, Cover } = Card;
 
-export default function LessonOneScreen() {
+export default function LessonOneScreen({navigation}: RootTabScreenProps<"ModuleFour">) {
   const setLessonAsRead = async (value: string) => {
     try {
-      await AsyncStorage.setItem('@M4L3isRead', value)
+      await AsyncStorage.setItem('@M4L1isRead', value)
     } catch (e) {
       console.log(e)
     }
   }
 
   setLessonAsRead('true');
-
+  
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview}>       

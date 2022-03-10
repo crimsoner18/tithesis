@@ -4,7 +4,7 @@ import { Pressable, StatusBar, StyleSheet } from 'react-native';
 import { Text, View } from '../../../components/Themed';
 import { RootTabScreenProps } from '../../../types';
 import { Card } from 'react-native-paper';
-import questions from '../../../assets/questions/module1/quiz1.json'; 
+import questions from '../../../assets/questions/module1/quiz3.json'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {

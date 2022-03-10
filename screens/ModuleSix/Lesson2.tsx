@@ -1,5 +1,6 @@
+import { Video } from 'expo-av';
 import React, { useRef, useState } from 'react';
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button, Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, List, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
 
@@ -7,7 +8,10 @@ const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
 
-export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>){
+export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleSix'>){
+  const video = useRef(null);
+
+  const [status, setStatus] = useState({});
   return (
     <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollview}>
@@ -325,7 +329,42 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   style={{'backgroundColor': '#FFFFFF'}}/>
                   </Card>
                 </Card.Content>
+<<<<<<< HEAD
               </Card>
+=======
+              </Card>
+              <Card style={styles.card}>
+              <Card.Title title="Watch Video Lesson Here" />
+                <Video
+                  ref={video}
+                  useNativeControls
+                  style={{ height: 300 }}
+                  resizeMode="contain"
+                  onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+                  source={require("../../assets/videos/module6/lesson2.mp4")}
+                />
+                <View>
+                  <Button
+                    title={status.isPlaying ? "Pause" : "Play"}
+                    onPress={() =>
+                      status.isPlaying
+                        ? video.current.pauseAsync()
+                        : video.current.playAsync()
+                    }
+                  />
+                </View>
+              </Card>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleSixQuizTwo')}>
+                  <Card style={styles.card}>
+                    <List.Item
+                      title="Quiz"
+                      description="Take the quiz to learn more"
+                      left={props => <List.Icon {...props} icon="play-circle" />}
+                    />
+                  </Card>
+              </TouchableOpacity>
+>>>>>>> 3ce47137ca864ffd3f13ea24b2e6f43c479f3b74
           </ScrollView>
     </SafeAreaView>
   );

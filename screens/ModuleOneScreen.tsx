@@ -69,6 +69,7 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
         <TouchableOpacity
           onPress={() => navigation.navigate('ModuleOneLessonFour')}>
             <Card style={styles.card}>
+<<<<<<< HEAD
               <Card.Title title="Behavior of Wave" subtitle="Lesson 4"/>
             </Card>
         </TouchableOpacity>
@@ -76,6 +77,9 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
           onPress={() => navigation.navigate('ModuleOneSimulation')}>
             <Card style={styles.card}>
               <Card.Title title="The Nature of a Wave" subtitle="Lesson 4"/>
+=======
+              <Card.Title title="Behavior of Waves" subtitle="Lesson 4" style={{ backgroundColor: isLesson4Read ? '#90EE90' : 'none' }}/>
+>>>>>>> 3ce47137ca864ffd3f13ea24b2e6f43c479f3b74
             </Card>
         </TouchableOpacity>
         {/* <TouchableOpacity

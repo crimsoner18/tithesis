@@ -4,7 +4,7 @@ import { Pressable, StatusBar, StyleSheet } from 'react-native';
 import { Text, View } from '../../../components/Themed';
 import { RootTabScreenProps } from '../../../types';
 import { Card } from 'react-native-paper';
-import questions from '../../../assets/questions/module2/quiz3.json'; 
+import questions from '../../../assets/questions/module6/quiz2.json'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
@@ -14,7 +14,7 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
 
   const setLessonAsRead = async (value: string) => {
     try {
-      await AsyncStorage.setItem('@M3L3isRead', value)
+      await AsyncStorage.setItem('@M6L2isRead', value)
     } catch (e) {
       console.log(e)
     }
@@ -46,7 +46,7 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
                     You scored {score} out of {questions.length}
                   </Text>
                   <Pressable
-                  onPress={() => navigation.navigate('ModuleThree')}
+                  onPress={() => navigation.navigate('ModuleFive')}
                     style={styles.button}>
                     <Text>Return To Lessons</Text>
                   </Pressable></>

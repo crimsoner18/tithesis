@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Video } from 'expo-av';
 import React, { useRef, useState } from 'react';
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button, Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, List, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
 
@@ -8,16 +9,12 @@ const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
 
-export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>){
-  const setLessonAsRead = async (value: string) => {
-    try {
-      await AsyncStorage.setItem('@M5L2isRead', value)
-    } catch (e) {
-      console.log(e)
-    }
-  }
+export default function LessonOneScreen({
+  navigation,
+}: RootTabScreenProps<"ModuleFive">) {
+  const video = React.useRef(null);
 
-  setLessonAsRead('true');
+  const [status, setStatus] = React.useState({});
   
   return (
     <SafeAreaView style={styles.container}>
@@ -131,8 +128,29 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   </Card>
                 </Card.Content>
               </Card>
+              <Card style={styles.card}>
+                <Card.Title title="Watch Video Lesson Here" />
+                <Video
+                  ref={video}
+                  useNativeControls
+                  style={{ height: 300 }}
+                  resizeMode="contain"
+                  onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+                  source={require("../../assets/videos/module5/lesson2.mp4")}
+                />
+                <View>
+                  <Button
+                    title={status.isPlaying ? "Pause" : "Play"}
+                    onPress={() =>
+                      status.isPlaying
+                        ? video.current.pauseAsync()
+                        : video.current.playAsync()
+                    }
+                  />
+                </View>
+              </Card>
               <TouchableOpacity
-                onPress={() => navigation.navigate('ModuleOneQuizOne')}>
+                onPress={() => navigation.navigate('ModuleFiveQuizTwo')}>
                   <Card style={styles.card}>
                     <List.Item
                       title="Quiz"

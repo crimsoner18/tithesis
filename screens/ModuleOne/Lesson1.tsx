@@ -132,7 +132,7 @@ export default function LessonOneScreen({
           <Card.Title title="" subtitle="Hooke's Law" />
         </Card>
         <Card style={styles.card}>
-          <Paragraph>asdklasjdklashjdklsjkl</Paragraph>
+          <Card.Title title="Watch Video Lesson Here" />
           <Video
             ref={video}
             useNativeControls

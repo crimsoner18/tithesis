@@ -47,26 +47,46 @@ export type RootStackParamList = {
   ModuleTwoLessonFour: undefined;
 
    // Module 2 QUIZZES
-   ModuleTwoQuizOne: undefined;
-   ModuleTwoQuizTwo: undefined;
-   ModuleTwoQuizThree: undefined;  
-   ModuleTwoQuizFour: undefined;
+  ModuleTwoQuizOne: undefined;
+  ModuleTwoQuizTwo: undefined;
+  ModuleTwoQuizThree: undefined;  
+  ModuleTwoQuizFour: undefined;
 
+  // Module 3 LESSONS
   ModuleThreeLessonOne: undefined;
   ModuleThreeLessonTwo: undefined;
   ModuleThreeLessonThree: undefined;
 
+  // Module 3 QUIZZES
+  ModuleThreeQuizOne: undefined;
+  ModuleThreeQuizTwo: undefined;
+  ModuleThreeQuizThree: undefined;
+
+  // Module 4 LESSONS
   ModuleFourLessonOne: undefined;
   ModuleFourLessonTwo: undefined;
   ModuleFourLessonThree: undefined;
 
+  // Module 4 QUIZZES
+  ModuleFourQuizOne: undefined;
+  ModuleFourQuizTwo: undefined;
+  ModuleFourQuizThree: undefined;  
+
+  // Module 5 LESSONS
   ModuleFiveLessonOne: undefined;
   ModuleFiveLessonTwo: undefined;
+  
+  // Module 5 QUIZZES
+  ModuleFiveQuizOne: undefined;
+  ModuleFiveQuizTwo: undefined;
 
+  // Module 6 LESSONS
   ModuleSixLessonOne: undefined;
   ModuleSixLessonTwo: undefined;
 
-
+  // Module 6 QUIZZES
+  ModuleSixQuizOne: undefined;
+  ModuleSixQuizTwo: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
