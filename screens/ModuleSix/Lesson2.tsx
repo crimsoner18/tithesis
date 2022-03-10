@@ -338,7 +338,7 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   style={{ height: 300 }}
                   resizeMode="contain"
                   onPlaybackStatusUpdate={(status) => setStatus(() => status)}
-                  source={require("../../assets/videos/module5/lesson1.mp4")}
+                  source={require("../../assets/videos/module6/lesson2.mp4")}
                 />
                 <View>
                   <Button
