@@ -4,17 +4,20 @@ import { Card, Paragraph, Title } from "react-native-paper";
 export default function CommentCard({
   comment,
   title,
+  postedBy,
+  body,
 }: {
   comment: string;
   title: string;
+  postedBy: string;
+  body: string;
 }) {
   return (
     <TouchableOpacity>
       <Card style={{ height: 200, width: 300 }}>
-        <Card.Title title={title} subtitle="Sample post" />
+        <Card.Title title={title} subtitle={`Posted By: ${postedBy}`} />
         <Card.Content>
-          <Title>{title}</Title>
-          <Paragraph>Sample</Paragraph>
+          <Paragraph>{body}</Paragraph>
         </Card.Content>
       </Card>
     </TouchableOpacity>

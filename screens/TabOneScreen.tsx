@@ -1,16 +1,34 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, { useState } from 'react';
-import { Text, Modal, Alert, Pressable, ScrollView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
-import {Avatar, Card, List, Paragraph} from 'react-native-paper';
-import { View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import React, { useEffect, useState } from "react";
+import {
+  Text,
+  Modal,
+  Alert,
+  Pressable,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions,
+  TextInput,
+} from "react-native";
+import { Card, Paragraph } from "react-native-paper";
+import { View } from "../components/Themed";
+import { RootTabScreenProps } from "../types";
 
-const clearAsyncStorage = async() => {
+const clearAsyncStorage = async () => {
   AsyncStorage.clear();
-}
-
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+};
+const windowHeight = Dimensions.get("window").height;
+export default function TabOneScreen({
+  navigation,
+}: RootTabScreenProps<"TabOne">) {
+  const [modalText, setModalText] = useState("");
   const [modalVisible, setModalVisible] = useState(true);
+
+  const setUser = (user: string) => {
+    AsyncStorage.setItem("user", user);
+  };
   return (
     <View style={styles.container}>
       <Modal
@@ -31,11 +49,23 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
             is very useful for us to understand the surrounding phenomena regarding the origins and propagation of light, \
             as well as the changes it undergoes and produces and other phenomena that are closely related to it.  
             </Text>
+            <Text style={styles.modalText}>Tell Me your Name!</Text>
+            <TextInput
+              placeholder="Your Name"
+              value={modalText}
+              onChangeText={(e) => {
+                setModalText(e);
+              }}
+            />
             <Pressable
               style={[styles.button, styles.buttonClose]}
-              onPress={() => setModalVisible(!modalVisible)}
+              onPress={() => {
+                setUser(modalText);
+                setModalVisible(!modalVisible);
+              }}
             >
               <Text style={styles.textStyle}>Continue</Text>
+              <Text style={styles.textStyle}>Enter</Text>
             </Pressable>
           </View>
           </ScrollView>
@@ -116,20 +146,21 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   scrollview: {
-    alignItems: 'center',
-    alignContent: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
     flexGrow: 1,
   },
   card: {
     margin: 10,
     flexGrow: 1,
     width: '90%',
+    marginBottom: 10,
   },
   centeredView: {
     flex: 1,
@@ -151,16 +182,16 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2
+      height: 2,
     },
     shadowOpacity: 0.25,
     shadowRadius: 4,
-    elevation: 5
+    elevation: 5,
   },
   button: {
     borderRadius: 20,
     padding: 10,
-    elevation: 2
+    elevation: 2,
   },
   buttonOpen: {
     backgroundColor: "#F194FF",
@@ -171,7 +202,7 @@ const styles = StyleSheet.create({
   textStyle: {
     color: "white",
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
   },
   modalText: {
     marginBottom: 15,
