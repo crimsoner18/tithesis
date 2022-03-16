@@ -28,6 +28,7 @@ import ModuleFive from "../screens/ModuleFiveScreen";
 import ModuleSix from "../screens/ModuleSixScreen";
 
 // Module 1 imports
+import M1IntroductionScreen from "../screens/ModuleOne/Introduction";
 import M1LessonOneScreen from "../screens/ModuleOne/Lesson1";
 import M1LessonTwoScreen from "../screens/ModuleOne/Lesson2";
 import M1LessonThreeScreen from "../screens/ModuleOne/Lesson3";
@@ -162,6 +163,11 @@ function RootNavigator() {
 
       {/* MODULE ONE LESSONS AND QUIZZES */}
       <Stack.Screen
+        name="ModuleOneIntroduction"
+        component={M1IntroductionScreen}
+        options={{ headerShown: true, title: "Introduction" }}
+      />
+      <Stack.Screen
         name="ModuleOneLessonOne"
         component={M1LessonOneScreen}
         options={{ headerShown: true, title: "Vibrations" }}
@@ -184,7 +190,7 @@ function RootNavigator() {
       <Stack.Screen
         name="ModuleOneSimulation"
         component={M1SimulationScreen}
-        options={{ headerShown: true, title: "Vibrations" }}
+        options={{ headerShown: true, title: "Simulation" }}
       />
 
       <Stack.Screen

@@ -18,7 +18,6 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
           setModalVisible(!modalVisible);
         }}
       >
@@ -32,49 +31,11 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
             is very useful for us to understand the surrounding phenomena regarding the origins and propagation of light, \
             as well as the changes it undergoes and produces and other phenomena that are closely related to it.  
             </Text>
-            <Text style={{fontWeight:"bold"}}>About Us</Text>
-            <Text style={{marginBottom:20}}>Physics Center is a specialized application that is designed and developed to be 
-            an aid to the knowledge, acquisition and organization of the learners in Waves and Optics. It is named as this due 
-            to its aim to be the central area or middle point of student’s knowledge and their go-to-application whenever they 
-            are learning Waves and Optics, a branch of Physics. Its features include learning materials and video lessons on Waves 
-            and Optics, activities, quizzes, a simulation about the Image formation on Mirrors and Lenses, and a help corner. 
-            </Text>
-            <List.Item 
-            title={<Text numberOfLines={4}>Jean Nicole A. Rivera, a 3rd year BSE- Science student at the University of Rizal System Morong who graduated at Carlos Botong V Francisco Memorial National High School in Angono Rizal. She received recognition for being a dean's lister, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST) and the Deputy secretary of the Science Enthusiasts and Environmentalists Society (SEES) for S.Y. 2021-2022. </Text>}
-            style={{flex:1, width:'100%'}}
-            description={<Text numberOfLines={4}>Jean Nicole A. Rivera, a 3rd year BSE- Science student at the University of Rizal System Morong who graduated at Carlos Botong V Francisco Memorial National High School in Angono Rizal. She received recognition for being a dean's lister, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST) and the Deputy secretary of the Science Enthusiasts and Environmentalists Society (SEES) for S.Y. 2021-2022. </Text>}
-            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Rivera.jpg')} />}
-          />
-          <List.Item 
-            title=""
-            style={{flex:1, width:'100%'}}
-            description="Leanna Mae G. Añis, a 3rd year BSE- Science student at the University of Rizal System Morong who is a graduate senior high student at the Catalino D. Salazar National High School, Cardona Rizal. She is a dean's lister in her 1st year and 2nd year, a recipient of the Junior Level Science Scholarship from the Department of Science and Technology (DOST), and a member of the Science Enthusiasts and Environmentalists Society (SEES).  "
-            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Anis.png')} />}
-          />
-          <List.Item 
-            title=""
-            style={{flex:1, width:'100%'}}
-            description="Ernila F. Custan, finished her senior high at Tomas Claudio Colleges, Morong Rizal, a 3rd year BSE- Science student at the University of Rizal System Morong. She received scholarship from the Barangay scholar (2020) and Manila Teacher's scholarship (2021). She is a member of the Science Enthusiasts and Environmentalists Society (SEES). "
-            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Custan.jpg')} />}
-          />
-          <List.Item 
-            title=""
-            style={{flex:1, width:'100%'}}
-            description="Jobren P. Passion, graduated senior high at Tomas Claudio Colleges, Morong Rizal, a 3rd year BSE- Science student at the University of Rizal System. A member of the Science Enthusiasts and Environmentalists Society (SEES). "
-            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/Pasion.jpg')} />}
-          />
-          <List.Item 
-            title=""
-            style={{flex:1, width:'100%'}}
-            description="Richard A. Etil Jr., took his senior high at the Binangonan Catholic College, Binangonan Rizal, STEM strand. A 3rd year BSE- Science student, a former head of the Tarcisian Turno 275, Catholic church organization, former organist of Himig Tarcisian Chorale. A member of Science Enthusiasts and Environmentalists Society (SEES). "
-            left={props => <Avatar.Image {...props} source={require('../assets/images/creator_images/etil.gif')} />}
-          />
-
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <Text style={styles.textStyle}>Hide Modal</Text>
+              <Text style={styles.textStyle}>Continue</Text>
             </Pressable>
           </View>
           </ScrollView>
@@ -86,101 +47,59 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
           onPress={() => navigation.navigate('ModuleOne')}
           style={styles.card}>
                 <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module One" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
+                  <Card.Cover source={require('../assets/images/moduleIcons/module1.png')}/>
+                  <Card.Title title="Vibration and Waves" />
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleTwo')}
             style={styles.card}>
             <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Two" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
+                  <Card.Cover source={require('../assets/images/moduleIcons/module2.png')}/>
+                  <Card.Title title="Light and Color" />
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleThree')}
             style={styles.card}>
             <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Three" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
+              <Card.Cover source={require('../assets/images/moduleIcons/module3.png')}/>
+                  <Card.Title title="Reflection and Mirror" />
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleFour')}
             style={styles.card}>
             <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Four" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
+            <Card.Cover source={require('../assets/images/moduleIcons/module4.png')}/>
+                  <Card.Title title="Refraction and Lenses" />
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleFive')}
             style={styles.card}>
             <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Five" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
+            <Card.Cover source={require('../assets/images/moduleIcons/module5.jpg')}/>
+                  <Card.Title title="Diffraction and interference" />
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleSix')}
             style={styles.card}>
             <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="Module Six" />
-                  <Card.Content>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
+            <Card.Cover source={require('../assets/images/moduleIcons/module6.png')}/>
+                  <Card.Title title="Optical Instruments" />
                 </Card>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleOneSimulation')}
             style={styles.card}>
-            <Card>
+                <Card>
                   <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
                   <Card.Title title="VIEW SIMULATION" />
                   <Card.Content>
                     <Paragraph>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Paragraph>
-                  </Card.Content>
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => setModalVisible(true)}
-            style={styles.card}>
-            <Card>
-                  <Card.Title title="Clear AsyncStorage" />
-                  <Card.Content>
-                    <Paragraph>
-                      EYYY LESGOOOOOOO
                     </Paragraph>
                   </Card.Content>
                 </Card>
@@ -210,13 +129,15 @@ const styles = StyleSheet.create({
   card: {
     margin: 10,
     flexGrow: 1,
-    width: '100%', 
+    width: '90%',
   },
   centeredView: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     width: '100%',
+    alignContent: 'center',
+
   },
   modalView: {
     flex: 1,
@@ -226,6 +147,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 35,
     alignItems: "center",
+    justifyContent: "center",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -253,6 +175,6 @@ const styles = StyleSheet.create({
   },
   modalText: {
     marginBottom: 15,
-    textAlign: "center"
+    textAlign: "center",
   }
 });

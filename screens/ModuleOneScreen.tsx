@@ -48,6 +48,12 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview} scrollEnabled={true}>
+      <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneIntroduction')}>
+            <Card style={styles.card}>
+              <Card.Title title="Introduction" subtitle="Introduction"/>
+            </Card>
+        </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate('ModuleOneLessonOne')}>
             <Card style={styles.card}>

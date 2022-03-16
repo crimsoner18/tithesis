@@ -27,6 +27,47 @@ export default function LessonOneScreen({
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview}>
+      <Card style={styles.card}>
+          <Card.Title title="Let's Dig Deeper" />
+          <Card.Content>
+            <Card style={styles.imageHolder}>
+              <Card.Cover
+                source={require("../../assets/images/module1/lesson1/image3.gif")}
+                resizeMode={`contain`}
+                style={{ backgroundColor: "#FFFFFF" }}
+              />
+              <Text
+                style={styles.sourceText}
+                onPress={() =>
+                  Linking.openURL(
+                    "https://www.google.com/search?q=pendulum&sxsrf=AOaemvIFCfSv9C8c9J9OwVhWrPUt6wGjhg:1639192121746&source=lnms&tbm=isch"
+                  )
+                }
+              >
+                https://www.google.com/search?q=pendulum&sxsrf=AOaemvIFCfSv9C8c9J9OwVhWrPUt6wGjhg:1639192121746&source=lnms&tbm=isch
+              </Text>
+            </Card>
+            <Paragraph style={styles.paragraph}>
+            Consider one of those bizarre bobble head dolls you've probably
+            seen at baseball stadiums or curiosity shops to begin our
+            exploration of vibrations and waves. A bobble head doll is made up
+            of an enlarged reproduction of a person's head that is joined to a
+            body and a stand by a spring. The big head bobbles when lightly
+            tapped. Wiggles, vibrates, and oscillates the head. The head
+            moves back and forth when pushed or otherwise disturbed. The
+            back-and-forth isn't going to last forever. The vibrations gradually
+            fade away, and the bobble head eventually stops bobbing and
+            returns to its normal resting position. The bobble head doll is a
+            good illustration of many of the principles of vibrational motion.
+            Think about how you would describe the back and forth motion of
+            the oversized head of a bobble head doll. What words would you
+            use to describe such a motion? How does the motion of the bobble head change
+            over time? How does the motion of one bobble head differ from the motion of
+            another bobble head?
+            </Paragraph>
+          </Card.Content>
+          <Card.Title title="" subtitle="Other Vibrating Systems" />
+        </Card>
         <Card style={styles.card}>
           <Card.Title title="What Causes Objects to Vibrate?" />
           <Card.Content>
