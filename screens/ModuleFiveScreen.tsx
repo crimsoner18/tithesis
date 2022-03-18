@@ -49,6 +49,12 @@ export default function ModuleFourScreen({navigation}: RootTabScreenProps<"Modul
         scrollEnabled={true}
       >
         <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleFiveIntroduction')}>
+            <Card style={styles.card}>
+              <Card.Title title="Introduction" subtitle="Introduction"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => navigation.navigate("ModuleFiveLessonOne")}
         >
           <Card style={styles.card}>
@@ -61,6 +67,18 @@ export default function ModuleFourScreen({navigation}: RootTabScreenProps<"Modul
           <Card style={styles.card}>
             <Card.Title title="Wave Interference at the Particle Level" subtitle="Lesson 2" style={{ backgroundColor: isLesson2Read ? '#90EE90' : 'none' }}/>
           </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleFiveConclusion')}>
+            <Card style={styles.card}>
+              <Card.Title title="Conclusion" subtitle="Conclusion"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleFiveReference')}>
+            <Card style={styles.card}>
+              <Card.Title title="Reference" subtitle="Reference"/>
+            </Card>
         </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>

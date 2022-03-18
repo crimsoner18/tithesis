@@ -78,6 +78,18 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
               <Card.Title title="Behavior of Waves" subtitle="Lesson 4" style={{ backgroundColor: isLesson4Read ? '#90EE90' : 'none' }}/>
             </Card>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneConclusion')}>
+            <Card style={styles.card}>
+              <Card.Title title="Conclusion" subtitle="Conclusion"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleOneReference')}>
+            <Card style={styles.card}>
+              <Card.Title title="Reference" subtitle="Reference"/>
+            </Card>
+        </TouchableOpacity>
         {/* <TouchableOpacity
           onPress={() => navigation.navigate('ModuleOneLessonFour')}>
             <Card style={styles.card}>
