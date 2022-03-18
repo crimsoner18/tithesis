@@ -33,6 +33,8 @@ import M1LessonOneScreen from "../screens/ModuleOne/Lesson1";
 import M1LessonTwoScreen from "../screens/ModuleOne/Lesson2";
 import M1LessonThreeScreen from "../screens/ModuleOne/Lesson3";
 import M1LessonFourScreen from "../screens/ModuleOne/Lesson4";
+import M1ConclusionScreen from "../screens/ModuleOne/Conclusion";
+import M1ReferenceScreen from "../screens/ModuleOne/Reference";
 import M1SimulationScreen from "../screens/ModuleOne/Simulation";
 import M1QuizOneScreen from "../screens/ModuleOne/Quizzes/Lesson1";
 import M1QuizTwoScreen from "../screens/ModuleOne/Quizzes/Lesson2";
@@ -40,37 +42,51 @@ import M1QuizThreeScreen from "../screens/ModuleOne/Quizzes/Lesson3";
 import M1QuizFourScreen from "../screens/ModuleOne/Quizzes/Lesson4";
 
 // Module 2 imports
+import M2IntroductionScreen from "../screens/ModuleTwo/Introduction";
 import M2LessonOneScreen from "../screens/ModuleTwo/Lesson1";
 import M2LessonTwoScreen from "../screens/ModuleTwo/Lesson2";
 import M2LessonThreeScreen from "../screens/ModuleTwo/Lesson3";
 import M2LessonFourScreen from "../screens/ModuleTwo/Lesson4";
+import M2ConclusionScreen from "../screens/ModuleTwo/Conclusion";
+import M2ReferenceScreen from "../screens/ModuleTwo/Reference";
 import M2QuizOneScreen from "../screens/ModuleTwo/Quizzes/Lesson1";
 import M2QuizTwoScreen from "../screens/ModuleTwo/Quizzes/Lesson2";
 import M2QuizThreeScreen from "../screens/ModuleTwo/Quizzes/Lesson3";
 import M2QuizFourScreen from "../screens/ModuleTwo/Quizzes/Lesson4";
 
 // Module 3 imports
+import M3IntroductionScreen from "../screens/ModuleThree/Introduction";
 import M3LessonOneScreen from '../screens/ModuleThree/Lesson1';
 import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
 import M3LessonThreeScreen from '../screens/ModuleThree/Lesson3';
+import M3ConclusionScreen from "../screens/ModuleThree/Conclusion";
+import M3ReferenceScreen from "../screens/ModuleThree/Reference";
 
 // Module 4 imports
+import M4IntroductionScreen from "../screens/ModuleFour/Introduction";
 import M4LessonOneScreen from "../screens/ModuleFour/Lesson1";
 import M4LessonTwoScreen from "../screens/ModuleFour/Lesson2";
 import M4LessonThreeScreen from "../screens/ModuleFour/Lesson3";
+import M4ReferenceScreen from "../screens/ModuleFour/Reference";
 import M4QuizOneScreen from "../screens/ModuleFour/Quizzes/Lesson1";
 import M4QuizTwoScreen from "../screens/ModuleFour/Quizzes/Lesson2";
 import M4QuizThreeScreen from "../screens/ModuleFour/Quizzes/Lesson3";
 
 // Module 5 imports
+import M5IntroductionScreen from "../screens/ModuleFive/Introduction";
 import M5LessonOneScreen from "../screens/ModuleFive/Lesson1";
 import M5LessonTwoScreen from "../screens/ModuleFive/Lesson2";
+import M5ConclusionScreen from "../screens/ModuleFive/Conclusion";
+import M5ReferenceScreen from "../screens/ModuleFive/Reference";
 import M5QuizOneScreen from "../screens/ModuleFive/Quizzes/Lesson1";
 import M5QuizTwoScreen from "../screens/ModuleFive/Quizzes/Lesson2";
 
 // Module 6 imports
+import M6IntroductionScreen from "../screens/ModuleSix/Introduction";
 import M6LessonOneScreen from "../screens/ModuleSix/Lesson1";
 import M6LessonTwoScreen from "../screens/ModuleSix/Lesson2";
+import M6ConclusionScreen from "../screens/ModuleSix/Conclusion";
+import M6ReferenceScreen from "../screens/ModuleSix/Reference";
 import M6QuizOneScreen from "../screens/ModuleSix/Quizzes/Lesson1";
 import M6QuizTwoScreen from "../screens/ModuleSix/Quizzes/Lesson2";
 
@@ -188,6 +204,16 @@ function RootNavigator() {
         options={{ headerShown: true, title: "Vibrations" }}
       />
       <Stack.Screen
+        name="ModuleOneConclusion"
+        component={M1ConclusionScreen}
+        options={{ headerShown: true, title: "Conclusion" }}
+      />
+      <Stack.Screen
+        name="ModuleOneReference"
+        component={M1ReferenceScreen}
+        options={{ headerShown: true, title: "Reference" }}
+      />
+      <Stack.Screen
         name="ModuleOneSimulation"
         component={M1SimulationScreen}
         options={{ headerShown: true, title: "Simulation" }}
@@ -216,6 +242,11 @@ function RootNavigator() {
       
       {/* MODULE TWO LESSONS AND QUIZZES */}
       <Stack.Screen
+        name="ModuleTwoIntroduction"
+        component={M2IntroductionScreen}
+        options={{ headerShown: true, title: "Introduction" }}
+      />
+      <Stack.Screen
         name="ModuleTwoLessonOne"
         component={M2LessonOneScreen}
         options={{ headerShown: true, title: "Theories of Light" }}
@@ -237,6 +268,16 @@ function RootNavigator() {
           headerShown: true,
           title: "Understanding Polarization and Malus law",
         }}
+      />
+      <Stack.Screen
+        name="ModuleTwoConclusion"
+        component={M2ConclusionScreen}
+        options={{ headerShown: true, title: "Conclusion" }}
+      />
+      <Stack.Screen
+        name="ModuleTwoReference"
+        component={M2ReferenceScreen}
+        options={{ headerShown: true, title: "Reference" }}
       />
 
       <Stack.Screen
@@ -261,6 +302,11 @@ function RootNavigator() {
       />
 
       {/* MODULE THREE LESSONS AND QUIZZES */}
+      <Stack.Screen
+        name="ModuleThreeIntroduction"
+        component={M3IntroductionScreen}
+        options={{ headerShown: true, title: "Introduction" }}
+      />
       <Stack.Screen 
         name="ModuleThreeLessonOne" 
         component={M3LessonOneScreen} 
@@ -286,6 +332,16 @@ function RootNavigator() {
         }} 
       />
       <Stack.Screen
+        name="ModuleThreeConclusion"
+        component={M3ConclusionScreen}
+        options={{ headerShown: true, title: "Conclusion" }}
+      />
+      <Stack.Screen
+        name="ModuleThreeReference"
+        component={M3ReferenceScreen}
+        options={{ headerShown: true, title: "Reference" }}
+      />
+      <Stack.Screen
         name="ModuleThreeQuizOne"
         component={M4QuizOneScreen}
         options={{ headerShown: true, title: "Lesson 1 Quiz" }}
@@ -302,6 +358,11 @@ function RootNavigator() {
       />
 
       {/* MODULE 4 LESSONS AND QUIZZES */}
+      <Stack.Screen
+        name="ModuleFourIntroduction"
+        component={M4IntroductionScreen}
+        options={{ headerShown: true, title: "Introduction" }}
+      />
       <Stack.Screen
         name="ModuleFourLessonOne"
         component={M4LessonOneScreen}
@@ -326,6 +387,11 @@ function RootNavigator() {
           title: "Drawing Ray Diagrams for Convex Lenses",
         }}
       />
+      <Stack.Screen
+        name="ModuleFourReference"
+        component={M4ReferenceScreen}
+        options={{ headerShown: true, title: "Reference" }}
+      />
 
       <Stack.Screen
         name="ModuleFourQuizOne"
@@ -346,6 +412,11 @@ function RootNavigator() {
 
       {/* MODULE 5 LESSONS AND QUIZZES */}
       <Stack.Screen
+        name="ModuleFiveIntroduction"
+        component={M5IntroductionScreen}
+        options={{ headerShown: true, title: "Introduction" }}
+      />
+      <Stack.Screen
         name="ModuleFiveLessonOne"
         component={M5LessonOneScreen}
         options={{
@@ -361,6 +432,16 @@ function RootNavigator() {
           title: "Wave Interference at the Particle Level",
         }}
       />
+      <Stack.Screen
+        name="ModuleFiveConclusion"
+        component={M5ConclusionScreen}
+        options={{ headerShown: true, title: "Conclusion" }}
+      />
+      <Stack.Screen
+        name="ModuleFiveReference"
+        component={M5ReferenceScreen}
+        options={{ headerShown: true, title: "Reference" }}
+      />
 
       <Stack.Screen
         name="ModuleFiveQuizOne"
@@ -374,6 +455,11 @@ function RootNavigator() {
       />
 
       {/* MODULE 6 LESSONS AND QUIZZES */}
+      <Stack.Screen
+        name="ModuleSixIntroduction"
+        component={M6IntroductionScreen}
+        options={{ headerShown: true, title: "Introduction" }}
+      />
       <Stack.Screen
         name="ModuleSixLessonOne"
         component={M6LessonOneScreen}
@@ -389,6 +475,16 @@ function RootNavigator() {
           headerShown: true,
           title: "Principles of Optical Instruments",
         }}
+      />
+      <Stack.Screen
+        name="ModuleSixConclusion"
+        component={M6ConclusionScreen}
+        options={{ headerShown: true, title: "Conclusion" }}
+      />
+      <Stack.Screen
+        name="ModuleSixReference"
+        component={M6ReferenceScreen}
+        options={{ headerShown: true, title: "Reference" }}
       />
       <Stack.Screen
         name="ModuleSixQuizOne"

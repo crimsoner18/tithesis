@@ -54,6 +54,12 @@ export default function ModuleFourScreen({ navigation,}: RootTabScreenProps<"Mod
         scrollEnabled={true}
       >
         <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleFourIntroduction')}>
+            <Card style={styles.card}>
+              <Card.Title title="Introduction" subtitle="Introduction"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => navigation.navigate("ModuleFourLessonOne")}
         >
           <Card style={styles.card}>
@@ -73,6 +79,12 @@ export default function ModuleFourScreen({ navigation,}: RootTabScreenProps<"Mod
           <Card style={styles.card}>
             <Card.Title title="Drawing Ray Diagrams for Convex Lenses" subtitle="Lesson 3" style={{ backgroundColor: isLesson3Read ? '#90EE90' : 'none' }}/>
           </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleFourReference')}>
+            <Card style={styles.card}>
+              <Card.Title title="Reference" subtitle="Reference"/>
+            </Card>
         </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>

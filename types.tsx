@@ -33,6 +33,8 @@ export type RootStackParamList = {
   ModuleOneLessonTwo: undefined;
   ModuleOneLessonThree: undefined;
   ModuleOneLessonFour: undefined;
+  ModuleOneConclusion: undefined;
+  ModuleOneReference: undefined;
   ModuleOneSimulation: undefined;
   
   // Module 1 QUIZZES
@@ -42,10 +44,13 @@ export type RootStackParamList = {
   ModuleOneQuizFour: undefined;
 
   // Module 2 LESSONS
+  ModuleTwoIntroduction: undefined;
   ModuleTwoLessonOne: undefined;
   ModuleTwoLessonTwo: undefined;
   ModuleTwoLessonThree: undefined;
   ModuleTwoLessonFour: undefined;
+  ModuleTwoConclusion: undefined;
+  ModuleTwoReference: undefined;
 
    // Module 2 QUIZZES
   ModuleTwoQuizOne: undefined;
@@ -54,9 +59,12 @@ export type RootStackParamList = {
   ModuleTwoQuizFour: undefined;
 
   // Module 3 LESSONS
+  ModuleThreeIntroduction: undefined;
   ModuleThreeLessonOne: undefined;
   ModuleThreeLessonTwo: undefined;
   ModuleThreeLessonThree: undefined;
+  ModuleThreeConclusion: undefined;
+  ModuleThreeReference: undefined;
 
   // Module 3 QUIZZES
   ModuleThreeQuizOne: undefined;
@@ -64,9 +72,11 @@ export type RootStackParamList = {
   ModuleThreeQuizThree: undefined;
 
   // Module 4 LESSONS
+  ModuleFourIntroduction: undefined;
   ModuleFourLessonOne: undefined;
   ModuleFourLessonTwo: undefined;
   ModuleFourLessonThree: undefined;
+  ModuleFourReference: undefined;
 
   // Module 4 QUIZZES
   ModuleFourQuizOne: undefined;
@@ -74,16 +84,22 @@ export type RootStackParamList = {
   ModuleFourQuizThree: undefined;  
 
   // Module 5 LESSONS
+  ModuleFiveIntroduction: undefined;
   ModuleFiveLessonOne: undefined;
   ModuleFiveLessonTwo: undefined;
+  ModuleFiveConclusion: undefined;
+  ModuleFiveReference: undefined;
   
   // Module 5 QUIZZES
   ModuleFiveQuizOne: undefined;
   ModuleFiveQuizTwo: undefined;
 
   // Module 6 LESSONS
+  ModuleSixIntroduction: undefined;
   ModuleSixLessonOne: undefined;
   ModuleSixLessonTwo: undefined;
+  ModuleSixConclusion: undefined;
+  ModuleSixReference: undefined;
 
   // Module 6 QUIZZES
   ModuleSixQuizOne: undefined;

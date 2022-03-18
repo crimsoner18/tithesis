@@ -51,6 +51,12 @@ export default function ModuleFourScreen({
         scrollEnabled={true}
       >
         <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleSixIntroduction')}>
+            <Card style={styles.card}>
+              <Card.Title title="Introduction" subtitle="Introduction"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => navigation.navigate("ModuleSixLessonOne")}
         >
           <Card style={styles.card}>
@@ -63,6 +69,18 @@ export default function ModuleFourScreen({
           <Card style={styles.card}>
             <Card.Title title="Principles of Optical Instruments" subtitle="Lesson 2" style={{ backgroundColor: isLesson2Read ? '#90EE90' : 'none' }}/>
           </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleSixConclusion')}>
+            <Card style={styles.card}>
+              <Card.Title title="Conclusion" subtitle="Conclusion"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleSixReference')}>
+            <Card style={styles.card}>
+              <Card.Title title="Reference" subtitle="Reference"/>
+            </Card>
         </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>

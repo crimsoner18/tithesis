@@ -43,6 +43,12 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview} scrollEnabled={true}>
+      <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleThreeIntroduction')}>
+            <Card style={styles.card}>
+              <Card.Title title="Introduction" subtitle="Introduction"/>
+            </Card>
+        </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate('ModuleThreeLessonOne')}>
             <Card style={styles.card}>
@@ -59,6 +65,18 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
           onPress={() => navigation.navigate('ModuleThreeLessonThree')}>
             <Card style={styles.card}>
               <Card.Title title="Concave and Convex Mirrors" subtitle="Lesson 3" style={{ backgroundColor: isLesson3Read ? '#90EE90' : 'none' }}/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleThreeConclusion')}>
+            <Card style={styles.card}>
+              <Card.Title title="Conclusion" subtitle="Conclusion"/>
+            </Card>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ModuleThreeReference')}>
+            <Card style={styles.card}>
+              <Card.Title title="Reference" subtitle="Reference"/>
             </Card>
         </TouchableOpacity>
       </ScrollView>
