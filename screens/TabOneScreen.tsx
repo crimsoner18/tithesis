@@ -16,9 +16,7 @@ import { Card, Paragraph } from "react-native-paper";
 import { View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
 
-const clearAsyncStorage = async () => {
-  AsyncStorage.clear();
-};
+
 const windowHeight = Dimensions.get("window").height;
 export default function TabOneScreen({
   navigation,
@@ -46,17 +44,23 @@ export default function TabOneScreen({
             <Text style={{fontWeight:"bold"}}>WAVES AND OPTICS</Text>
             <Text style={{marginBottom:20}}>It is a branch of Physics that deals with the study of optical phenomena, 
             having its subject that revolves on the interaction of waves and light rays. The knowledge on Waves and optics 
-            is very useful for us to understand the surrounding phenomena regarding the origins and propagation of light, \
+            is very useful for us to understand the surrounding phenomena regarding the origins and propagation of light,
             as well as the changes it undergoes and produces and other phenomena that are closely related to it.  
             </Text>
-            <Text style={styles.modalText}>Tell Me your Name!</Text>
-            <TextInput
-              placeholder="Your Name"
-              value={modalText}
-              onChangeText={(e) => {
-                setModalText(e);
-              }}
-            />
+
+            <Card style={{width:'100%', marginBottom: 20}}>
+              <Card.Title title="To continue, tell me your name!" />
+              <Card.Content>
+                <TextInput
+                  placeholder="Your Name"
+                  value={modalText}
+                  onChangeText={(e) => {
+                    setModalText(e);
+                  }}
+                />
+              </Card.Content>
+            </Card>
+
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => {
@@ -65,7 +69,6 @@ export default function TabOneScreen({
               }}
             >
               <Text style={styles.textStyle}>Continue</Text>
-              <Text style={styles.textStyle}>Enter</Text>
             </Pressable>
           </View>
           </ScrollView>
@@ -164,11 +167,7 @@ const styles = StyleSheet.create({
   },
   centeredView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
     width: '100%',
-    alignContent: 'center',
-
   },
   modalView: {
     flex: 1,
@@ -178,7 +177,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 35,
     alignItems: "center",
-    justifyContent: "center",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,

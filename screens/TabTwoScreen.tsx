@@ -30,9 +30,7 @@ export default function TabTwoScreen() {
     }
   };
   useEffect(() => {
-    getUser().then((user) => {
-      setCurrentUser(user);
-    });
+    getUser().then((user) => setCurrentUser(user));
   }, []);
   console.log(currentUser);
   return (

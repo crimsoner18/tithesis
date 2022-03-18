@@ -25,7 +25,7 @@ const { Title, Content, Cover } = Card;
 export default function LessonOneScreen({navigation}: RootTabScreenProps<"ModuleFour">) {
   const setLessonAsRead = async (value: string) => {
     try {
-      await AsyncStorage.setItem('@M4L1isRead', value)
+      await AsyncStorage.setItem('@M4L3isRead', value)
     } catch (e) {
       console.log(e)
     }

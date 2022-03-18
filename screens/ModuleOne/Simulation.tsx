@@ -4,20 +4,21 @@ import { Card, List, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
 import {WebView} from 'react-native-webview';
 import RenderHTML from 'react-native-render-html';
+const PolicyHTML = require('../../assets/simulations/sim1.html');
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
-const html = require('../../assets/sim1.html');
 
 export default function LessonOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>){
   return (
         <WebView
           startInLoadingState={true} 
+          style={{flex: 1, marginTop : 44}}
           containerStyle = {{marginTop: 20, width: Dimensions.get('window').width, height: Dimensions.get('window').height}} 
-          source={{ uri: 'https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html'}}
+          // source={{ uri: 'https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_en.html'}}
           originWhitelist={['*']}
-        //   source={{uri: 'asset:/sim1.html'}}
+          source={PolicyHTML}
         //   style={{ marginTop: 20, flex: 1 }}
           javaScriptEnabled={true}
           domStorageEnabled={true}
