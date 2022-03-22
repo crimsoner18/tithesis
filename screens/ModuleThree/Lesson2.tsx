@@ -384,7 +384,6 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: StatusBar.currentHeight,
     flexGrow: 1,
   },
   title: {

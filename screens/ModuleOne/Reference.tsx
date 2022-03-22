@@ -124,7 +124,6 @@ export default function LessonOneScreen({
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: StatusBar.currentHeight,
     flexGrow: 1,
   },
   title: {

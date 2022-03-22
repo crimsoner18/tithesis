@@ -214,7 +214,6 @@ export default function LessonFourScreen({ navigation }: RootTabScreenProps<'Mod
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: StatusBar.currentHeight,
     flexGrow: 1,
   },
   title: {
