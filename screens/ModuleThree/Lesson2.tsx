@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Video } from 'expo-av';
 import React from 'react';
+import { LinearGradient } from "expo-linear-gradient";
 import { Button, Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, List, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
@@ -15,6 +16,11 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
   const [status, setStatus] = React.useState({});
   return (
     <SafeAreaView style={styles.container}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#FF9AA2', '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA']}
+        style={styles.background}
+      />
         <ScrollView contentContainerStyle={styles.scrollview}>
             <Card style={styles.card}>
                 <Card.Title title="Why is an Image Formed?" />
@@ -412,6 +418,13 @@ const styles = StyleSheet.create({
   },
   paragraph: {
     marginBottom: 10,
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '120%',
   },
 });
 

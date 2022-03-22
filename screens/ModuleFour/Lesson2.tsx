@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Video } from "expo-av";
 import React from "react";
+import { LinearGradient } from "expo-linear-gradient";
 import {
   Dimensions,
   Linking,
@@ -32,6 +33,11 @@ export default function LessonOneScreen({
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollview}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#FF9AA2', '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA']}
+        style={styles.background}
+      />
         <Card style={styles.card}>
 
           <Title
@@ -286,5 +292,12 @@ const styles = StyleSheet.create({
   coverImage: {
     backgroundColor: "#FFFFFF",
     margin: 10,
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '120%',
   },
 });
