@@ -120,7 +120,16 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: '#B5EAD7',
+      },
+      headerTintColor: '#000',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    }}>
       <Stack.Screen
         name="Root"
         component={BottomTabNavigator}
@@ -518,6 +527,12 @@ function BottomTabNavigator() {
       initialRouteName="TabOne"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
+        tabBarInactiveBackgroundColor: '#B5EAD7',
+        tabBarActiveBackgroundColor: '#B5EAD7',
+        headerStyle: {
+          backgroundColor: '#B5EAD7',
+        },
+        headerTintColor: Colors[colorScheme].tint,
       }}
     >
       <BottomTab.Screen

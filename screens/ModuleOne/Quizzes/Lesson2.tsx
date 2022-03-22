@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Pressable, StatusBar, StyleSheet } from 'react-native';
+import { Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
 
-import { Text, View } from '../../../components/Themed';
 import { RootTabScreenProps } from '../../../types';
-import { Card } from 'react-native-paper';
+import { Card, Paragraph } from 'react-native-paper';
 import questions from '../../../assets/questions/module1/quiz2.json'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -14,7 +14,8 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
 
   const setLessonAsRead = async (value: string) => {
     try {
-      await AsyncStorage.setItem('@M1L2isRead', value)
+      await AsyncStorage.setItem('@M1L2isRead', value);
+      await AsyncStorage.setItem('@M1L2Passed', value);
     } catch (e) {
       console.log(e)
     }
@@ -45,15 +46,41 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
                   <Text style={styles.score_section}>
                     You scored {score} out of {questions.length}
                   </Text>
-                  <Pressable
-                  onPress={() => navigation.navigate('ModuleOne')}
-                    style={styles.button}>
-                    <Text>Return To Lessons</Text>
-              </Pressable></>
+                  {
+                    score <= 6 ? (
+                    <>
+                      <Paragraph style={{ color: 'red' }}>
+                        Oops! Looks like you had a bit of a confusion with the lesson, please try again.
+                      </Paragraph>
+                      <Pressable
+                      onPress={() => navigation.navigate('ModuleOneLessonTwo')}
+                      style={styles.button}>
+                        <Text>Return to Lesson 2</Text>
+                      </Pressable>
+                    </>
+                    ) : (
+                      <>
+                      <Paragraph style={{ color: 'green' }}>
+                        Marvelous! You have passed the lesson!
+                      </Paragraph>
+                      <Pressable
+                      onPress={() => navigation.navigate('ModuleOne')}
+                      style={styles.button}>
+                        <Text>Return To Lessons</Text>
+                      </Pressable>
+                    </>
+                    )
+                  }
+              </>
                 )
                 :
                 (
                     <>
+                      <LinearGradient
+                        // Background Linear Gradient
+                        colors={['#FF9AA2', '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA']}
+                        style={styles.background}
+                      />
                         <Card style={styles.question_section}>
                             <Card.Title title={'Question ' + (currentQuestion + 1) + '/' + questions.length} />
                             <Card.Content style={styles.question_text}>
@@ -124,6 +151,13 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'column',
     justifyContent: 'center',
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '120%',
   },
 });
 

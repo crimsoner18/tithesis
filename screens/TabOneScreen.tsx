@@ -15,7 +15,7 @@ import {
 import { Card, Paragraph } from "react-native-paper";
 import { View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
-
+import { LinearGradient } from "expo-linear-gradient";
 
 const windowHeight = Dimensions.get("window").height;
 export default function TabOneScreen({
@@ -23,12 +23,61 @@ export default function TabOneScreen({
 }: RootTabScreenProps<"TabOne">) {
   const [modalText, setModalText] = useState("");
   const [modalVisible, setModalVisible] = useState(true);
+  const [isM1Completed, setM1Status] = useState(false);
+  const [isM2Completed, setM2Status] = useState(false);
+  const [isM3Completed, setM3Status] = useState(false);
+  const [isM4Completed, setM4Status] = useState(false);
+  const [isM5Completed, setM5Status] = useState(false);
 
   const setUser = (user: string) => {
     AsyncStorage.setItem("user", user);
   };
+
+  const getData = async () => {
+    try {
+      const m1 = await AsyncStorage.getItem('@M1isCompleted');
+      const m2 = await AsyncStorage.getItem('@M2isCompleted');
+      const m3 = await AsyncStorage.getItem('@M3isCompleted');
+      const m4 = await AsyncStorage.getItem('@M4isCompleted');
+      const m5 = await AsyncStorage.getItem('@M5isCompleted');
+      
+
+      if(m1 == 'true') {
+        setM1Status(true);
+      }
+      if(m2 == 'true') {
+        setM2Status(true);
+      }
+      if(m3 == 'true') {
+        setM3Status(true);
+      }
+      if(m4 == 'true') {
+        setM4Status(true);
+      }
+      if(m5 == 'true') {
+        setM5Status(true);
+      }
+      
+    } catch(e) {
+      console.log(e)
+    }
+  }
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      getData();
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <View style={styles.container}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#FF9AA2', '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA']}
+        style={styles.background}
+      />
       <Modal
         animationType="slide"
         transparent={true}
@@ -74,66 +123,176 @@ export default function TabOneScreen({
           </ScrollView>
         </View>
       </Modal>
-
         <ScrollView contentContainerStyle={styles.scrollview}>
           <TouchableOpacity
           onPress={() => navigation.navigate('ModuleOne')}
           style={styles.card}>
                 <Card>
-                  <Card.Cover source={require('../assets/images/moduleIcons/module1.png')}/>
-                  <Card.Title title="Vibration and Waves" />
+                  <Card.Cover 
+                    source={require('../assets/images/moduleIcons/module1.png')}
+                    resizeMode={`contain`}
+                    style={{backgroundColor:'white'}}/>
+                  <Card.Title title="Vibration and Waves" subtitle="Module 1"/>
                 </Card>
             </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleTwo')}
-            style={styles.card}>
-            <Card>
-                  <Card.Cover source={require('../assets/images/moduleIcons/module2.png')}/>
-                  <Card.Title title="Light and Color" />
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleThree')}
-            style={styles.card}>
-            <Card>
-              <Card.Cover source={require('../assets/images/moduleIcons/module3.png')}/>
-                  <Card.Title title="Reflection and Mirror" />
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleFour')}
-            style={styles.card}>
-            <Card>
-            <Card.Cover source={require('../assets/images/moduleIcons/module4.png')}/>
-                  <Card.Title title="Refraction and Lenses" />
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleFive')}
-            style={styles.card}>
-            <Card>
-            <Card.Cover source={require('../assets/images/moduleIcons/module5.jpg')}/>
-                  <Card.Title title="Diffraction and interference" />
-                </Card>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={() => navigation.navigate('ModuleSix')}
-            style={styles.card}>
-            <Card>
-            <Card.Cover source={require('../assets/images/moduleIcons/module6.png')}/>
-                  <Card.Title title="Optical Instruments" />
-                </Card>
-            </TouchableOpacity>
+            {
+              isM1Completed ? (
+                <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleTwo')}
+                style={styles.card}>
+                <Card>
+                    <Card.Cover 
+                      source={require('../assets/images/moduleIcons/module2.png')}
+                      resizeMode={`contain`}
+                      style={{backgroundColor:'white'}}/>
+                    <Card.Title title="Light and Color" subtitle="Module 2"/>
+                  </Card>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                style={styles.card}>
+                <Card style={{backgroundColor:'grey'}}>
+                    <Card.Cover 
+                      source={require('../assets/images/moduleIcons/module2.png')}
+                      resizeMode={`contain`}
+                      style={{backgroundColor:'grey'}}/>
+                    <Card.Title title="Light and Color" subtitle="Module 2"/>
+                  </Card>
+                </TouchableOpacity>
+              )
+            }
+            {
+              isM2Completed ? (
+                <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleThree')}
+                style={styles.card}>
+                  <Card>
+                    <Card.Cover 
+                      source={require('../assets/images/moduleIcons/module3.png')}
+                      resizeMode={`contain`}
+                      style={{backgroundColor:'white'}}/>
+                    <Card.Title title="Reflection and Mirror" subtitle="Module 3"/>
+                  </Card>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                style={styles.card}>
+                  <Card style={{backgroundColor:'grey'}}>
+                    <Card.Cover 
+                      source={require('../assets/images/moduleIcons/module3.png')}
+                      resizeMode={`contain`}
+                      style={{backgroundColor:'grey'}}/>
+                    <Card.Title title="Reflection and Mirror" subtitle="Module 3"/>
+                  </Card>
+                </TouchableOpacity>
+              )
+            }
+            
+            {
+              isM3Completed ? (
+                <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleFour')}
+                style={styles.card}>
+                  <Card>
+                    <Card.Cover 
+                    source={require('../assets/images/moduleIcons/module4.png')}
+                    resizeMode={`contain`}
+                    style={{backgroundColor:'white'}}/>
+                    <Card.Title title="Refraction and Lenses" subtitle="Module 4"/>
+                  </Card>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                style={styles.card}>
+                  <Card style={{backgroundColor:'grey'}}>
+                    <Card.Cover 
+                    source={require('../assets/images/moduleIcons/module4.png')}
+                    resizeMode={`contain`}
+                    style={{backgroundColor:'grey'}}/>
+                    <Card.Title title="Refraction and Lenses" subtitle="Module 4"/>
+                  </Card>
+                </TouchableOpacity>
+              )
+            }
+            {
+              isM4Completed ? (
+                <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleFive')}
+                style={styles.card}>
+                  <Card>
+                    <Card.Cover 
+                    source={require('../assets/images/moduleIcons/module5.jpg')}
+                    resizeMode={`contain`}
+                    style={{backgroundColor:'white'}}/>
+                    <Card.Title title="Diffraction and interference" subtitle="Module 5"/>
+                  </Card>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                style={styles.card}>
+                  <Card style={{backgroundColor:'grey'}}>
+                    <Card.Cover 
+                    source={require('../assets/images/moduleIcons/module5.jpg')}
+                    resizeMode={`contain`}
+                    style={{backgroundColor:'grey'}}/>
+                    <Card.Title title="Diffraction and interference" subtitle="Module 5"/>
+                  </Card>
+                </TouchableOpacity>
+              )
+            }
+            {
+              isM5Completed ? (
+                <TouchableOpacity
+                onPress={() => navigation.navigate('ModuleSix')}
+                style={styles.card}>
+                  <Card>
+                    <Card.Cover 
+                      source={require('../assets/images/moduleIcons/module6.png')}
+                      resizeMode={`contain`}
+                      style={{backgroundColor:'white'}}/>
+                    <Card.Title title="Optical Instruments" subtitle="Module 6"/>
+                  </Card>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                style={styles.card}>
+                  <Card style={{backgroundColor:'grey'}}>
+                    <Card.Cover 
+                      source={require('../assets/images/moduleIcons/module6.png')}
+                      resizeMode={`contain`}
+                      style={{backgroundColor:'grey'}}/>
+                    <Card.Title title="Optical Instruments" subtitle="Module 6"/>
+                  </Card>
+                </TouchableOpacity>
+              )
+            }
+           
+            
+            
+            
             <TouchableOpacity
             onPress={() => navigation.navigate('ModuleOneSimulation')}
             style={styles.card}>
                 <Card>
-                  <Card.Cover source={{uri:'https://www.incimages.com/uploaded_files/image/1920x1080/getty_655998316_2000149920009280219_363765.jpg'}}/>
-                  <Card.Title title="VIEW SIMULATION" />
+                <Card.Cover 
+                source={require('../assets/images/moduleIcons/simulation.gif')}
+                resizeMode={`contain`}
+                style={{backgroundColor:'white'}}/>
+                  <Card.Title title="Ray Diagraming Simulation" />
                   <Card.Content>
                     <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ray Diagramming is a method of tracing the path that light takes relative to the person's viewpoint 
+                    on the image of an object. It helps us to see the location, size, orientation, and type of image formed. 
+                    Ray diagrams have three (3) rays drawn for the incident and reflected rays. In this simulation, you will be 
+                    able to trace and see the how the image is formed from the object in both converging and diverging mirrors 
+                    and lenses. This simulation is embedded from the PhET Simulation with small modifications to achieve the 
+                    goals of this application.
                     </Paragraph>
+                    <Paragraph>
+                    PhET Simulation possesses the MIT License, allowing the users the right to use, copy, obtain, modify, 
+                    distribute, and publish copies of the software.
+                    </Paragraph>
+
                   </Card.Content>
                 </Card>
             </TouchableOpacity>
@@ -205,5 +364,12 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center",
-  }
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '120%',
+  },
 });
