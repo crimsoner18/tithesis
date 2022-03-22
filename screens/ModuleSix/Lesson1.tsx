@@ -16,12 +16,12 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
   
   return (
     <SafeAreaView style={styles.container}>
-          <ScrollView contentContainerStyle={styles.scrollview}>
-          <LinearGradient
+      <LinearGradient
         // Background Linear Gradient
         colors={['#FF9AA2', '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA']}
         style={styles.background}
       />
+          <ScrollView contentContainerStyle={styles.scrollview}>
               <Card style={styles.card}>
                 <Paragraph style={{fontWeight: "bold", marginTop:20, marginLeft:20}}>
                 Optics of the Human Eye and the Image Formation
