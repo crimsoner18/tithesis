@@ -1,5 +1,5 @@
 import { TouchableOpacity, View, Text } from "react-native";
-import { Card, Paragraph, Title } from "react-native-paper";
+import { Button, Card, Paragraph, Title } from "react-native-paper";
 
 export default function CommentCard({
   comment,
@@ -13,14 +13,29 @@ export default function CommentCard({
   body: string;
 }) {
   return (
-    <TouchableOpacity>
-      <Card style={{ height: 200, width: 300 }}>
+    <>
+      <Card
+        style={{
+          height: 200,
+          width: 300,
+        }}
+      >
         <Card.Title title={title} subtitle={`Posted By: ${postedBy}`} />
         <Card.Content>
           <Paragraph>{body}</Paragraph>
         </Card.Content>
       </Card>
-    </TouchableOpacity>
+      <Card.Actions
+        style={{
+          justifyContent: "space-between",
+          backgroundColor: "white",
+        }}
+      >
+        <Button>Like</Button>
+        <Button>Comment</Button>
+        <Button>Share</Button>
+      </Card.Actions>
+    </>
   );
 }
 

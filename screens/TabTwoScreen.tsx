@@ -41,7 +41,25 @@ export default function TabTwoScreen() {
       console.log(e);
     }
   };
-  console.log(posts);
+
+  const addPost = async () => {
+    try {
+      const post = await fetch("https://physics-session.herokuapp.com/posts", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(postData),
+      });
+      const json = await post.json();
+      setPosts([...posts, json]);
+      setModalVisible(false);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   useEffect(() => {
     getUser().then((user) => {
       setCurrentUser(user);
@@ -86,15 +104,7 @@ export default function TabTwoScreen() {
         <Button
           style={styles.button}
           onPress={() => {
-            setPosts([
-              ...posts,
-              {
-                ...postData,
-                id: uuid.v4(),
-
-                postedBy: currentUser,
-              },
-            ]);
+            addPost();
             setModalVisible(!modalVisible);
           }}
         >
@@ -118,13 +128,8 @@ export default function TabTwoScreen() {
         <FlatList
           extraData={posts}
           data={posts}
-          ItemSeparatorComponent={() => (
-            <View
-              style={styles.separator}
-              // lightColor="#eee"
-              // darkColor="rgba(255,255,255,0.1)"
-            />
-          )}
+          ItemSeparatorComponent={() => <View style={{ height: 10 }}></View>}
+          keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
             <CommentCard
               title={item.title}
