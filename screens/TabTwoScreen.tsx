@@ -29,10 +29,33 @@ export default function TabTwoScreen() {
       console.log(e);
     }
   };
+  const getPosts = async () => {
+    try {
+      const posts = await fetch("https://physics-session.herokuapp.com/posts");
+
+      if (posts) {
+        return posts.json();
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    getUser().then((user) => {
+      setCurrentUser(user);
+    });
+  }, []);
+
   useEffect(() => {
     getUser().then((user) => setCurrentUser(user));
+    getPosts().then((posts) => {
+      setPosts(posts);
+    });
+    const dataInterval = setInterval(() => getPosts(), 1 * 1000);
+
+    return () => clearInterval(dataInterval);
   }, []);
-  console.log(currentUser);
   return (
     <>
       <Modal
