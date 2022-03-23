@@ -48,7 +48,6 @@ export default function TabTwoScreen() {
   }, []);
 
   useEffect(() => {
-    getUser().then((user) => setCurrentUser(user));
     getPosts().then((posts) => {
       setPosts(posts);
     });
