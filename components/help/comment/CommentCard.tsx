@@ -6,35 +6,40 @@ export default function CommentCard({
   title,
   postedBy,
   body,
+  comments,
+  openComments,
 }: {
   comment: string;
   title: string;
   postedBy: string;
   body: string;
+  comments: boolean;
+  openComments: any;
 }) {
   return (
     <>
       <Card
         style={{
-          height: 200,
+          maxHeight: 500,
           width: 300,
+          marginBottom: 5,
         }}
       >
         <Card.Title title={title} subtitle={`Posted By: ${postedBy}`} />
-        <Card.Content>
-          <Paragraph>{body}</Paragraph>
+        <Card.Content style={{ maxHeight: "70%" }}>
+          <Paragraph>{body} </Paragraph>
         </Card.Content>
+        <Card.Actions
+          style={{
+            justifyContent: "space-between",
+            backgroundColor: "white",
+          }}
+        >
+          <Button>Like</Button>
+          <Button onPress={() => openComments(true)}>Comment</Button>
+          <Button>Share</Button>
+        </Card.Actions>
       </Card>
-      <Card.Actions
-        style={{
-          justifyContent: "space-between",
-          backgroundColor: "white",
-        }}
-      >
-        <Button>Like</Button>
-        <Button>Comment</Button>
-        <Button>Share</Button>
-      </Card.Actions>
     </>
   );
 }

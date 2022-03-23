@@ -10,14 +10,22 @@ import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import CommentCard from "../components/help/comment/CommentCard";
 import React, { useEffect, useState } from "react";
-import { Button } from "react-native-paper";
+import { Button, FAB } from "react-native-paper";
 import uuid from "react-native-uuid";
 export default function TabTwoScreen() {
   const DATA: any = [];
   const [posts, setPosts] = useState(DATA);
   const [currentUser, setCurrentUser] = useState("");
   const [modalVisible, setModalVisible] = useState(false);
-  const [postData, setPostData] = useState({ title: "", body: "" });
+  const [commentModal, setCommentModal] = useState(false);
+  const [commentData, setCommentData] = useState({
+    comment: "",
+    commentedBy: "",
+  });
+  const [postData, setPostData] = useState({
+    title: "",
+    body: "",
+  });
   const getUser = async () => {
     try {
       const user = await AsyncStorage.getItem("user");
@@ -43,6 +51,7 @@ export default function TabTwoScreen() {
   };
 
   const addPost = async () => {
+    setPostData({ ...postData, postedBy: currentUser });
     try {
       const post = await fetch("https://physics-session.herokuapp.com/posts", {
         method: "POST",
@@ -75,6 +84,11 @@ export default function TabTwoScreen() {
   }, []);
   return (
     <>
+      <Modal visible={commentModal} animationType="slide">
+        <View>
+          <Button onPress={() => setCommentModal(false)}>Close</Button>
+        </View>
+      </Modal>
       <Modal
         visible={modalVisible}
         animationType="slide"
@@ -121,14 +135,11 @@ export default function TabTwoScreen() {
       </Modal>
       <View style={styles.container}>
         <Text style={styles.title}>Posts</Text>
-        <Button onPress={() => setModalVisible(true)}>
-          <Text>Add Post</Text>
-        </Button>
 
         <FlatList
           extraData={posts}
           data={posts}
-          ItemSeparatorComponent={() => <View style={{ height: 10 }}></View>}
+          ItemSeparatorComponent={() => <View style={{ margin: "2%" }}></View>}
           keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
             <CommentCard
@@ -136,10 +147,24 @@ export default function TabTwoScreen() {
               comment={item.body}
               postedBy={item.postedBy}
               body={item.body}
+              comments={commentModal}
+              openComments={setCommentModal}
             />
           )}
         />
       </View>
+      <FAB
+        icon={"plus"}
+        style={{
+          position: "absolute",
+          margin: 16,
+          right: 0,
+          bottom: 0,
+        }}
+        onPress={() => {
+          setModalVisible(true);
+        }}
+      />
     </>
   );
 }
