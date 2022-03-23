@@ -34,13 +34,14 @@ export default function TabTwoScreen() {
       const posts = await fetch("https://physics-session.herokuapp.com/posts");
 
       if (posts) {
-        return posts.json();
+        const json = await posts.json();
+        setPosts(json);
       }
     } catch (e) {
       console.log(e);
     }
   };
-
+  console.log(posts);
   useEffect(() => {
     getUser().then((user) => {
       setCurrentUser(user);
@@ -48,10 +49,9 @@ export default function TabTwoScreen() {
   }, []);
 
   useEffect(() => {
-    getPosts().then((posts) => {
-      setPosts(posts);
-    });
-    const dataInterval = setInterval(() => getPosts(), 1 * 1000);
+    const dataInterval = setInterval(() => {
+      getPosts();
+    }, 2000);
 
     return () => clearInterval(dataInterval);
   }, []);
@@ -116,6 +116,7 @@ export default function TabTwoScreen() {
         </Button>
 
         <FlatList
+          extraData={posts}
           data={posts}
           ItemSeparatorComponent={() => (
             <View
