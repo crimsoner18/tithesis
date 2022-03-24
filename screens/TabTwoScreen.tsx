@@ -115,10 +115,13 @@ export default function TabTwoScreen() {
 
   useEffect(() => {
     const dataInterval = setInterval(() => {
-      getPosts();
+      selectedPost && getComments(selectedPost);
     }, 2000);
 
     return () => clearInterval(dataInterval);
+  }, [selectedPost]);
+  useEffect(() => {
+    getPosts();
   }, []);
   return (
     <>
