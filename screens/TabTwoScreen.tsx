@@ -1,17 +1,10 @@
-import {
-  StyleSheet,
-  ScrollView,
-  FlatList,
-  Modal,
-  TextInput,
-} from "react-native";
+import { StyleSheet, ScrollView, FlatList, Modal } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import CommentCard from "../components/help/comment/CommentCard";
 import React, { useEffect, useState } from "react";
-import { Button, FAB } from "react-native-paper";
-import uuid from "react-native-uuid";
+import { Button, Card, FAB, TextInput } from "react-native-paper";
 export default function TabTwoScreen() {
   const DATA: any = [];
   const [posts, setPosts] = useState(DATA);
@@ -19,13 +12,18 @@ export default function TabTwoScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [commentModal, setCommentModal] = useState(false);
   const [commentData, setCommentData] = useState({
-    comment: "",
     commentedBy: "",
+    content: "",
+    post: "",
   });
   const [postData, setPostData] = useState({
     title: "",
     body: "",
+    postedBy: "",
   });
+  const [selectedPost, setSelectedPost] = useState();
+  const [comments, setComments] = useState([]);
+
   const getUser = async () => {
     try {
       const user = await AsyncStorage.getItem("user");
@@ -68,7 +66,47 @@ export default function TabTwoScreen() {
       console.log(e);
     }
   };
+  const addComment = async () => {
+    setCommentData({
+      ...commentData,
+      commentedBy: currentUser,
+    });
+    try {
+      const response = await fetch(
+        "https://physics-session.herokuapp.com/comments",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(commentData),
+        }
+      );
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
+  const getComments = async (postId) => {
+    try {
+      const response = await fetch(
+        `https://physics-session.herokuapp.com/comments/${postId}`,
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const json = await response.json();
+      setComments(json);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+  console.log(comments);
   useEffect(() => {
     getUser().then((user) => {
       setCurrentUser(user);
@@ -84,9 +122,45 @@ export default function TabTwoScreen() {
   }, []);
   return (
     <>
-      <Modal visible={commentModal} animationType="slide">
-        <View>
+      <Modal
+        visible={commentModal}
+        animationType="slide"
+        onRequestClose={() => setCommentModal(false)}
+      >
+        <View style={{ justifyContent: "flex-end", height: "100%" }}>
+          <FlatList
+            data={comments}
+            renderItem={({ item }) => {
+              return (
+                <View style={{ margin: 10 }}>
+                  <Card>
+                    <Card.Title
+                      title={item.commentedBy}
+                      subtitle={item.datePosted}
+                    />
+                    <Card.Content>
+                      <Text>{item.content}</Text>
+                    </Card.Content>
+                  </Card>
+                </View>
+              );
+            }}
+          />
           <Button onPress={() => setCommentModal(false)}>Close</Button>
+          <View style={{ flexDirection: "row", width: "100%" }}>
+            <TextInput
+              onChangeText={(value) => {
+                setCommentData({ ...commentData, content: value });
+              }}
+              label="Comment"
+              style={{ width: "80%" }}
+            />
+            <Button
+              style={{ width: "10%" }}
+              icon="send"
+              onPress={() => addComment()}
+            ></Button>
+          </View>
         </View>
       </Modal>
       <Modal
@@ -143,12 +217,18 @@ export default function TabTwoScreen() {
           keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
             <CommentCard
+              id={item._id}
               title={item.title}
               comment={item.body}
               postedBy={item.postedBy}
               body={item.body}
               comments={commentModal}
               openComments={setCommentModal}
+              selectedPost={selectedPost}
+              setSelectedPost={setSelectedPost}
+              commentData={commentData}
+              setCommentData={setCommentData}
+              getComments={getComments}
             />
           )}
         />

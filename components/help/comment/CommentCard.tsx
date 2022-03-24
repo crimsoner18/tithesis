@@ -1,6 +1,6 @@
 import { TouchableOpacity, View, Text } from "react-native";
 import { Button, Card, Paragraph, Title } from "react-native-paper";
-
+import React, { useState } from "react";
 export default function CommentCard({
   comment,
   title,
@@ -8,6 +8,12 @@ export default function CommentCard({
   body,
   comments,
   openComments,
+  selectedPost,
+  setSelectedPost,
+  id,
+  commentData,
+  setCommentData,
+  getComments,
 }: {
   comment: string;
   title: string;
@@ -15,6 +21,12 @@ export default function CommentCard({
   body: string;
   comments: boolean;
   openComments: any;
+  selectedPost: String;
+  setSelectedPost: any;
+  id: string;
+  commentData: Object;
+  setCommentData: any;
+  getComments: any;
 }) {
   return (
     <>
@@ -36,7 +48,16 @@ export default function CommentCard({
           }}
         >
           <Button>Like</Button>
-          <Button onPress={() => openComments(true)}>Comment</Button>
+          <Button
+            onPress={() => {
+              openComments(true),
+                setSelectedPost(id),
+                setCommentData({ ...commentData, post: id });
+              getComments(id);
+            }}
+          >
+            Comment
+          </Button>
           <Button>Share</Button>
         </Card.Actions>
       </Card>
