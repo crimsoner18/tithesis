@@ -10,13 +10,18 @@ import {
   Dimensions,
 } from "react-native";
 import { Card } from "react-native-paper";
-import { Text, View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
 import { LinearGradient } from "expo-linear-gradient";
+import Toast from "react-native-root-toast";
 
 const { width, height } = Dimensions.get("window");
 const vw = width - 10;
 const vh = height;
+
+const lessonIsClosed = () => {
+  Toast.show('This lesson is closed until you finish the previous ones.', { duration: Toast.durations.LONG, });
+}
+
 export default function ModuleFourScreen({ navigation,}: RootTabScreenProps<"ModuleFour">) {
   const [isLesson1Read, setLesson1Read] = useState(false);
   const [isLesson1Passed, setLesson1Passed] = useState(false);
@@ -96,7 +101,7 @@ export default function ModuleFourScreen({ navigation,}: RootTabScreenProps<"Mod
               </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
               <Card style={styles.card}>
                 <Card.Title title="Lenses and Refraction of Light" subtitle="Lesson 2" style={{ backgroundColor: 'grey' }}/>
               </Card>
@@ -114,7 +119,7 @@ export default function ModuleFourScreen({ navigation,}: RootTabScreenProps<"Mod
               </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
               <Card style={styles.card}>
                 <Card.Title title="Drawing Ray Diagrams for Convex Lenses" subtitle="Lesson 3" style={{ backgroundColor: 'grey' }}/>
               </Card>

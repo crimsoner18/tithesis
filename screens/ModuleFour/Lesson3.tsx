@@ -33,6 +33,10 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
   }
 
   setLessonAsRead('true');
+
+  const video = React.useRef(null);
+
+  const [status, setStatus] = React.useState({});
   
   return (
     <View style={styles.container}>
@@ -161,6 +165,27 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
               style={{'backgroundColor': '#FFFFFF'}}/>
             </Card>
           </Content>
+        </Card>
+        <Card style={styles.card}>
+          <Card.Title title="Watch Video Lesson Here" />
+          <Video
+            ref={video}
+            useNativeControls
+            style={{ height: 300 }}
+            resizeMode="contain"
+            onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+            source={require("../../assets/videos/module4/lesson3.mp4")}
+          />
+          <View>
+            <Button
+              title={status.isPlaying ? "Pause" : "Play"}
+              onPress={() =>
+                status.isPlaying
+                  ? video.current.pauseAsync()
+                  : video.current.playAsync()
+              }
+            />
+          </View>
         </Card>
       </ScrollView>
     </View>

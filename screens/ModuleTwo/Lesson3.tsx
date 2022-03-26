@@ -83,9 +83,65 @@ export default function LessonThreeScreen({ navigation }: RootTabScreenProps<'Mo
                     approximately 300 m/s. This is why during a storm you always see lightning before
                     hearing thunder.
                   </Paragraph>
+
                 </Card.Content>
                 <Card.Title title="" subtitle="Speed of Light" />
               </Card>
+
+              <Card style={styles.card}>
+                <Card.Title title="Sample Problems" />
+                <Card.Content>
+                  <Text style={{marginBottom: 10}}>
+                    1. Calculate the wavelength of a photon that has a frequency of 2.5x10^12 Hz.
+                  </Text>
+                  <Card style={styles.imageHolder}>
+                    <Card.Cover 
+                    source={require('../../assets/images/module2/lesson3/image2.png')}
+                    resizeMode={`contain`}
+                    style={{'backgroundColor': '#FFFFFF', 'marginBottom': 10}}/>
+                  </Card>
+
+                  <Text style={{marginBottom: 10}}>
+                    2.What is the frequency of a photon that has a wavelength of 1.5x10^-8 m?
+                  </Text>
+                  <Card style={styles.imageHolder}>
+                    <Card.Cover 
+                    source={require('../../assets/images/module2/lesson3/image2.png')}
+                    resizeMode={`contain`}
+                    style={{'backgroundColor': '#FFFFFF', 'marginBottom': 10}}/>
+                  </Card>
+
+                  <Text style={{marginBottom: 10}}>
+                  3. What is the frequency of a photon that has a wavelength of 350nm?
+                  </Text>
+                  <Card style={styles.imageHolder}>
+                    <Card.Cover 
+                    source={require('../../assets/images/module2/lesson3/image3.png')}
+                    resizeMode={`contain`}
+                    style={{'backgroundColor': '#FFFFFF', 'marginBottom': 10}}/>
+                  </Card>
+
+                </Card.Content>
+                <Card.Title title="" subtitle="Sample Problems" />
+              </Card>
+
+              <Card style={styles.card}>
+                <Card.Title title="Self Test 1" />
+                <Card.Content>
+                  <Text style={{marginBottom: 10}}>
+                    1. Determine the wavelength of a photon that has a frequency of 95.0 MHz
+                  </Text>
+                  <Text style={{marginBottom: 10}}>
+                    2. What is the frequency of electromagnetic radiation having a wavelength of 210 nm?
+                  </Text>
+                  
+                  <Text style={{marginBottom: 10}}>
+                    3. What is the wavelength (in m and nm) of light with a frequency of 6.75x10^14 Hz?
+                  </Text>
+                </Card.Content>
+                <Card.Title title="" subtitle="Self Test 1" />
+              </Card>
+
               <Card style={styles.card}>
                 <Card.Title title="Watch Video Lesson Here" />
                 <Video

@@ -13,10 +13,16 @@ import { Card } from "react-native-paper";
 import { Text, View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
 import { LinearGradient } from "expo-linear-gradient";
+import Toast from "react-native-root-toast";
 
 const { width, height } = Dimensions.get("window");
 const vw = width - 10;
 const vh = height;
+
+const lessonIsClosed = () => {
+  Toast.show('This lesson is closed until you finish the previous ones.', { duration: Toast.durations.LONG, });
+}
+
 export default function ModuleFourScreen({navigation}: RootTabScreenProps<"ModuleFive">) {
   const [isLesson1Read, setLesson1Read] = useState(false);
   const [isLesson1Passed, setLesson1Passed] = useState(false);
@@ -76,7 +82,7 @@ export default function ModuleFourScreen({navigation}: RootTabScreenProps<"Modul
           onPress={() => navigation.navigate("ModuleFiveLessonOne")}
         >
           <Card style={styles.card}>
-            <Card.Title title="Diffraction and Interference" subtitle="Lesson 1" style={{ backgroundColor: isLesson1Read ? '#90EE90' : 'none' }}/>
+            <Card.Title title="Diffraction" subtitle="Lesson 1" style={{ backgroundColor: isLesson1Read ? '#90EE90' : 'none' }}/>
           </Card>
         </TouchableOpacity>
         
@@ -86,13 +92,13 @@ export default function ModuleFourScreen({navigation}: RootTabScreenProps<"Modul
               onPress={() => navigation.navigate("ModuleFiveLessonTwo")}
             >
               <Card style={styles.card}>
-                <Card.Title title="Wave Interference at the Particle Level" subtitle="Lesson 2" style={{ backgroundColor: isLesson2Read ? '#90EE90' : 'white' }}/>
+                <Card.Title title="Interference" subtitle="Lesson 2" style={{ backgroundColor: isLesson2Read ? '#90EE90' : 'white' }}/>
               </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
               <Card style={styles.card}>
-                <Card.Title title="Wave Interference at the Particle Level" subtitle="Lesson 2" style={{ backgroundColor: 'grey' }}/>
+                <Card.Title title="Interference" subtitle="Lesson 2" style={{ backgroundColor: 'grey' }}/>
               </Card>
             </TouchableOpacity>
           )

@@ -160,6 +160,56 @@ export default function LessonFourScreen({ navigation }: RootTabScreenProps<'Mod
                 </Card.Content>
                 <Card.Title title="" subtitle="Malus Law" />
               </Card>
+
+              <Card style={styles.card}>
+                <Card.Title title="Sample Problems" />
+                <Card.Content>
+                  <Text style={{marginBottom: 10}}>
+                    1. Unpolarized light with an intensity of 100 W/m^2 passes through two polarizing filters
+                    that are oriented at an angle of 40 degrees to each other. What is the intensity of the light
+                    that emerges from each filter?
+                  </Text>
+                  <Card style={styles.imageHolder}>
+                    <Card.Cover 
+                    source={require('../../assets/images/module2/lesson4/image8.png')}
+                    resizeMode={`contain`}
+                    style={{'backgroundColor': '#FFFFFF', 'marginBottom': 10}}/>
+                  </Card>
+
+                  <Text style={{marginBottom: 10}}>
+                    2. Un polarized light with intensity I0 passes through two polarizing filters that are 90
+                    degrees with respect to each other. What is the intensity of light that emerges through
+                    each filter in terms of I0
+                  </Text>
+                  <Card style={styles.imageHolder}>
+                    <Card.Cover 
+                    source={require('../../assets/images/module2/lesson4/image9.png')}
+                    resizeMode={`contain`}
+                    style={{'backgroundColor': '#FFFFFF', 'marginBottom': 10}}/>
+                  </Card>
+
+                </Card.Content>
+                <Card.Title title="" subtitle="Sample Problems" />
+              </Card>
+
+              <Card style={styles.card}>
+                <Card.Title title="Self Test 2" />
+                <Card.Content>
+                  <Text style={{marginBottom: 10}}>
+                    1. We have a polarizer that has an axis of polarization which is vertical having an incident
+                    beam of polarized light for which the plane of polarization is making an angle of 60° with
+                    a vertical, the incident of intensity is 100 watts per meter square. What is the intensity of
+                    the light that comes out of the polarizer?
+                  </Text>
+                  <Text>           
+                    2. Unpolarized light with intensity I0 passes through a polarizer and then a second
+                    polarizing filter (analyzer) with an angle of 30 degrees relative to the first one. What is the
+                    intensity of light as it passes through each filter in terms of I0?
+                  </Text>
+                </Card.Content>
+                <Card.Title title="" subtitle="Self Test 2" />
+              </Card>
+
               <Card style={styles.card}>
                 <Card.Title title="Watch Video Lesson Here" />
                 <Video

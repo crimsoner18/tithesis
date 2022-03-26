@@ -47,7 +47,6 @@ export default function CommentCard({
             backgroundColor: "white",
           }}
         >
-          <Button>Like</Button>
           <Button
             onPress={() => {
               openComments(true),
@@ -58,7 +57,6 @@ export default function CommentCard({
           >
             Comment
           </Button>
-          <Button>Share</Button>
         </Card.Actions>
       </Card>
     </>

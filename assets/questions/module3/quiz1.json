@@ -3,8 +3,8 @@
       "questionText": "Question 1: It refers to the objects that produce lights on their own.",
       "answerOptions": [
         { "answerText": "Illuminated Objects", "isCorrect": false },
-        { "answerText": "Luminous Objects", "isCorrect": false },
-        { "answerText": "Torch", "isCorrect": true },
+        { "answerText": "Luminous Objects", "isCorrect": true },
+        { "answerText": "Torch", "isCorrect": false },
         { "answerText": "None of the Above", "isCorrect": false }
       ]
     },
@@ -12,9 +12,9 @@
     {
       "questionText": "Question 2: These are objects that reflect light back at our sight.",
       "answerOptions": [
-        { "answerText": "Illuminated Objects", "isCorrect": false },
+        { "answerText": "Illuminated Objects", "isCorrect": true },
         { "answerText": "Luminous Objects", "isCorrect": false },
-        { "answerText": "Torch", "isCorrect": true },
+        { "answerText": "Torch", "isCorrect": false },
         { "answerText": "None of the Above", "isCorrect": false }
       ]
     },
@@ -23,8 +23,8 @@
       "questionText": "Question 3: Illuminated objects emits light in a variety of directions.",
       "answerOptions": [
         { "answerText": "True", "isCorrect": false },
-        { "answerText": "False", "isCorrect": false },
-        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "False", "isCorrect": true },
+        { "answerText": "Not sure", "isCorrect": false },
         { "answerText": "Maybe", "isCorrect": false }
       ]
     },
@@ -32,9 +32,9 @@
     {
       "questionText": "Question 4: What are the two types of rays seen when viewing an image?",
       "answerOptions": [
-        { "answerText": "Incident and Reflected", "isCorrect": false },
+        { "answerText": "Incident and Reflected", "isCorrect": true },
         { "answerText": "Reflected and Refracted", "isCorrect": false },
-        { "answerText": "Illuminated and Illuminous", "isCorrect": true },
+        { "answerText": "Illuminated and Illuminous", "isCorrect": false },
         { "answerText": "None of the above", "isCorrect": false }
       ]
     },
@@ -43,8 +43,8 @@
       "questionText": "Question 5: It refers to the ray originated at the object location and first travels along a line towards the mirror.",
       "answerOptions": [
         { "answerText": "Light ray", "isCorrect": false },
-        { "answerText": "Incident ray", "isCorrect": false },
-        { "answerText": "Reflected Ray", "isCorrect": true },
+        { "answerText": "Incident ray", "isCorrect": true },
+        { "answerText": "Reflected Ray", "isCorrect": false },
         { "answerText": "None of the above", "isCorrect": false }
       ]
     },
@@ -54,17 +54,17 @@
       "answerOptions": [
         { "answerText": "Law of Jungle", "isCorrect": false },
         { "answerText": "Law of Refraction", "isCorrect": false },
-        { "answerText": "Law of Physics", "isCorrect": true },
-        { "answerText": "Law of Reflection", "isCorrect": false }
+        { "answerText": "Law of Physics", "isCorrect": false },
+        { "answerText": "Law of Reflection", "isCorrect": true }
       ]
     },
   
     {
       "questionText": "Question 7: If a ray of light were to approach and reflect off of a flat mirror, the light's behavior as it reflected would follow a predictable law known as the law of reflection.",
       "answerOptions": [
-        { "answerText": "True", "isCorrect": false },
+        { "answerText": "True", "isCorrect": true },
         { "answerText": "False", "isCorrect": false },
-        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Not sure", "isCorrect": false },
         { "answerText": "Maybe", "isCorrect": false }
       ]
     },
@@ -73,8 +73,8 @@
       "questionText": "Question 8: When the individual rays reflect off the rough surface, they will proceed on one point only.",
       "answerOptions": [
         { "answerText": "True", "isCorrect": false },
-        { "answerText": "False", "isCorrect": false },
-        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "False", "isCorrect": true },
+        { "answerText": "Not sure", "isCorrect": false },
         { "answerText": "Maybe", "isCorrect": false }
       ]
     },
@@ -83,8 +83,8 @@
       "questionText": "Question 9: The second application of the distinction between diffuse and specular reflection is applied to the field of ___",
       "answerOptions": [
         { "answerText": "Videography", "isCorrect": false },
-        { "answerText": "Photography", "isCorrect": false },
-        { "answerText": "Physics", "isCorrect": true },
+        { "answerText": "Photography", "isCorrect": true },
+        { "answerText": "Physics", "isCorrect": false },
         { "answerText": "Biology", "isCorrect": false }
       ]
     },

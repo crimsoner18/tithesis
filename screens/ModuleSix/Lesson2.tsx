@@ -337,6 +337,26 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card.Content>
               </Card>
               <Card style={styles.card}>
+                <Card.Title title="Self Test 1" />
+                <Card.Content>
+                  <Paragraph>Answer the following word problems given below.</Paragraph>
+                  <Text style={{marginBottom: 10}}>
+                    1. A 40 mm eyepiece is used on a 1,500 mm focal length telescope. Determine the
+                    magnification power of the telescope.
+                  </Text>
+                  <Text style={{marginBottom: 10}}>
+                    2. A compound microscope has a focal length of objective lens of 10 m and eyepiece
+                    focal length of 6 cm. What is the angular magnification of the microscope?
+                  </Text>
+                  <Text style={{marginBottom: 10}}>
+                    3. What is the angular magnification of Astro Master 130 with a mirror of focal length fo
+                    = 650 and an eyepiece of focal length fe = 25?
+                  </Text>
+                </Card.Content>
+                <Card.Title title="" subtitle="Self Test 1" />
+            </Card>
+
+              <Card style={styles.card}>
                 <Card.Title title="Watch Video Lesson Here" />
                 <Video
                   ref={video}

@@ -2,9 +2,9 @@
     {
       "questionText": "Question 1: What is refraction?",
       "answerOptions": [
-        { "answerText": "Change in direction of light as it passes from on medium to another.", "isCorrect": false },
+        { "answerText": "Change in direction of light as it passes from on medium to another.", "isCorrect": true },
         { "answerText": "Does not Change direction of light as it passes from on medium to another.", "isCorrect": false },
-        { "answerText": "Change direction of light as it passes from on air to light and dust.", "isCorrect": true },
+        { "answerText": "Change direction of light as it passes from on air to light and dust.", "isCorrect": false },
         { "answerText": "When the light passes straight from the wood to light.", "isCorrect": false }
       ]
     },
@@ -12,9 +12,9 @@
     {
       "questionText": "Question 2: What is a lens?",
       "answerOptions": [
-        { "answerText": "Transparent block that causes liquid to refract to form an image.", "isCorrect": false },
+        { "answerText": "Transparent block that causes liquid to refract to form an image.", "isCorrect": true },
         { "answerText": "It is the transparent that causes dust and light to refract from image.", "isCorrect": false },
-        { "answerText": "It is the reflection from glass to light", "isCorrect": true },
+        { "answerText": "It is the reflection from glass to light", "isCorrect": false },
         { "answerText": "It is the mirror that can form image", "isCorrect": false }
       ]
     },
@@ -22,9 +22,9 @@
     {
       "questionText": "Question 3: What is refractive index?",
       "answerOptions": [
-        { "answerText": "Feature of specific materials related to how the light rays refract when they go into that particular medium.", "isCorrect": false },
+        { "answerText": "Feature of specific materials related to how the light rays refract when they go into that particular medium.", "isCorrect": true },
         { "answerText": "It is the change in direction of a wave front at an interface between two media", "isCorrect": false },
-        { "answerText": "It is the multiple light waves", "isCorrect": true },
+        { "answerText": "It is the multiple light waves", "isCorrect": false },
         { "answerText": "When light bounces in smooth and shiny", "isCorrect": false }
       ]
     },
@@ -44,17 +44,17 @@
       "answerOptions": [
         { "answerText": "n=c/v where the v is the speed of reflection in vacuum", "isCorrect": false },
         { "answerText": "n=v/c where the n is the less dense", "isCorrect": false },
-        { "answerText": "v=n/c where c is the light that refract to dust", "isCorrect": true },
-        { "answerText": "n=c/v where c is speed of light in a vacuum", "isCorrect": false }
+        { "answerText": "v=n/c where c is the light that refract to dust", "isCorrect": false },
+        { "answerText": "n=c/v where c is speed of light in a vacuum", "isCorrect": true }
       ]
     },
   
     {
       "questionText": "Question 6: What does having a higher refractive index mean?",
       "answerOptions": [
-        { "answerText": "The greater the refractive index, the more the light entering material from air is refracted towards the normal", "isCorrect": false },
+        { "answerText": "The greater the refractive index, the more the light entering material from air is refracted towards the normal", "isCorrect": true },
         { "answerText": "The lesser the refractive index, the more light bent on the material from air toward to incidence i", "isCorrect": false },
-        { "answerText": "The greater the light entering the normal, the lesser the refractive index", "isCorrect": true },
+        { "answerText": "The greater the light entering the normal, the lesser the refractive index", "isCorrect": false },
         { "answerText": "All of the above", "isCorrect": false }
       ]
     },
@@ -72,9 +72,9 @@
     {
       "questionText": "Question 8: What is the absolute refractive index of diamond?",
       "answerOptions": [
-        { "answerText": "2.41", "isCorrect": false },
+        { "answerText": "2.41", "isCorrect": true },
         { "answerText": "2.55", "isCorrect": false },
-        { "answerText": "1.68", "isCorrect": true },
+        { "answerText": "1.68", "isCorrect": false },
         { "answerText": "2.06", "isCorrect": false }
       ]
     },
@@ -94,8 +94,8 @@
       "answerOptions": [
         { "answerText": "Middle", "isCorrect": false },
         { "answerText": "Ray", "isCorrect": false },
-        { "answerText": "Angle of refraction i", "isCorrect": true },
-        { "answerText": "Normal", "isCorrect": false }
+        { "answerText": "Angle of refraction i", "isCorrect": false },
+        { "answerText": "Normal", "isCorrect": true }
       ]
     }
   ]

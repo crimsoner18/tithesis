@@ -2,9 +2,9 @@
     {
       "questionText": "Question 1: Force that propels the normally stationary bobble head into motion could be described as forced vibration",
       "answerOptions": [
-        { "answerText": "Pendulum", "isCorrect": false },
+        { "answerText": "Pendulum", "isCorrect": true },
         { "answerText": "Motion", "isCorrect": false },
-        { "answerText": "Forced Vibration", "isCorrect": true },
+        { "answerText": "Forced Vibration", "isCorrect": false },
         { "answerText": "Kinetic", "isCorrect": false }
       ]
     },

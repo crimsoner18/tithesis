@@ -61,6 +61,9 @@ import M3LessonTwoScreen from '../screens/ModuleThree/Lesson2';
 import M3LessonThreeScreen from '../screens/ModuleThree/Lesson3';
 import M3ConclusionScreen from "../screens/ModuleThree/Conclusion";
 import M3ReferenceScreen from "../screens/ModuleThree/Reference";
+import M3QuizOneScreen from "../screens/ModuleThree/Quizzes/Lesson1";
+import M3QuizTwoScreen from "../screens/ModuleThree/Quizzes/Lesson2";
+import M3QuizThreeScreen from "../screens/ModuleThree/Quizzes/Lesson3";
 
 // Module 4 imports
 import M4IntroductionScreen from "../screens/ModuleFour/Introduction";
@@ -352,17 +355,17 @@ function RootNavigator() {
       />
       <Stack.Screen
         name="ModuleThreeQuizOne"
-        component={M4QuizOneScreen}
+        component={M3QuizOneScreen}
         options={{ headerShown: true, title: "Lesson 1 Quiz" }}
       />
       <Stack.Screen
         name="ModuleThreeQuizTwo"
-        component={M4QuizTwoScreen}
+        component={M3QuizTwoScreen}
         options={{ headerShown: true, title: "Lesson 2 Quiz" }}
       />
       <Stack.Screen
         name="ModuleThreeQuizThree"
-        component={M4QuizThreeScreen}
+        component={M3QuizThreeScreen}
         options={{ headerShown: true, title: "Lesson 3 Quiz" }}
       />
 
@@ -430,7 +433,7 @@ function RootNavigator() {
         component={M5LessonOneScreen}
         options={{
           headerShown: true,
-          title: "Diffraction and Interference",
+          title: "Diffraction",
         }}
       />
        <Stack.Screen
@@ -438,7 +441,7 @@ function RootNavigator() {
         component={M5LessonTwoScreen}
         options={{
           headerShown: true,
-          title: "Wave Interference at the Particle Level",
+          title: "Interference",
         }}
       />
       <Stack.Screen
@@ -507,7 +510,7 @@ function RootNavigator() {
       />
 
       <Stack.Group screenOptions={{ presentation: "modal" }}>
-        <Stack.Screen name="Modal" component={ModalScreen} />
+        <Stack.Screen name="Modal" component={ModalScreen} options={{ headerShown: true, title: "About Us" }}/>
       </Stack.Group>
     </Stack.Navigator>
   );

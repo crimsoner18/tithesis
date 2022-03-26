@@ -4,8 +4,8 @@
       "answerOptions": [
         { "answerText": "Diffraction", "isCorrect": false },
         { "answerText": "Frequency", "isCorrect": false },
-        { "answerText": "Unpolarized", "isCorrect": true },
-        { "answerText": "Polarized", "isCorrect": false }
+        { "answerText": "Unpolarized", "isCorrect": false },
+        { "answerText": "Polarized", "isCorrect": true }
       ]
     },
   
@@ -24,8 +24,8 @@
       "answerOptions": [
         { "answerText": "Elliptical polarization", "isCorrect": false },
         { "answerText": "Circular polarization", "isCorrect": false },
-        { "answerText": "Perpendicular polarization", "isCorrect": true },
-        { "answerText": "Linear polarization", "isCorrect": false }
+        { "answerText": "Perpendicular polarization", "isCorrect": false },
+        { "answerText": "Linear polarization", "isCorrect": true }
       ]
     },
   
@@ -33,8 +33,8 @@
       "questionText": "Question 4: Key optical elements for controlling the polarization, transmitting the desired polarization state while reflecting, absorbing, or deviating the rest.",
       "answerOptions": [
         { "answerText": "Polymerization", "isCorrect": false },
-        { "answerText": "Polarizers", "isCorrect": false },
-        { "answerText": "Prism", "isCorrect": true },
+        { "answerText": "Polarizers", "isCorrect": true },
+        { "answerText": "Prism", "isCorrect": false },
         { "answerText": "Lens", "isCorrect": false }
       ]
     },
@@ -43,8 +43,8 @@
       "questionText": "Question 5: The electric field of the light consists of two linear components that are perpendicular to each other, equal in amplitude, but have a phase difference of π/2.",
       "answerOptions": [
         { "answerText": "Elliptical polarization", "isCorrect": false },
-        { "answerText": "Circular polarization", "isCorrect": false },
-        { "answerText": "Perpendicular polarization", "isCorrect": true },
+        { "answerText": "Circular polarization", "isCorrect": true },
+        { "answerText": "Perpendicular polarization", "isCorrect": false },
         { "answerText": "Linear polarization", "isCorrect": false }
       ]
     },
@@ -53,8 +53,8 @@
       "questionText": "Question 6: The electric field of light describes an ellipse.",
       "answerOptions": [
         { "answerText": "Circular polarization", "isCorrect": false },
-        { "answerText": "Elliptical polarization", "isCorrect": false },
-        { "answerText": "Linear polarization", "isCorrect": true },
+        { "answerText": "Elliptical polarization", "isCorrect": true },
+        { "answerText": "Linear polarization", "isCorrect": false },
         { "answerText": "Perpendicular polarizationn", "isCorrect": false }
       ]
     },
@@ -72,9 +72,9 @@
     {
       "questionText": "Question 8: When an LCD is switched on, the liquid crystal rotates the angle by how many degrees?",
       "answerOptions": [
-        { "answerText": "90", "isCorrect": false },
+        { "answerText": "90", "isCorrect": true },
         { "answerText": "45", "isCorrect": false },
-        { "answerText": "180", "isCorrect": true },
+        { "answerText": "180", "isCorrect": false },
         { "answerText": "0", "isCorrect": false }
       ]
     },
@@ -83,8 +83,8 @@
       "questionText": "Question 9: The most common source of polarized light",
       "answerOptions": [
         { "answerText": "flashlight", "isCorrect": false },
-        { "answerText": "laser", "isCorrect": false },
-        { "answerText": "lamp", "isCorrect": true },
+        { "answerText": "laser", "isCorrect": true },
+        { "answerText": "lamp", "isCorrect": false },
         { "answerText": "light bulb", "isCorrect": false }
       ]
     },

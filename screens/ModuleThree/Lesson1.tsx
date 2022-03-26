@@ -1,9 +1,10 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { LinearGradient } from "expo-linear-gradient";
-import { Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Button, Dimensions, Linking, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card, List, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../../types';
+import { Video } from 'expo-av';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
@@ -281,17 +282,17 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
                         an annoying glare caused by this concentrated beam of reflected light.
                     </Paragraph>
                     <Paragraph style={styles.paragraph}> 
-                    A second application of the distinction between diffuse and specular reflection
-                    pertains to the field of photography. Many people have witnessed in person or have
-                    seen a photograph of a beautiful nature scene captured by a photographer who set up
-                    the shot with a calm body of water in the foreground. The water (if calm) provides for the
-                    specular reflection of light from the subject of the photograph. Light from the subject can
-                    reach the camera lens directly or it can take a longer path in which it reflects off the
-                    water before traveling to the lens. Since the light reflecting off the water undergoes
-                    specular reflection, the incident rays remain concentrated (instead of diffusing). The
-                    light is thus able to travel together to the lens of the camera and produce an image (an
-                    exact replica) of the subject which is strong enough to perceive in the photograph. An
-                    example of such a photograph is shown below.
+                        A second application of the distinction between diffuse and specular reflection
+                        pertains to the field of photography. Many people have witnessed in person or have
+                        seen a photograph of a beautiful nature scene captured by a photographer who set up
+                        the shot with a calm body of water in the foreground. The water (if calm) provides for the
+                        specular reflection of light from the subject of the photograph. Light from the subject can
+                        reach the camera lens directly or it can take a longer path in which it reflects off the
+                        water before traveling to the lens. Since the light reflecting off the water undergoes
+                        specular reflection, the incident rays remain concentrated (instead of diffusing). The
+                        light is thus able to travel together to the lens of the camera and produce an image (an
+                        exact replica) of the subject which is strong enough to perceive in the photograph. An
+                        example of such a photograph is shown below.
                     </Paragraph>
                     <Card style={styles.imageHolder}>
                         <Card.Cover 
@@ -305,6 +306,27 @@ export default function LessonOneScreen({navigation}: RootTabScreenProps<"Module
                     </Card>
                 </Card.Content>
                 <Card.Title title="" subtitle="Applications of Specular and Diffuse Reflection" />
+            </Card>
+            <Card style={styles.card}>
+                <Card.Title title="Watch Video Lesson Here" />
+                <Video
+                    ref={video}
+                    useNativeControls
+                    style={{ height: 300 }}
+                    resizeMode="contain"
+                    onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+                    source={require("../../assets/videos/module3/lesson1.mp4")}
+                />
+                <View>
+                    <Button
+                    title={status.isPlaying ? "Pause" : "Play"}
+                    onPress={() =>
+                        status.isPlaying
+                        ? video.current.pauseAsync()
+                        : video.current.playAsync()
+                    }
+                    />
+                </View>
             </Card>
               <TouchableOpacity
                 onPress={() => navigation.navigate('ModuleThreeQuizOne')}>

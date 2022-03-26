@@ -12,12 +12,18 @@ import {
   Dimensions,
   TextInput,
 } from "react-native";
-import { Card, Paragraph } from "react-native-paper";
+import { Button, Card, Paragraph } from "react-native-paper";
 import { View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
 import { LinearGradient } from "expo-linear-gradient";
+import Toast from 'react-native-root-toast';
 
 const windowHeight = Dimensions.get("window").height;
+
+const moduleIsClosed = () => {
+    Toast.show('Module is closed, finish the previous modules first! :)', { duration: Toast.durations.LONG, });
+}
+
 export default function TabOneScreen({
   navigation,
 }: RootTabScreenProps<"TabOne">) {
@@ -41,8 +47,8 @@ export default function TabOneScreen({
       const m4 = await AsyncStorage.getItem('@M4isCompleted');
       const m5 = await AsyncStorage.getItem('@M5isCompleted');
       
-
       if(m1 == 'true') {
+        console.log(m1);
         setM1Status(true);
       }
       if(m2 == 'true') {
@@ -150,6 +156,7 @@ export default function TabOneScreen({
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
+                onPress={() => moduleIsClosed()}
                 style={styles.card}>
                 <Card style={{backgroundColor:'grey'}}>
                     <Card.Cover 
@@ -176,6 +183,7 @@ export default function TabOneScreen({
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
+                onPress={() => moduleIsClosed()}
                 style={styles.card}>
                   <Card style={{backgroundColor:'grey'}}>
                     <Card.Cover 
@@ -203,6 +211,7 @@ export default function TabOneScreen({
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
+                onPress={() => moduleIsClosed()}
                 style={styles.card}>
                   <Card style={{backgroundColor:'grey'}}>
                     <Card.Cover 
@@ -229,6 +238,7 @@ export default function TabOneScreen({
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
+                onPress={() => moduleIsClosed()}
                 style={styles.card}>
                   <Card style={{backgroundColor:'grey'}}>
                     <Card.Cover 
@@ -255,6 +265,7 @@ export default function TabOneScreen({
                 </TouchableOpacity>
               ) : (
                 <TouchableOpacity
+                onPress={() => moduleIsClosed()}
                 style={styles.card}>
                   <Card style={{backgroundColor:'grey'}}>
                     <Card.Cover 

@@ -185,6 +185,8 @@ export default function TabTwoScreen() {
           />
           <Text>Body</Text>
           <TextInput
+            multiline
+            numberOfLines={8}
             placeholder="Enter Comment"
             value={postData.body}
             onChangeText={(value) => {
@@ -270,7 +272,6 @@ const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
   },
   modalView: {
     backgroundColor: "white",

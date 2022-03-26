@@ -13,10 +13,16 @@ import { Card } from "react-native-paper";
 import { Text, View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
 import { LinearGradient } from "expo-linear-gradient";
+import Toast from "react-native-root-toast";
 
 const { width, height } = Dimensions.get("window");
 const vw = width - 10;
 const vh = height;
+
+const lessonIsClosed = () => {
+  Toast.show('This lesson is closed until you finish the previous ones.', { duration: Toast.durations.LONG, });
+}
+
 export default function ModuleFourScreen({
   navigation,
 }: RootTabScreenProps<"ModuleFour">) {
@@ -91,7 +97,7 @@ export default function ModuleFourScreen({
               </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
               <Card style={styles.card}>
                 <Card.Title title="Principles of Optical Instruments" subtitle="Lesson 2" style={{ backgroundColor: 'grey' }}/>
               </Card>

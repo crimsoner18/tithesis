@@ -125,6 +125,43 @@ export default function LessonOneScreen({
             </Paragraph>
           </Card.Content>
         </Card>
+
+        <Card style={styles.card}>
+          <Card.Title title="Answer Keys" />
+          <Card.Content>
+            <Text style={{fontWeight:'bold'}}> Self-Test 1 </Text>
+            <Card style={styles.imageHolder}>
+              <Card.Cover
+                source={require("../../assets/images/module2/conclusion/image2.png")}
+                resizeMode={`contain`}
+                style={{ backgroundColor: "#FFFFFF" }}
+              />
+            </Card>
+            <Card style={styles.imageHolder}>
+              <Card.Cover
+                source={require("../../assets/images/module2/conclusion/image3.png")}
+                resizeMode={`contain`}
+                style={{ backgroundColor: "#FFFFFF" }}
+              />
+            </Card>
+            <Card style={styles.imageHolder}>
+              <Card.Cover
+                source={require("../../assets/images/module2/conclusion/image4.png")}
+                resizeMode={`contain`}
+                style={{ backgroundColor: "#FFFFFF" }}
+              />
+            </Card>
+
+            <Text style={{fontWeight:'bold', marginTop:20}}> Self-Test 2 </Text>
+            <Card style={styles.imageHolder}>
+              <Card.Cover
+                source={require("../../assets/images/module2/conclusion/image5.png")}
+                resizeMode={`contain`}
+                style={{ backgroundColor: "#FFFFFF" }}
+              />
+            </Card>
+          </Card.Content>
+        </Card>
       </ScrollView>
     </SafeAreaView>
   );

@@ -118,7 +118,6 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
   },
   button: {
     borderRadius: 8,

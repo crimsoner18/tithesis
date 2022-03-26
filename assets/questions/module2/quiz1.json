@@ -2,9 +2,9 @@
     {
       "questionText": "Question 1: Which of the following is Sir Isaac Newton’s theory that explains the light as a particle",
       "answerOptions": [
-        { "answerText": "Corpuscular Theory", "isCorrect": false },
+        { "answerText": "Corpuscular Theory", "isCorrect": true },
         { "answerText": "Quantum Theory", "isCorrect": false },
-        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": false },
         { "answerText": "Wave Theory", "isCorrect": false }
       ]
     },
@@ -13,8 +13,8 @@
       "questionText": "Question 2: Huygens’ wave theory of light considered light to be ____________",
       "answerOptions": [
         { "answerText": "Made up of particles", "isCorrect": false },
-        { "answerText": "Longitudinal Waves", "isCorrect": false },
-        { "answerText": "Transverse Waves", "isCorrect": true },
+        { "answerText": "Longitudinal Waves", "isCorrect": true },
+        { "answerText": "Transverse Waves", "isCorrect": false },
         { "answerText": "Of dual nature", "isCorrect": false }
       ]
     },
@@ -32,9 +32,9 @@
     {
       "questionText": "Question 4: According to the Electromagnetic theory electromagnetic wave is_____________",
       "answerOptions": [
-        { "answerText": "Transverse waves", "isCorrect": false },
+        { "answerText": "Transverse waves", "isCorrect": true },
         { "answerText": "Longitudinal waves", "isCorrect": false },
-        { "answerText": "made up of particles", "isCorrect": true },
+        { "answerText": "made up of particles", "isCorrect": false },
         { "answerText": "mechanical", "isCorrect": false }
       ]
     },
@@ -52,9 +52,9 @@
     {
       "questionText": "Question 6: It is successful in explaining the phenomena of reflection, refraction, interference, and diffraction phenomena of light and tells us that light is a wave.",
       "answerOptions": [
-        { "answerText": "Wave Theory", "isCorrect": false },
+        { "answerText": "Wave Theory", "isCorrect": true },
         { "answerText": "Corpuscular Theory", "isCorrect": false },
-        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": false },
         { "answerText": "Quantum Theory", "isCorrect": false }
       ]
     },
@@ -74,8 +74,8 @@
       "answerOptions": [
         { "answerText": "photons", "isCorrect": false },
         { "answerText": "ether", "isCorrect": false },
-        { "answerText": "Compton", "isCorrect": true },
-        { "answerText": "corpuscles", "isCorrect": false }
+        { "answerText": "Compton", "isCorrect": false },
+        { "answerText": "corpuscles", "isCorrect": true }
       ]
     },
   
@@ -83,8 +83,8 @@
       "questionText": "Question 9: This theory assumes that light is radiated in discrete packets or bundles of energy called photons",
       "answerOptions": [
         { "answerText": "Corpuscular Theory", "isCorrect": false },
-        { "answerText": "Quantum Theory", "isCorrect": false },
-        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Quantum Theory", "isCorrect": true },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": false },
         { "answerText": "Wave Theory", "isCorrect": false }
       ]
     },
@@ -93,8 +93,8 @@
       "questionText": "Question 10: This theory also says that the color of light is dependent on the size of the corpuscles which tells that light is a particle.",
       "answerOptions": [
         { "answerText": "Quantum Theory ", "isCorrect": false },
-        { "answerText": "Corpuscular Theory", "isCorrect": false },
-        { "answerText": "Electromagnetic Wave Theory", "isCorrect": true },
+        { "answerText": "Corpuscular Theory", "isCorrect": true },
+        { "answerText": "Electromagnetic Wave Theory", "isCorrect": false },
         { "answerText": "Wave Theory", "isCorrect": false }
       ]
     }

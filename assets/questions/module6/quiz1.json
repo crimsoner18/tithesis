@@ -12,9 +12,9 @@
     {
       "questionText": "Question 2: Cornea functions as ___________.",
       "answerOptions": [
-        { "answerText": "A refractor of light and protects the eyes from accidents by preventing foreign particles inside it.", "isCorrect": false },
+        { "answerText": "A refractor of light and protects the eyes from accidents by preventing foreign particles inside it.", "isCorrect": true },
         { "answerText": "A messenger of sensation from the eyes to the brain", "isCorrect": false },
-        { "answerText": "The center of the eye that lets the light in and focus it on the retina.", "isCorrect": true },
+        { "answerText": "The center of the eye that lets the light in and focus it on the retina.", "isCorrect": false },
         { "answerText": "A controller of the amount of light entering the eye.", "isCorrect": false }
       ]
     },
@@ -23,8 +23,8 @@
       "questionText": "Question 3: It refers to the nerve cells at the back of the eye essential for detecting and deciphering colors.",
       "answerOptions": [
         { "answerText": "Optic Nerve", "isCorrect": false },
-        { "answerText": "Retina", "isCorrect": false },
-        { "answerText": "Pupils", "isCorrect": true },
+        { "answerText": "Retina", "isCorrect": true },
+        { "answerText": "Pupils", "isCorrect": false },
         { "answerText": "Iris", "isCorrect": false }
       ]
     },
@@ -32,9 +32,9 @@
     {
       "questionText": "Question 4: The lens functions to make sure that all the light from an object is being focused on the retina only.",
       "answerOptions": [
-        { "answerText": "True", "isCorrect": false },
+        { "answerText": "True", "isCorrect": true },
         { "answerText": "False", "isCorrect": false },
-        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Not sure", "isCorrect": false },
         { "answerText": "Maybe", "isCorrect": false }
       ]
     },
@@ -44,8 +44,8 @@
       "answerOptions": [
         { "answerText": "Posterior Muscle", "isCorrect": false },
         { "answerText": "Lateral Muscle", "isCorrect": false },
-        { "answerText": "Medial Muscle", "isCorrect": true },
-        { "answerText": "Ciliary Muscle", "isCorrect": false }
+        { "answerText": "Medial Muscle", "isCorrect": false },
+        { "answerText": "Ciliary Muscle", "isCorrect": true }
       ]
     },
   
@@ -53,8 +53,8 @@
       "questionText": "Question 6: Which of the following best describes accommodation",
       "answerOptions": [
         { "answerText": "The distance is called the minimum distance of an object from the eye.", "isCorrect": false },
-        { "answerText": "It is the ability of the lens of the eye to adjust its focal length.", "isCorrect": false },
-        { "answerText": "Process of visual nerve impulses that begins with interconnections in the retina and continues in the brain.", "isCorrect": true },
+        { "answerText": "It is the ability of the lens of the eye to adjust its focal length.", "isCorrect": true },
+        { "answerText": "Process of visual nerve impulses that begins with interconnections in the retina and continues in the brain.", "isCorrect": false },
         { "answerText": "It is the method of correcting visual defects.", "isCorrect": false }
       ]
     },
@@ -62,9 +62,9 @@
     {
       "questionText": "Question 7: Refractive Errors refer to the type of vision problems wherein the person experiences blurry visions due to the inability of the eye to focus images sharply on the retina.",
       "answerOptions": [
-        { "answerText": "True", "isCorrect": false },
+        { "answerText": "True", "isCorrect": true },
         { "answerText": "False", "isCorrect": false },
-        { "answerText": "Not sure", "isCorrect": true },
+        { "answerText": "Not sure", "isCorrect": false },
         { "answerText": "Maybe", "isCorrect": false }
       ]
     },
@@ -72,9 +72,9 @@
     {
       "questionText": "Question 8: What are the two most known refractive errors?",
       "answerOptions": [
-        { "answerText": "Nearsightedness and Farsightedness", "isCorrect": false },
+        { "answerText": "Nearsightedness and Farsightedness", "isCorrect": true },
         { "answerText": "Astigmatism and Presbyopia", "isCorrect": false },
-        { "answerText": "Astigmatism and Nearsightedness", "isCorrect": true },
+        { "answerText": "Astigmatism and Nearsightedness", "isCorrect": false },
         { "answerText": "Farsightedness and Presbyopia", "isCorrect": false }
       ]
     },
@@ -82,9 +82,9 @@
     {
       "questionText": "Question 9: How are refractive errors be corrected?",
       "answerOptions": [
-        { "answerText": "Prescribed eyeglasses and surgeries", "isCorrect": false },
+        { "answerText": "Prescribed eyeglasses and surgeries", "isCorrect": true },
         { "answerText": "Anti-rad eyeglasses", "isCorrect": false },
-        { "answerText": "Surgeries", "isCorrect": true },
+        { "answerText": "Surgeries", "isCorrect": false },
         { "answerText": "Lens", "isCorrect": false }
       ]
     },
@@ -92,9 +92,9 @@
     {
       "questionText": "Question 10: This condition can be corrected through the use of cylindrical lens due to its no refractive power along one axis, and it’s concave or convex along the other axis.",
       "answerOptions": [
-        { "answerText": "Astigmatism", "isCorrect": false },
+        { "answerText": "Astigmatism", "isCorrect": true },
         { "answerText": "Hyperopia", "isCorrect": false },
-        { "answerText": "Presbyopia", "isCorrect": true },
+        { "answerText": "Presbyopia", "isCorrect": false },
         { "answerText": "Myopia", "isCorrect": false }
       ]
     }

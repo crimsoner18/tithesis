@@ -4,10 +4,15 @@ import { Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, TouchableO
 import { Card, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../types';
 import { LinearGradient } from 'expo-linear-gradient';
+import Toast from 'react-native-root-toast';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
+
+const lessonIsClosed = () => {
+  Toast.show('This lesson is closed until you finish the previous ones.', { duration: Toast.durations.LONG, });
+}
 
 export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>) {
   const [isLesson1Read, setLesson1Read] = useState(false);
@@ -28,6 +33,8 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
       const l3Passed = await AsyncStorage.getItem('@M2L3Passed')
       const l4 = await AsyncStorage.getItem('@M2L4isRead')
       const l4Passed = await AsyncStorage.getItem('@M2L4Passed')
+
+      setLesson3Passed(true);
 
       if(l1 == 'true') {
         setLesson1Read(true);
@@ -100,7 +107,7 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
                 <Card style={styles.card}>
                   <Card.Title title="Visible Light and Color" subtitle="Lesson 2" style={{ backgroundColor: 'grey' }}/>
                 </Card>
@@ -117,7 +124,7 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
                 <Card style={styles.card}>
                   <Card.Title title="Basic Properties of Light" subtitle="Lesson 3" style={{ backgroundColor: 'grey' }}/>
                 </Card>
@@ -134,7 +141,7 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => lessonIsClosed()}>
               <Card style={styles.card}>
                 <Card.Title title="Understanding Polarization and Malus law" subtitle="Lesson 4" style={{ backgroundColor: 'grey' }}/>
               </Card>

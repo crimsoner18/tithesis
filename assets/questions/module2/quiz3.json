@@ -3,8 +3,8 @@
       "questionText": "Question 1: We can see things because light",
       "answerOptions": [
         { "answerText": "is absorbed by objects", "isCorrect": false },
-        { "answerText": "enters our eyes", "isCorrect": false },
-        { "answerText": "reflects from our eyes", "isCorrect": true },
+        { "answerText": "enters our eyes", "isCorrect": true },
+        { "answerText": "reflects from our eyes", "isCorrect": false },
         { "answerText": "is colorless", "isCorrect": false }
       ]
     },
@@ -43,8 +43,8 @@
       "questionText": "Question 5: What is the speed of light in a vacuum to three significant figures?",
       "answerOptions": [
         { "answerText": "1.86×10^8m/s", "isCorrect": false },
-        { "answerText": "3.00×10^8m/s", "isCorrect": false },
-        { "answerText": "6.71×10^8m/s", "isCorrect": true },
+        { "answerText": "3.00×10^8m/s", "isCorrect": true },
+        { "answerText": "6.71×10^8m/s", "isCorrect": false },
         { "answerText": "1.50×10^11m/s", "isCorrect": false }
       ]
     },
@@ -53,8 +53,8 @@
       "questionText": "Question 6: What is the frequency of a photon having energy 2.1 X 10-30 J?",
       "answerOptions": [
         { "answerText": "3.1 X 1013 Hz", "isCorrect": false },
-        { "answerText": "4.1 X 1013 Hz", "isCorrect": false },
-        { "answerText": "5.1 X 1013 Hz", "isCorrect": true },
+        { "answerText": "4.1 X 1013 Hz", "isCorrect": true },
+        { "answerText": "5.1 X 1013 Hz", "isCorrect": false },
         { "answerText": "6.1 X 1013 Hz", "isCorrect": false }
       ]
     },
@@ -72,9 +72,9 @@
     {
       "questionText": "Question 8: What is the speed of light in water?",
       "answerOptions": [
-        { "answerText": "2.26×10^8m/s", "isCorrect": false },
+        { "answerText": "2.26×10^8m/s", "isCorrect": true },
         { "answerText": "3.00×10^8m/s", "isCorrect": false },
-        { "answerText": "6.71×10^8m/s", "isCorrect": true },
+        { "answerText": "6.71×10^8m/s", "isCorrect": false },
         { "answerText": "1.50×10^11m/s", "isCorrect": false }
       ]
     },
@@ -82,9 +82,9 @@
     {
       "questionText": "Question 9: His only conclusion was that light speed was too fast to be measured by that experiment.",
       "answerOptions": [
-        { "answerText": "Christian Huygens", "isCorrect": false },
+        { "answerText": "Christian Huygens", "isCorrect": true },
         { "answerText": "Aristotles", "isCorrect": false },
-        { "answerText": "Galileo Galilei", "isCorrect": true },
+        { "answerText": "Galileo Galilei", "isCorrect": false },
         { "answerText": "Isaac Newtons", "isCorrect": false }
       ]
     },
@@ -92,9 +92,9 @@
     {
       "questionText": "Question 10: What is the wavelength of a photon that has a frequency of 6.9x10^9 Hz",
       "answerOptions": [
-        { "answerText": "0.43 m", "isCorrect": false },
+        { "answerText": "0.43 m", "isCorrect": true },
         { "answerText": "0.043 m", "isCorrect": false },
-        { "answerText": "0.034 m", "isCorrect": true },
+        { "answerText": "0.034 m", "isCorrect": false },
         { "answerText": "0.434 m", "isCorrect": false }
       ]
     }

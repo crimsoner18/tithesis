@@ -3,7 +3,7 @@ import { Pressable, StatusBar, StyleSheet, Text, View } from 'react-native';
 
 import { RootTabScreenProps } from '../../../types';
 import { Card, Paragraph } from 'react-native-paper';
-import questions from '../../../assets/questions/module2/quiz2.json'; 
+import questions from '../../../assets/questions/module3/quiz2.json'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -118,7 +118,6 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
   },
   button: {
     borderRadius: 8,

@@ -4,8 +4,8 @@
       "answerOptions": [
         { "answerText": "Pole", "isCorrect": false },
         { "answerText": "Focus", "isCorrect": false },
-        { "answerText": "Length", "isCorrect": true },
-        { "answerText": "Focal length", "isCorrect": false }
+        { "answerText": "Length", "isCorrect": false },
+        { "answerText": "Focal length", "isCorrect": true }
       ]
     },
   
@@ -14,17 +14,17 @@
       "answerOptions": [
         { "answerText": "Conducting lens", "isCorrect": false },
         { "answerText": "Diverging lens", "isCorrect": false },
-        { "answerText": "Divergent lens", "isCorrect": true },
-        { "answerText": "Converging lens", "isCorrect": false }
+        { "answerText": "Divergent lens", "isCorrect": false },
+        { "answerText": "Converging lens", "isCorrect": true }
       ]
     },
   
     {
       "questionText": "Question 3: The word diverging means what?",
       "answerOptions": [
-        { "answerText": "To spread apart", "isCorrect": false },
+        { "answerText": "To spread apart", "isCorrect": true },
         { "answerText": "To compress", "isCorrect": false },
-        { "answerText": "To slant", "isCorrect": true },
+        { "answerText": "To slant", "isCorrect": false },
         { "answerText": "To move speed", "isCorrect": false }
       ]
     },
@@ -42,9 +42,9 @@
     {
       "questionText": "Question 5: Is a convex lens thicker or thinner in the middle?",
       "answerOptions": [
-        { "answerText": "Thicker", "isCorrect": false },
+        { "answerText": "Thicker", "isCorrect": true },
         { "answerText": "Thinner", "isCorrect": false },
-        { "answerText": "Less thicker", "isCorrect": true },
+        { "answerText": "Less thicker", "isCorrect": false },
         { "answerText": "All of the above", "isCorrect": false }
       ]
     },
@@ -63,8 +63,8 @@
       "questionText": "Question 7: Concave is also known as converging lens",
       "answerOptions": [
         { "answerText": "True", "isCorrect": false },
-        { "answerText": "False", "isCorrect": false },
-        { "answerText": "Maybe", "isCorrect": true },
+        { "answerText": "False", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false },
         { "answerText": "Sort of", "isCorrect": false }
       ]
     },
@@ -72,9 +72,9 @@
     {
       "questionText": "Question 8: Convex lens is also known as converging lens.",
       "answerOptions": [
-        { "answerText": "True", "isCorrect": false },
+        { "answerText": "True", "isCorrect": true },
         { "answerText": "False", "isCorrect": false },
-        { "answerText": "Maybe", "isCorrect": true },
+        { "answerText": "Maybe", "isCorrect": false },
         { "answerText": "Sort of", "isCorrect": false }
       ]
     },
@@ -83,8 +83,8 @@
       "questionText": "Question 9: Lenses are classified into three.",
       "answerOptions": [
         { "answerText": "True", "isCorrect": false },
-        { "answerText": "False", "isCorrect": false },
-        { "answerText": "yes", "isCorrect": true },
+        { "answerText": "False", "isCorrect": true },
+        { "answerText": "yes", "isCorrect": false },
         { "answerText": "all of the above", "isCorrect": false }
       ]
     },
@@ -92,9 +92,9 @@
     {
       "questionText": "Question 10: The mirrors and lenses both have the ability to reflect or refract light.",
       "answerOptions": [
-        { "answerText": "True", "isCorrect": false },
+        { "answerText": "True", "isCorrect": true },
         { "answerText": "False", "isCorrect": false },
-        { "answerText": "No", "isCorrect": true },
+        { "answerText": "No", "isCorrect": false },
         { "answerText": "all of the above", "isCorrect": false }
       ]
     }

@@ -3,9 +3,9 @@
       "questionText": "Question 1: \"Diffraction\" of light occurs when",
       "answerOptions": [
         { "answerText": "light bounces off a surface.", "isCorrect": false },
-        { "answerText": "light bends around corners or obstacles.", "isCorrect": false },
-        { "answerText": "light changes intensity when passing from one material into another.", "isCorrect": true },
-        { "answerText": "ight waves add together to make a wave with larger amplitude.", "isCorrect": false }
+        { "answerText": "light bends around corners or obstacles.", "isCorrect": true },
+        { "answerText": "light changes intensity when passing from one material into another.", "isCorrect": false },
+        { "answerText": "light waves add together to make a wave with larger amplitude.", "isCorrect": false }
       ]
     },
   
@@ -14,17 +14,17 @@
       "answerOptions": [
         { "answerText": "the wave must be a sound wave.", "isCorrect": false },
         { "answerText": "the wave must be traveling from a less dense to a denser material.", "isCorrect": false },
-        { "answerText": "the wave must be traveling slower than the speed of light in a vacuum.", "isCorrect": true },
-        { "answerText": "the wave must encounter an obstacle that is comparable in size to the wavelength of the wave.", "isCorrect": false }
+        { "answerText": "the wave must be traveling slower than the speed of light in a vacuum.", "isCorrect": false },
+        { "answerText": "the wave must encounter an obstacle that is comparable in size to the wavelength of the wave.", "isCorrect": true }
       ]
     },
   
     {
       "questionText": "Question 3: What term is used to describe two waves when the crests and troughs of match as below?",
       "answerOptions": [
-        { "answerText": "In Phase", "isCorrect": false },
+        { "answerText": "In Phase", "isCorrect": true },
         { "answerText": "Out of Phase", "isCorrect": false },
-        { "answerText": "Phase Different", "isCorrect": true },
+        { "answerText": "Phase Different", "isCorrect": false },
         { "answerText": "the wave must encounter an obstacle that is comparable in size to the wavelength of the wave.", "isCorrect": false }
       ]
     },
@@ -32,9 +32,9 @@
     {
       "questionText": "Question 4: Monochromatic light of wavelength 589 nm is incident on a grating - the spacing between lines on the grating is 4.8x10-6 m. What is the angle between the zero order and first order maxima?",
       "answerOptions": [
-        { "answerText": "7.05 degree", "isCorrect": false },
+        { "answerText": "7.05 degree", "isCorrect": true },
         { "answerText": "6.89 degree", "isCorrect": false },
-        { "answerText": "13.2 degree", "isCorrect": true },
+        { "answerText": "13.2 degree", "isCorrect": false },
         { "answerText": "0.466 degree", "isCorrect": false }
       ]
     },
@@ -54,17 +54,17 @@
       "answerOptions": [
         { "answerText": "When the Slit Width is smaller than λ", "isCorrect": false },
         { "answerText": "When the Slit Width is the same as λ", "isCorrect": false },
-        { "answerText": "When the Slit Width is slightly larger than", "isCorrect": true },
-        { "answerText": "Both B and C ", "isCorrect": false }
+        { "answerText": "When the Slit Width is slightly larger than", "isCorrect": false },
+        { "answerText": "Both B and C ", "isCorrect": true }
       ]
     },
   
     {
       "questionText": "Question 7: When a wave moves around a barrier or through an opening it is known as what?",
       "answerOptions": [
-        { "answerText": "Diffractione", "isCorrect": false },
+        { "answerText": "Diffractione", "isCorrect": true },
         { "answerText": "Refraction", "isCorrect": false },
-        { "answerText": "Destruction", "isCorrect": true },
+        { "answerText": "Destruction", "isCorrect": false },
         { "answerText": "6.22 degree", "isCorrect": false }
       ]
     },
@@ -93,8 +93,8 @@
       "questionText": "Question 10: Huygen’s wave theory of light considered light to be ____________",
       "answerOptions": [
         { "answerText": "Made up of particles", "isCorrect": false },
-        { "answerText": "Longitudinal Waves", "isCorrect": false },
-        { "answerText": "Transverse Waves", "isCorrect": true },
+        { "answerText": "Longitudinal Waves", "isCorrect": true },
+        { "answerText": "Transverse Waves", "isCorrect": false },
         { "answerText": "Of dual nature", "isCorrect": false }
       ]
     }

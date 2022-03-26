@@ -215,6 +215,21 @@ export default function LessonOneScreen({
             </Card>
           </Content>
         </Card>
+
+        <Card style={styles.card}>
+          <Card.Title title="Self Test 1" />
+          <Card.Content>
+            <Paragraph>Answer the following word problems given below.</Paragraph>
+            <Text style={{marginBottom: 10}}>
+              1. What image is produced by placing an object 4 cm away from a convex lens of focal length 8 cm?
+            </Text>
+            <Text style={{marginBottom: 10}}>
+              2. If an object is 12 cm away from a convex lens of focal length 4 cm where will the image be?
+            </Text>
+          </Card.Content>
+          <Card.Title title="" subtitle="Self Test 1" />
+        </Card>
+
         <Card style={styles.card}>
           <Card.Title title="Watch Video Lesson Here" />
           <Video

@@ -4,10 +4,15 @@ import { Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, TouchableO
 import { Card, Paragraph } from 'react-native-paper';
 import { RootTabScreenProps } from '../types';
 import { LinearGradient } from 'expo-linear-gradient';
+import Toast from 'react-native-root-toast';
 
 const {width, height} = Dimensions.get("window");
 const vw = width-10;
 const vh = height;
+
+const lessonIsClosed = () => {
+  Toast.show('This lesson is closed until you finish the previous ones.', { duration: Toast.durations.LONG, });
+}
 
 export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'ModuleOne'>) {
   const [isLesson1Read, setLesson1Read] = useState(false);
@@ -98,7 +103,8 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => lessonIsClosed()}>
                 <Card style={styles.card}>
                   <Card.Title title="The Nature of a Wave" subtitle="Lesson 2" style={{ backgroundColor: 'grey' }}/>
                 </Card>
@@ -114,7 +120,8 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => lessonIsClosed()}>
                 <Card style={styles.card}>
                   <Card.Title title="Properties of a Wave" subtitle="Lesson 3" style={{ backgroundColor: 'grey' }}/>
                 </Card>
@@ -130,7 +137,8 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
                 </Card>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => lessonIsClosed()}>
                 <Card style={styles.card}>
                   <Card.Title title="Behavior of Waves" subtitle="Lesson 4" style={{ backgroundColor: 'grey' }}/>
                 </Card>
