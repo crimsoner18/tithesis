@@ -58,9 +58,9 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
                         Oops! Looks like you had a bit of a confusion with the lesson, please try again.
                       </Paragraph>
                       <Pressable
-                      onPress={() => navigation.navigate('ModuleFourLessonOne')}
+                      onPress={() => navigation.navigate('ModuleFourLessonTwo')}
                       style={styles.button}>
-                        <Text>Return to Lesson 1</Text>
+                        <Text>Return to Lesson 2</Text>
                       </Pressable>
                     </>
                     ) : (

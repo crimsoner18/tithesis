@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
   Dimensions,
   TextInput,
+  Image,
 } from "react-native";
 import { Button, Card, Paragraph } from "react-native-paper";
 import { View } from "../components/Themed";

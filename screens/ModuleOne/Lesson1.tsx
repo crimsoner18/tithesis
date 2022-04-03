@@ -38,7 +38,7 @@ export default function LessonOneScreen({
           <Card.Content>
             <Card style={styles.imageHolder}>
               <Card.Cover
-                source={require("../../assets/images/module1/lesson1/image3.gif")}
+                source={require("../../assets/images/module1/lesson1/image3.jpg")}
                 resizeMode={`contain`}
                 style={{ backgroundColor: "#FFFFFF" }}
               />
@@ -46,11 +46,11 @@ export default function LessonOneScreen({
                 style={styles.sourceText}
                 onPress={() =>
                   Linking.openURL(
-                    "https://www.google.com/search?q=pendulum&sxsrf=AOaemvIFCfSv9C8c9J9OwVhWrPUt6wGjhg:1639192121746&source=lnms&tbm=isch"
+                    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gamestop.com%2Fcollectibles%2Ffunko%2Fpop%2Fproducts%2Ffunko-pop-star-wars-the-mandalorian-fennec-shand-vinyl-bobble-head%2F11164299."
                   )
                 }
               >
-                https://www.google.com/search?q=pendulum&sxsrf=AOaemvIFCfSv9C8c9J9OwVhWrPUt6wGjhg:1639192121746&source=lnms&tbm=isch
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gamestop.com%2Fcollectibles%2Ffunko%2Fpop%2Fproducts%2Ffunko-pop-star-wars-the-mandalorian-fennec-shand-vinyl-bobble-head%2F11164299.
               </Text>
             </Card>
             <Paragraph style={styles.paragraph}>

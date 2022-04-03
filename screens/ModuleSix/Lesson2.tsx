@@ -97,6 +97,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson2/image1.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Book%3A_University_Physics_III_-_Optics_and_Modern_Physics_(OpenStax)/02%3A_Geometric_Optics_and_Image_Formation/2.07%3A_The_Camera"
+                      )
+                    }
+                  >
+                    https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Book%3A_University_Physics_III_-_Optics_and_Modern_Physics_(OpenStax)/02%3A_Geometric_Optics_and_Image_Formation/2.07%3A_The_Camera
+                  </Text>
                   </Card>
                   <Paragraph>
                   The image shows the anatomy of a camera consisting of aperture, lenses, flip-up
@@ -126,6 +136,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson2/image2.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.chicagotribune.com/consumer-reviews/sns-bestreviews-home-the-best-magnifying-glass-20191121-qly64nobrbcl7bvs3yhru7rg7m-story.html"
+                      )
+                    }
+                  >
+                    https://www.chicagotribune.com/consumer-reviews/sns-bestreviews-home-the-best-magnifying-glass-20191121-qly64nobrbcl7bvs3yhru7rg7m-story.html
+                  </Text>
                   </Card>
                   <Paragraph>
                   Have you seen a magnifying glass? this consist of a single converging
@@ -166,6 +186,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson2/image4.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.youtube.com/watch?v=SddBPTcmqOk"
+                      )
+                    }
+                  >
+                    https://www.youtube.com/watch?v=SddBPTcmqOk
+                  </Text>
                   </Card>
                   <Paragraph style={{marginLeft:40, marginBottom:30}}>
                   Given:{"\n"}
@@ -235,6 +265,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson2/image6.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.history.com/news/10-fascinating-facts-about-the-hubble-space-telescope"
+                      )
+                    }
+                  >
+                    https://www.history.com/news/10-fascinating-facts-about-the-hubble-space-telescope
+                  </Text>
                   </Card>
                   <Paragraph style={{marginLeft:100, marginBottom:30}}>
                   tanθ′ = h / fe
@@ -261,6 +301,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson2/image7.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://m.made-in-china.com/product/40X-640X-Monocular-Professional-Student-Biological-Compound-Microscope-BM-XSP02-903834605.html"
+                      )
+                    }
+                  >
+                    https://m.made-in-china.com/product/40X-640X-Monocular-Professional-Student-Biological-Compound-Microscope-BM-XSP02-903834605.html
+                  </Text>
                   </Card>
                   <Paragraph>
                   Have you ever held or tried a microscope on your early

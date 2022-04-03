@@ -34,8 +34,6 @@ export default function ModuleOneScreen({ navigation }: RootTabScreenProps<'Modu
       const l4 = await AsyncStorage.getItem('@M2L4isRead')
       const l4Passed = await AsyncStorage.getItem('@M2L4Passed')
 
-      setLesson3Passed(true);
-
       if(l1 == 'true') {
         setLesson1Read(true);
       }

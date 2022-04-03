@@ -61,7 +61,7 @@ export default function QuizScreen({ navigation }: RootTabScreenProps<'Quiz'>) {
                       <Pressable
                       onPress={() => navigation.navigate('ModuleFiveLessonTwo')}
                       style={styles.button}>
-                        <Text>Return to Lesson 1</Text>
+                        <Text>Return to Lesson 2</Text>
                       </Pressable>
                     </>
                     ) : (

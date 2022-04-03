@@ -37,13 +37,9 @@ export default function LessonOneScreen({
           <Card.Title title="LEARNING COMPETENCY" />
           <Card.Content>
             <Paragraph style={styles.paragraph}>
-            A. Determine the properties of light (wavelength){"\n"}
-            B. Explain the photoelectric effect using the idea of light quanta or photons.{"\n"}
-            C. Calculate kinetic energy, rest energy, momentum, and speed of objects
-            moving with speeds comparable to the speed of light.{"\n"}
-            D. Determine the conditions of polarization for interference to occur
+            A. Determine the conditions of polarization for interference to occur
             emphasizing the properties of a laser.{"\n"}
-            E. Calculate the intensity of the transmitted light after passing through a series
+            B. Calculate the intensity of the transmitted light after passing through a series
             of polarizers applying Malus’s Law.
             </Paragraph> 
           <Card.Title title="What to expect" />

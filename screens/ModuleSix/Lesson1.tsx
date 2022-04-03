@@ -35,10 +35,20 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                 and some eyes need correction in order to achieve this 20/20 vision.
                   </Paragraph>
                   <Card style={styles.imageHolder}>
-                  <Card.Cover 
-                  source={require('../../assets/images/module6/lesson1/image1.png')}
-                  resizeMode={`contain`}
-                  style={{'backgroundColor': '#FFFFFF'}}/>
+                    <Card.Cover 
+                    source={require('../../assets/images/module6/lesson1/image1.png')}
+                    resizeMode={`contain`}
+                    style={{'backgroundColor': '#FFFFFF'}}/>
+                    <Text
+                      style={styles.sourceText}
+                      onPress={() =>
+                        Linking.openURL(
+                          "http://ffden-2.phys.uaf.edu/211_fall2013.web.dir/jessica_garvin/parts_of_the_eye.htm"
+                        )
+                      }
+                    >
+                      http://ffden-2.phys.uaf.edu/211_fall2013.web.dir/jessica_garvin/parts_of_the_eye.htm
+                    </Text>
                   </Card>
                   <Paragraph style={styles.paragraph}>
                   Major parts and functions of the Human eye
@@ -107,7 +117,18 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson1/image3.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.youtube.com/watch?v=pNuotNacp1c"
+                      )
+                    }
+                  >
+                    https://www.youtube.com/watch?v=pNuotNacp1c
+                  </Text>
                   </Card>
+                  
                   <Paragraph>
                   Refraction occurs at other interfaces too but not as much as the interface of air
                   and the cornea. The lens also refracts the light but it functions to make sure that all the
@@ -169,6 +190,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson1/image4.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.medicalnewstoday.com/articles/324004"
+                      )
+                    }
+                  >
+                    https://www.medicalnewstoday.com/articles/324004
+                  </Text>
                   </Card>
                   <Paragraph>
                   Have you ever wondered why when we are in a dark place, after some time, we can see
@@ -186,6 +217,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson1/image5.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://discoveryeye.org/20-facts-about-the-amazing-eye/"
+                      )
+                    }
+                  >
+                    https://discoveryeye.org/20-facts-about-the-amazing-eye/
+                  </Text>
                   </Card>
                   <Paragraph style={styles.paragraph}>
                   Nearsightedness, Farsightedness, and Vision Corrections
@@ -217,6 +258,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson1/image6.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://mymyopia.com/whats-the-difference-between-nearsightedness-farsightedness-and-astigmatism/"
+                      )
+                    }
+                  >
+                    https://mymyopia.com/whats-the-difference-between-nearsightedness-farsightedness-and-astigmatism/
+                  </Text>
                   </Card>
                   <Paragraph>
                   Myopia or nearsightedness is the  condition wherein the eyes are able to see
@@ -230,6 +281,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson1/image7.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.corkeyeclinic.ie/Hyperopia"
+                      )
+                    }
+                  >
+                    https://www.corkeyeclinic.ie/Hyperopia
+                  </Text>
                   </Card>
                   <Paragraph>
                   Hyperopia or farsightedness is the reverse state of the myopia. In this condition, the point of
@@ -242,6 +303,16 @@ export default function LessonOneScreen({ navigation }: RootTabScreenProps<'Modu
                   source={require('../../assets/images/module6/lesson1/image8.png')}
                   resizeMode={`contain`}
                   style={{'backgroundColor': '#FFFFFF'}}/>
+                  <Text
+                    style={styles.sourceText}
+                    onPress={() =>
+                      Linking.openURL(
+                        "https://www.webmd.com/eye-health/astigmatism-eyes"
+                      )
+                    }
+                  >
+                    https://www.webmd.com/eye-health/astigmatism-eyes
+                  </Text>
                   </Card>
                   <Paragraph>
                   The next one is astigmatism. This condition happens due to the nonspherical

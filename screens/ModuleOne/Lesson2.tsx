@@ -33,8 +33,8 @@ export default function LessonTwoScreen({ navigation }: RootTabScreenProps<'Modu
                 resizeMode={`contain`}
                 style={{'backgroundColor': '#FFFFFF'}}/>
                 <Text style={styles.sourceText}
-                onPress={() => Linking.openURL('https://www.physicsclassroom.com/class/waves')}>
-                  https://www.physicsclassroom.com/class/waves
+                onPress={() => Linking.openURL('https://www.google.com/search?q=nature+of+wave&sxsrf=APq-WBvJBn7KJr9zSNepcyBD_G3gUcphfQ:1647082147296&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjUubiSs8D2AhXoy4sBHROYATcQ_AUoAXoECAEQAw&biw=1280&bih=540&dpr=0.8#imgrc=v5S8PuepuBhdGM')}>
+                  https://www.google.com/search?q=nature+of+wave&sxsrf=APq-WBvJBn7KJr9zSNepcyBD_G3gUcphfQ:1647082147296&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjUubiSs8D2AhXoy4sBHROYATcQ_AUoAXoECAEQAw&biw=1280&bih=540&dpr=0.8#imgrc=v5S8PuepuBhdGM
                 </Text>
               </Card>
               <Card.Content>
@@ -62,12 +62,12 @@ export default function LessonTwoScreen({ navigation }: RootTabScreenProps<'Modu
             <Card style={styles.card}>
               <Card style={styles.imageHolder}>
                 <Card.Cover 
-                source={require('../../assets/images/module1/lesson2/image2.jpg')}
+                source={require('../../assets/images/module1/lesson2/image2.png')}
                 resizeMode={`contain`}
                 style={{'backgroundColor': '#FFFFFF'}}/>
                 <Text style={styles.sourceText}
-                onPress={() => Linking.openURL('https://www.physicsclassroom.com/class/waves')}>
-                  https://www.physicsclassroom.com/class/waves
+                onPress={() => Linking.openURL('https://www.google.com/search?q=transverse+and+longitudinal&tbm=isch&ved=2ahU')}>
+                  https://www.google.com/search?q=transverse+and+longitudinal&tbm=isch&ved=2ahU
                 </Text>
               </Card>
               <Card.Content>
@@ -161,6 +161,10 @@ export default function LessonTwoScreen({ navigation }: RootTabScreenProps<'Modu
                     source={require('../../assets/images/module1/lesson2/image4.jpg')} 
                     resizeMode={`contain`} 
                     style={{'backgroundColor': '#FFFFFF'}}/>
+                    <Text style={styles.sourceText}
+                    onPress={() => Linking.openURL('https://images.slideplayer.com/39/10919089/slides/slide_3.jpg')}>
+                      https://images.slideplayer.com/39/10919089/slides/slide_3.jpg
+                    </Text>
                   </Card>
                   <Paragraph style={styles.paragraph}>
                     Individual medium particles are only temporarily

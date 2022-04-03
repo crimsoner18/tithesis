@@ -107,6 +107,16 @@ export default function LessonOneScreen({
                 resizeMode={`contain`}
                 style={{ backgroundColor: "#FFFFFF" }}
               />
+              <Text
+                style={styles.sourceText}
+                onPress={() =>
+                  Linking.openURL(
+                    "https://www.gsmarena.com/best_camera_phones_buyers_guide-review-2030.php"
+                  )
+                }
+              >
+                https://www.gsmarena.com/best_camera_phones_buyers_guide-review-2030.php
+              </Text>
             </Card>
             <Title>OBJECTIVE:</Title>
             <Paragraph style={{marginBottom:10, marginLeft:20}}>

@@ -213,7 +213,7 @@ function RootNavigator() {
       <Stack.Screen
         name="ModuleOneLessonFour"
         component={M1LessonFourScreen}
-        options={{ headerShown: true, title: "Vibrations" }}
+        options={{ headerShown: true, title: "Behavior of Waves" }}
       />
       <Stack.Screen
         name="ModuleOneConclusion"

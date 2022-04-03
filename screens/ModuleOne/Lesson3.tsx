@@ -26,9 +26,13 @@ export default function LessonThreeScreen({ navigation }: RootTabScreenProps<'Mo
               <Card.Title title="The Anatomy of a Wave" />
               <Card style={styles.imageHolder}>
                 <Card.Cover 
-                source={require('../../assets/images/module1/lesson3/image1.jpg')}
+                source={require('../../assets/images/module1/lesson3/image1.png')}
                 resizeMode={`contain`}
                 style={{'backgroundColor': '#FFFFFF'}}/>
+                <Text style={styles.sourceText}
+                onPress={() => Linking.openURL('https://ds055uzetaobb.cloudfront.net/brioche/uploads/Y0eZtf7RXi-sinewave-3.png?width=400')}>
+                  https://ds055uzetaobb.cloudfront.net/brioche/uploads/Y0eZtf7RXi-sinewave-3.png?width=400
+                </Text>
               </Card>
               <Card.Content>
                 <Paragraph style={styles.paragraph}> 
@@ -50,9 +54,13 @@ export default function LessonThreeScreen({ navigation }: RootTabScreenProps<'Mo
             <Card style={styles.card}>
               <Card style={styles.imageHolder}>
                 <Card.Cover 
-                source={require('../../assets/images/module1/lesson3/image2.jpg')}
+                source={require('../../assets/images/module1/lesson3/image2.jpeg')}
                 resizeMode={`contain`}
                 style={{'backgroundColor': '#FFFFFF'}}/>
+                <Text style={styles.sourceText}
+                onPress={() => Linking.openURL('https://d39460vivz6red.cloudfront.net/questions/PH-BB-SELINA8-CH7-EXSA-Q3/images/1_1592316496365.jpeg')}>
+                  https://d39460vivz6red.cloudfront.net/questions/PH-BB-SELINA8-CH7-EXSA-Q3/images/1_1592316496365.jpeg
+                </Text>
               </Card>
               <Card.Content>
                 <Paragraph style={styles.paragraph}> 
@@ -173,6 +181,49 @@ export default function LessonThreeScreen({ navigation }: RootTabScreenProps<'Mo
               </Card.Content>
               <Card.Title title="" subtitle="The Speed of a Wave" />
             </Card>
+            <Card style={styles.card}>
+              <Card.Content>
+                <Paragraph style={styles.paragraph}> 
+                  If the crest of an ocean wave moves 20 meters in 10 seconds, the wave's speed
+                  is 2.0 meters per second. In contrast, if the crest of an ocean wave moves 25 meters in
+                  10 seconds (the same amount of time), the wave's speed is 2.5 meters per second. In
+                  the same length of time, the quicker wave travels a greater distance. Occasionally, a
+                  wave will run into the end of one medium and the presence of another. A wave put into
+                  one end of a slinky, for example, will travel through the slinky until it reaches the other
+                  end and the presence of a second person's hand. Reflection is one of the behaviors that
+                  waves exhibit towards the end of a medium. The person's hand will reflect or bounce
+                  the wave. When a wave reflects, it remains within the medium and simply reverses its
+                  travel direction. The disturbance can be observed traveling back to the originating end
+                  of a slinky wave. A slinky wave that goes from the beginning to the end of the slinky has
+                  doubled its distance. The wave has traveled a distance equal to double the length of the
+                  slinky by reflecting back to its original place.
+                </Paragraph>
+              </Card.Content>
+              <Card.Title title="" subtitle="The Speed of a Wave" />
+            </Card>
+            <Card style={styles.card}>
+                <Card.Title title="Self-Test 1" />
+                <Card.Content>
+                  <Paragraph>Answer the following word problems given below.</Paragraph>
+                  <Text style={{marginBottom: 10}}>
+                    1. Waves in a lake are 6 m apart and pass a person on a raft every 2 s. What is the
+                    speed of the waves?
+                  </Text>
+                  <Text style={{marginBottom: 10}}>
+                    2. A buoy bobs up and down in the ocean. The waves have a wavelength of 2.5 m,
+                    and they pass the buoy at a speed of 4.0 m/s. What is the frequency of the
+                    waves? How much time does it take for one wave to pass under the buoy?
+                  </Text>
+                  <Text style={{marginBottom: 10}}>
+                    3. The musical note A above middle C has a frequency of 440 Hz. If the speed of
+                    sound is known to be 350 m/s, what is the wavelength of this note?
+                  </Text>
+                </Card.Content>
+                <Card.Title title="" subtitle="Self-Test 1" />
+            </Card>
+
+
+
             <Card style={styles.card}>
               <Card.Title title="Watch Video Lesson Here" />
               <Video
